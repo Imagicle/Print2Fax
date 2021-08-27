@@ -292,9 +292,6 @@ msgstr "Invia individualmente"
 msgid "Enter multiple recipients separated by semicolons."
 msgstr "Inserisci più destinatari separandoli con punto e virgola."
 
-# SendFAX.dfm:265 D:\proj\wphf-reloaded\wphfgui\SendFAX.cpp:137
-# D:\proj\wphf-reloaded\wphfgui\SendFAX.cpp:275
-# D:\proj\wphf-reloaded\wphfgui\SendFAX.cpp:828
 #: frmMain.dfm:558 /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:433
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:690
 msgid "Select from address book"
@@ -412,7 +409,6 @@ msgstr ""
 msgid "Fax sent to:"
 msgstr "Fax inviato a:"
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookCSV.cpp:53
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookCSV.cpp:60
 msgid "Unable to lock addressbook.csv!"
 msgstr "Impossibile acquisire addressbook.csv!"
@@ -422,118 +418,93 @@ msgstr "Impossibile acquisire addressbook.csv!"
 msgid "Call to curl_easy_init failed"
 msgstr "La chiamata a curl_easy_init è fallita"
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookCSV.cpp:203
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookCSV.cpp:188
 msgid "Unable to create addressbook.csv!"
 msgstr "Impossibile creare addressbook.csv!"
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookMAPI.cpp:98
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:95
 msgid "Unable to query address book contents table: 0x"
 msgstr "Impossibile interrogare i contenuti della rubrica: 0x"
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookMAPI.cpp:205
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:201
 msgid "Unable to query address book hierarchy table: 0x"
 msgstr "Impossibile interrogare la gerarchia della rubrica: 0x"
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookMAPI.cpp:239
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:235
 msgid "Unable to open address book sub container: 0x"
 msgstr "Impossibile aprire un sotto-contenitore della rubrica: 0x"
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookMAPI.cpp:296
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:294
 msgid "Unable to initialize MAPI: 0x"
 msgstr "Impossibile inizializzare MAPI: 0x"
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookMAPI.cpp:317
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:315
 msgid "Unable to logon to MAPI: 0x"
 msgstr "Impossibile eseguire il logon a MAPI: 0x"
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookMAPI.cpp:322
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:320
 msgid "Unable to open MAPI address book: 0x"
 msgstr "Impossibile acquisire la rubrica MAPI: 0x"
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookMAPI.cpp:327
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:325
 msgid "Unable to open MAPI address book container: 0x"
 msgstr "Impossibile acquisire il contenitore della rubrica MAPI: 0x"
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookODBC.cpp:83
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:85
 msgid "Unable to initialize ODBC: "
 msgstr "Impossibile inizializzare ODBC: "
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookODBC.cpp:88
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:90
 msgid "Unable to setup ODBC: "
 msgstr "Impossibile configurare ODBC: "
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookODBC.cpp:93
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:96
 msgid "Unable to create ODBC connection: "
 msgstr "Impossibile creare la connessione ODBC: "
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookODBC.cpp:98
-# D:\proj\wphf-reloaded\wphfgui\AddrBookODBC.cpp:103
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:101
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:106
 msgid "Unable to setup ODBC connection: "
 msgstr "Impossibile configurare la connessione ODBC: "
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookODBC.cpp:114
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:118
 msgid "Unable to open ODBC connection: "
 msgstr "Impossibile aprire la connessione ODBC: "
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookODBC.cpp:119
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:134
 msgid "Unable to create ODBC statement: "
 msgstr "Impossibile creare l'istruzione ODBC: "
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookODBC.cpp:132
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:153
 msgid "Unable to execute ODBC statement: "
 msgstr "Impossibile eseguire l'istruzione ODBC: "
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookODBC.cpp:137
-# D:\proj\wphf-reloaded\wphfgui\AddrBookODBC.cpp:142
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:159
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:164
 msgid "Unable to bind ODBC column: "
 msgstr "Impossibile collegare la colonna ODBC: "
 
-# D:\proj\wphf-reloaded\wphfgui\AddrBookODBC.cpp:148
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:171
 msgid "Unable to fetch ODBC data: "
 msgstr "Impossibile leggere i dati ODBC: "
 
-# D:\proj\wphf-reloaded\wphfgui\SendFAX.cpp:172
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/ConfigSerializerIni.cpp:54
 msgid "Client is not configured. Would you like to configure it now?"
 msgstr "Il client non è configurato. Vuoi configurarlo ora?"
 
-# D:\proj\wphf-reloaded\wphfgui\Config.cpp:53
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmConfig.cpp:65
 msgid "Choose address book location"
 msgstr "Scegli la posizione della rubrica"
 
-# D:\proj\wphf-reloaded\wphfgui\Config.cpp:83
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmConfig.cpp:99
 msgid "Specify a valid path for the Address Book"
 msgstr "Specificare un percorso valido per la rubrica"
 
-# D:\proj\wphf-reloaded\trunk\wphfgui\Config.cpp:115
-# D:\proj\wphf-reloaded\trunk\wphfgui\SendFAX.cpp:836
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmConfig.cpp:119
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:460
 msgid "rel. "
 msgstr "ver. "
 
-# D:\proj\wphf-reloaded\wphfgui\SendFAX.cpp:266
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:424
 msgid ""
 " is already present in the address book.\n"
@@ -542,12 +513,10 @@ msgstr ""
 " è già presente in rubrica.\n"
 "Vuoi modificare il numero associato?"
 
-# D:\proj\wphf-reloaded\wphfgui\SendFAX.cpp:761
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:625
 msgid "Unsent faxes will be lost. Are you sure you want to exit?"
 msgstr "I fax non inviati andranno persi. Sei sicuro di voler uscire?"
 
-# D:\proj\wphf-reloaded\wphfgui\SendFAX.cpp:824
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:684
 msgid "Delete recipient?"
 msgstr "Cancellare il nominativo?"
