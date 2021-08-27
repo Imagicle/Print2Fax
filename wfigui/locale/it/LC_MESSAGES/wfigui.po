@@ -18,134 +18,86 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.7.2\n"
 
-#. ConfigForm..Caption
-#. MainForm..Caption
-#. MainForm..Panel1..Label4..Caption
 #: frmConfig.dfm:7
 msgid "Imagicle print2fax"
 msgstr ""
 
-#. ConfigForm..Font.Name
-#. ConfigForm..Panel1..Label5..Font.Name
-#. ConfigForm..Panel1..lblVersion..Font.Name
-#. Confirmation..Font.Name
-#. Confirmation..Panel1..Result..Font.Name
-#. MainForm..Font.Name
-#. MainForm..Panel1..Label4..Font.Name
-#. MainForm..Panel1..lblVersion..Font.Name
-#. MainForm..Panel2..Panel4..Label7..Font.Name
-#. FormProgress..Font.Name
-#. RecipientName..Font.Name
-#. SelectRcpt..Font.Name
-#. FormNotify..Font.Name
-#. FormNotify..Label1..Font.Name
-#. FormNotify..lblNumber..Font.Name
 #: frmConfig.dfm:14 frmConfirm.dfm:45 frmMain.dfm:178 Main.dfm:12
 msgid "Tahoma"
 msgstr ""
 
-#. ConfigForm..Panel1..Label5..Caption
 #: frmConfig.dfm:110
 msgid "Configure Imagicle print2fax"
 msgstr "Configura Imagicle print2fax"
 
-#. ConfigForm..Panel1..lblVersion..Caption
-#. MainForm..Panel1..lblVersion..Caption
 #: frmConfig.dfm:125
 msgid "rel. X.X.X"
 msgstr ""
 
-#. ConfigForm..Panel3..btnOK..Caption
-#. RecipientName..OK..Caption
-#. SelectRcpt..OK..Caption
 #: frmConfig.dfm:151
 msgid "OK"
 msgstr "OK"
 
-#. ConfigForm..Panel3..btnCancel..Caption
-#. FormProgress..btnCancelClose..Caption
-#. RecipientName..Cancel..Caption
-#. SelectRcpt..Cancel..Caption
 #: frmConfig.dfm:163 frmSelect.dfm:53
 msgid "Cancel"
 msgstr "Annulla"
 
-#. ConfigForm..tabs..tsServer..Caption
 #: frmConfig.dfm:179
 msgid "Imagicle server"
 msgstr "Server Imagicle"
 
-#. ConfigForm..tabs..tsServer..Default..Caption
 #: frmConfig.dfm:193
 msgid "Notification email"
 msgstr "Email notifica"
 
-#. ConfigForm..tabs..tsServer..Label3..Caption
-#. ConfigForm..tabs..tsAddrBook..gbODBC..Label17..Caption
 #: frmConfig.dfm:201
 msgid "Password"
 msgstr "Password"
 
-#. ConfigForm..tabs..tsServer..Label2..Caption
-#. ConfigForm..tabs..tsAddrBook..gbODBC..Label16..Caption
 #: frmConfig.dfm:209
 msgid "Username"
 msgstr "Nome utente"
 
-#. ConfigForm..tabs..tsServer..Label1..Caption
 #: frmConfig.dfm:217
 msgid "Imagicle server address"
 msgstr "Indirizzo server Imagicle"
 
-#. ConfigForm..tabs..tsServer..edtNotificationEmail..Hint
-#. MainForm..Panel2..PageControl1..tsFax..edtNotificationEmail..Hint
 #: frmConfig.dfm:224
 msgid "Events will be notified to this email address."
 msgstr "Gli eventi saranno notificati a questo indirizzo email."
 
-#. ConfigForm..tabs..tsServer..edtPassword..PasswordChar
-#. ConfigForm..tabs..tsAddrBook..gbODBC..edtODBCPassword..PasswordChar
 #: frmConfig.dfm:234
 msgid "●"
 msgstr ""
 
-#. ConfigForm..tabs..tsServer..chkNotify..Caption
 #: frmConfig.dfm:259
 msgid "Notify status"
 msgstr "Notifica lo status"
 
-#. ConfigForm..tabs..tsServer..chkUseSSL..Caption
 #: frmConfig.dfm:268
 msgid "Use secure connection (https)"
 msgstr "Usa connessione sicura (https)"
 
-#. ConfigForm..tabs..tsServer..chkSkipCertificateCheck..Caption
 #: frmConfig.dfm:278
 msgid "Skip server certificate validity checks"
 msgstr "Salta i controlli di validità del certificato del server"
 
-#. ConfigForm..tabs..tsAddrBook..Caption
 #: frmConfig.dfm:283
 msgid "Address book"
 msgstr "Rubrica"
 
-#. ConfigForm..tabs..tsAddrBook..Label14..Caption
 #: frmConfig.dfm:298
 msgid "Address book type"
 msgstr "Tipo di rubrica"
 
-#. ConfigForm..tabs..tsAddrBook..gbAddressBook..Caption
-#. ConfigForm..tabs..tsAddrBook..cbAddrBookType....Items.Strings
 #: frmConfig.dfm:306
 msgid "CSV"
 msgstr ""
 
-#. ConfigForm..tabs..tsAddrBook..gbAddressBook..Label13..Caption
 #: frmConfig.dfm:316
 msgid "Address book location"
 msgstr "Posizione della rubrica"
 
-#. ConfigForm..tabs..tsAddrBook..gbAddressBook..edtAddressBook....Hint
 #: frmConfig.dfm:325
 msgid ""
 "The path to addressbook.csv. File must be in CSV format delimited by commas."
@@ -153,82 +105,63 @@ msgstr ""
 "Percorso del file addressbook.csv. Il file è in formato CSV delimitato da "
 "virgola."
 
-#. ConfigForm..tabs..tsAddrBook..gbAddressBook..btnBrowse..Hint
 #: frmConfig.dfm:334
 msgid "Browse..."
 msgstr "Sfoglia..."
 
-#. ConfigForm..tabs..tsAddrBook..gbAddressBook..btnBrowse..Caption
-#. FormNotify..lblNumber..Caption
 #: frmConfig.dfm:336
 msgid "..."
 msgstr ""
 
-#. ConfigForm..tabs..tsAddrBook..gbAddressBook..btnDefault..Hint
 #: frmConfig.dfm:345
 #, no-object-pascal-format
 msgid "Set to default location (%APPDATA%\\Imagicle print2fax)"
 msgstr "Imposta la posizione di default (%APPDATA%\\Imagicle print2fax)"
 
-#. ConfigForm..tabs..tsAddrBook..gbAddressBook..btnDefault..Caption
 #: frmConfig.dfm:347
 msgid "Default"
 msgstr ""
 
-#. ConfigForm..tabs..tsAddrBook..cbAddrBookType..Hint
 #: frmConfig.dfm:357
 msgid "Choose the type of address book."
 msgstr "Seleziona il tipo di rubrica."
 
-#. ConfigForm..tabs..tsAddrBook..cbAddrBookType..Text
-#. ConfigForm..tabs..tsAddrBook..cbAddrBookType....Items.Strings
 #: frmConfig.dfm:361
 msgid "No address book"
 msgstr "Nessuna rubrica"
 
-#. ConfigForm..tabs..tsAddrBook..cbAddrBookType....Items.Strings
-#. ConfigForm..tabs..tsAddrBook..gbMAPI..Caption
 #: frmConfig.dfm:365
 msgid "Extended MAPI"
 msgstr ""
 
-#. ConfigForm..tabs..tsAddrBook..cbAddrBookType....Items.Strings
-#. ConfigForm..tabs..tsAddrBook..gbODBC..Caption
 #: frmConfig.dfm:366
 msgid "ODBC"
 msgstr ""
 
-#. ConfigForm..tabs..tsAddrBook..gbMAPI..rbMAPIDefProfile..Caption
 #: frmConfig.dfm:384
 msgid "Use default profile"
 msgstr "Usa il profilo di default"
 
-#. ConfigForm..tabs..tsAddrBook..gbMAPI..rbMAPIUseProfile..Caption
 #: frmConfig.dfm:392
 msgid "Use this profile:"
 msgstr "Usa questo profilo:"
 
-#. ConfigForm..tabs..tsAddrBook..gbODBC..Label15..Caption
 #: frmConfig.dfm:418
 msgid "DSN"
 msgstr ""
 
-#. ConfigForm..tabs..tsAddrBook..gbODBC..Label18..Caption
 #: frmConfig.dfm:439
 msgid "Fax field"
 msgstr "Campo fax"
 
-#. ConfigForm..tabs..tsAddrBook..gbODBC..Label19..Caption
 #: frmConfig.dfm:446
 msgid "Name field"
 msgstr "Campo nome"
 
-#. ConfigForm..tabs..tsAddrBook..gbODBC..Label20..Caption
 #: frmConfig.dfm:453
 msgid "Table"
 msgstr "Tabella"
 
-#. ConfigForm..tabs..tsAddrBook..gbODBC..edtODBCDSN....Hint
 #: frmConfig.dfm:462
 msgid ""
 "Data Source Name for the ODBC connection. Use ODBC administration tool to "
@@ -237,32 +170,26 @@ msgstr ""
 "Nome origine dati (DSN) per la connessione ODBC. Configurare con il tool di "
 "amministrazione ODBC."
 
-#. ConfigForm..tabs..tsAddrBook..gbODBC..edtODBCUser..Hint
 #: frmConfig.dfm:470
 msgid "Optional. User name for the ODBC connection."
 msgstr "Opzionale. Nome utente per la connessione ODBC."
 
-#. ConfigForm..tabs..tsAddrBook..gbODBC..edtODBCPassword..Hint
 #: frmConfig.dfm:478
 msgid "Optional. Password for the ODBC connection."
 msgstr "Opzionale. Password per la connessione ODBC."
 
-#. ConfigForm..tabs..tsAddrBook..gbODBC..edtODBCFax..Hint
 #: frmConfig.dfm:487
 msgid "Name of the field containing the \"Fax number\"."
 msgstr "Nome del campo che contiene il \"Numero di fax\"."
 
-#. ConfigForm..tabs..tsAddrBook..gbODBC..edtODBCTable..Hint
 #: frmConfig.dfm:495
 msgid "Name of the table containing data."
 msgstr "Nome della tabella che contiene i dati."
 
-#. ConfigForm..tabs..tsAddrBook..gbODBC..edtODBCName..Hint
 #: frmConfig.dfm:503
 msgid "Name of the field containing the \"Recipient\"."
 msgstr "Nome del campo che contiene il \"Destinatario\"."
 
-#. ConfigForm..tabs..tsAddrBook..gbODBC..chkODBCAuth....Hint
 #: frmConfig.dfm:513
 msgid ""
 "Check this if ODBC should authenticate with user and password. Leave blank "
@@ -271,121 +198,96 @@ msgstr ""
 "Selezionare se ODBC deve autenticarsi con utente e password. Lasciare bianco "
 "per acceso anonimo."
 
-#. ConfigForm..tabs..tsAddrBook..gbODBC..chkODBCAuth..Caption
 #: frmConfig.dfm:514
 msgid "ODBC authentication"
 msgstr "Autenticazione ODBC"
 
-#. ConfigForm..tabs..tsOptions..Caption
 #: frmConfig.dfm:521
 msgid "Other options"
 msgstr "Altre opzioni"
 
-#. ConfigForm..tabs..tsOptions..Label11..Caption
 #: frmConfig.dfm:533
 msgid "Language"
 msgstr "Lingua"
 
-#. ConfigForm..tabs..tsOptions..Label4..Caption
 #: frmConfig.dfm:541
 msgid "Log level"
 msgstr "Livello di log"
 
-#. ConfigForm..tabs..tsOptions..cbLogLevel....Items.Strings
 #: frmConfig.dfm:559
 msgid "None"
 msgstr "Nessuno"
 
-#. ConfigForm..tabs..tsOptions..cbLogLevel....Items.Strings
 #: frmConfig.dfm:560
 msgid "Errors"
 msgstr "Errori"
 
-#. ConfigForm..tabs..tsOptions..cbLogLevel....Items.Strings
 #: frmConfig.dfm:561
 msgid "Debug"
 msgstr "Debug"
 
-#. Confirmation..Caption
 #: frmConfirm.dfm:4
 msgid "Job submission"
 msgstr "Inoltro fax"
 
-#. Confirmation..Panel1..Result..Caption
 #: frmConfirm.dfm:41
 msgid "Result"
 msgstr "Risultato"
 
-#. Confirmation..Panel1..Label2..Caption
 #: frmConfirm.dfm:54
 msgid "Details:"
 msgstr "Dettagli:"
 
-#. Confirmation..Panel2..Close..Caption
 #: frmConfirm.dfm:70
 msgid "Ok"
 msgstr "Ok"
 
-#. MainForm..Panel1..lblLink....Caption
 #: frmMain.dfm:136
 msgid "<a href=\"https://www.imagicle.com/\">https://www.imagicle.com/</a>"
 msgstr ""
 
-#. MainForm..Panel2..Panel4..Label5..Caption
 #: frmMain.dfm:165
 msgid "Documents to send:"
 msgstr "Documenti da inviare:"
 
-#. MainForm..Panel2..Panel4..Label7..Caption
 #: frmMain.dfm:174
 msgid "You can append new pages, or send selected documents now."
 msgstr "Puoi aggiungere pagine o inviare ora i documenti selezionati."
 
-#. MainForm..Panel2..Panel4..lbDocuments....Hint
 #: frmMain.dfm:192
 msgid "Drag documents or use arrows to sort. Right click for popup menu."
 msgstr ""
 "Trascina i documenti o usa le frecce per riordinarli. Tasto destro per il "
 "menù a comparsa."
 
-#. MainForm..Panel2..Panel4..btnUp..Caption
-#. MainForm..actions..actUp..Caption
 #: frmMain.dfm:212
 msgid "Up"
 msgstr "Su"
 
-#. MainForm..Panel2..Panel4..btnDown..Caption
-#. MainForm..actions..actDown..Caption
 #: frmMain.dfm:354
 msgid "Down"
 msgstr "Giù"
 
-#. MainForm..Panel2..PageControl1..tsFax..Caption
 #: frmMain.dfm:500
 msgid "Fax"
 msgstr "Fax"
 
-#. MainForm..Panel2..PageControl1..tsFax..Label1..Caption
 #: frmMain.dfm:510
 msgid "FAX numbers"
 msgstr "Numeri di FAX"
 
-#. MainForm..Panel2..PageControl1..tsFax..Label3..Caption
 #: frmMain.dfm:518
 msgid "Notify E-Mail"
 msgstr "Notifica a"
 
-#. MainForm..Panel2..PageControl1..tsFax..rbSendTogether..Caption
 #: frmMain.dfm:525
 msgid "Send as a single fax"
 msgstr "Invia come fax singolo"
 
-#. MainForm..Panel2..PageControl1..tsFax..rbSendIndividually..Caption
 #: frmMain.dfm:536
 msgid "Send individually"
 msgstr "Invia individualmente"
 
-#. MainForm..Panel2..PageControl1..tsFax..edtFAXNumber..Hint
 #: frmMain.dfm:545
 msgid "Enter multiple recipients separated by semicolons."
 msgstr "Inserisci più destinatari separandoli con punto e virgola."
@@ -393,151 +295,119 @@ msgstr "Inserisci più destinatari separandoli con punto e virgola."
 # SendFAX.dfm:265 D:\proj\wphf-reloaded\wphfgui\SendFAX.cpp:137
 # D:\proj\wphf-reloaded\wphfgui\SendFAX.cpp:275
 # D:\proj\wphf-reloaded\wphfgui\SendFAX.cpp:828
-#. MainForm..Panel2..PageControl1..tsFax..cbABNames..Text
 #: frmMain.dfm:558 /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:433
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:690
 msgid "Select from address book"
 msgstr "Seleziona dalla rubrica"
 
-#. MainForm..Panel2..PageControl1..tsFaxcover..Caption
 #: frmMain.dfm:600
 msgid "Fax cover"
 msgstr ""
 
-#. MainForm..Panel2..PageControl1..tsFaxcover..chkFaxcover..Caption
 #: frmMain.dfm:614
 msgid "Use fax cover"
 msgstr "Usa fax cover"
 
-#. MainForm..Panel2..PageControl1..tsFaxcover..StaticText1..Caption
 #: frmMain.dfm:630
 msgid "Subject:"
 msgstr "Oggetto:"
 
-#. MainForm..Panel2..PageControl1..tsFaxcover..StaticText2..Caption
 #: frmMain.dfm:646
 msgid "Comments:"
 msgstr "Commenti:"
 
-#. MainForm..Panel2..PageControl1..tsFaxcover..StaticText3..Caption
-#. RecipientName..Label2..Caption
 #: frmMain.dfm:654
 msgid "Recipient's name:"
 msgstr "Nome del destinatario:"
 
-#. MainForm..Panel2..PageControl1..tsFaxcover..edtRecipientName..Text
 #: frmMain.dfm:664
 msgid "<from address book>"
 msgstr "<dalla rubrica>"
 
-#. MainForm..actions..actSend..Caption
 #: frmMain.dfm:716
 msgid "Send"
 msgstr "Invia"
 
-#. MainForm..actions..actSave..Caption
 #: frmMain.dfm:728
 msgid "Save Number"
 msgstr "Salva numero"
 
-#. MainForm..actions..actDelete..Caption
 #: frmMain.dfm:732
 msgid "Delete Entry"
 msgstr "Elimina numero"
 
-#. MainForm..actions..actConfigure..Caption
 #: frmMain.dfm:736
 msgid "Configure"
 msgstr "Configura"
 
-#. MainForm..actions..actClose..Caption
 #: frmMain.dfm:740
 msgid "Close"
 msgstr "Chiudi"
 
-#. MainForm..actions..actSelect..Caption
 #: frmMain.dfm:744
 msgid "Select..."
 msgstr "Seleziona..."
 
-#. MainForm..actions..actHelp..Caption
 #: frmMain.dfm:748
 msgid "Help"
 msgstr "Aiuto"
 
-#. MainForm..popup..mnuAddfile..Caption
 #: frmMain.dfm:762
 msgid "Add file..."
 msgstr "Aggiungi file..."
 
-#. MainForm..popup..mnuSelectAll..Caption
-#. SelectRcpt..popup..mnuSelectAll..Caption
 #: frmMain.dfm:766
 msgid "Select All"
 msgstr "Seleziona Tutto"
 
-#. MainForm..popup..mnuSelectNone..Caption
-#. SelectRcpt..popup..mnuSelectNone..Caption
 #: frmMain.dfm:770
 msgid "Select None"
 msgstr "Seleziona Nessuno"
 
-#. MainForm..opendlg..Filter
 #: frmMain.dfm:775
 msgid "All supported files|*.ps;*.pdf;*.tif;*.tiff;*.pcl|All files|*.*"
 msgstr "Tutti i file supportati|*.ps;*.pdf;*.tif;*.tiff;*.pcl|Tutti i file|*.*"
 
-#. FormProgress..Caption
 #: frmProgress.dfm:5
 msgid "Fax processing"
 msgstr "Elaborazione fax"
 
-#. FormProgress..Label1..Caption
 #: frmProgress.dfm:28
 msgid "Status:"
 msgstr "Stato:"
 
-#. FormProgress..lvResults......Caption
 #: frmProgress.dfm:51
 msgid "Recipients"
 msgstr "Destinatari"
 
-#. FormProgress..lvResults......Caption
 #: frmProgress.dfm:55
 msgid "Subject"
 msgstr "Oggetto"
 
-#. FormProgress..lvResults......Caption
 #: frmProgress.dfm:59
 msgid "Status"
 msgstr "Stato"
 
-#. RecipientName..Caption
 #: frmRecipient.dfm:5
 msgid "Recipient's name"
 msgstr "Nome del destinatario"
 
-#. RecipientName..Label1..Caption
 #: frmRecipient.dfm:26
 msgid "FAX number:"
 msgstr "Numero di FAX:"
 
-#. SelectRcpt..Caption
 #: frmSelect.dfm:4
 msgid "Select Recipients"
 msgstr "Seleziona i Destinatari"
 
-#. FormNotify..btnClose..Caption
 #: Main.dfm:36
 msgid "X"
 msgstr ""
 
-#. FormNotify..btnClose..Font.Name
 #: Main.dfm:40
 msgid "Verdana"
 msgstr ""
 
-#. FormNotify..Label1..Caption
 #: Main.dfm:226
 msgid "Fax sent to:"
 msgstr "Fax inviato a:"
