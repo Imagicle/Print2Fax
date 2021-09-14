@@ -18,14 +18,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.8\n"
 
-#: frmConfig.dfm:7 frmMain.dfm:6 frmMain.dfm:105
+#: frmConfig.dfm:7
+#: frmMain.dfm:6
+#: frmMain.dfm:105
 msgid "Imagicle print2fax"
 msgstr ""
 
-#: frmConfig.dfm:14 frmConfig.dfm:114 frmConfig.dfm:129 frmConfirm.dfm:11
-#: frmConfirm.dfm:45 frmMain.dfm:13 frmMain.dfm:109 frmMain.dfm:124
-#: frmMain.dfm:178 frmProgress.dfm:12 frmRecipient.dfm:12 frmSelect.dfm:11
-#: Main.dfm:12 Main.dfm:230 Main.dfm:243
+#: frmConfig.dfm:14
+#: frmConfig.dfm:114
+#: frmConfig.dfm:129
+#: frmConfirm.dfm:11
+#: frmConfirm.dfm:45
+#: frmMain.dfm:13
+#: frmMain.dfm:109
+#: frmMain.dfm:124
+#: frmMain.dfm:178
+#: frmProgress.dfm:12
+#: frmRecipient.dfm:12
+#: frmSelect.dfm:11
+#: Main.dfm:12
+#: Main.dfm:230
+#: Main.dfm:243
 msgid "Tahoma"
 msgstr ""
 
@@ -33,15 +46,20 @@ msgstr ""
 msgid "Configure Imagicle print2fax"
 msgstr "Konfiguration von Imagicle print2fax"
 
-#: frmConfig.dfm:125 frmMain.dfm:120
+#: frmConfig.dfm:125
+#: frmMain.dfm:120
 msgid "rel. X.X.X"
 msgstr ""
 
-#: frmConfig.dfm:151 frmRecipient.dfm:59 frmSelect.dfm:41
+#: frmConfig.dfm:151
+#: frmRecipient.dfm:59
+#: frmSelect.dfm:41
 msgid "OK"
 msgstr "OK"
 
-#: frmConfig.dfm:163 frmProgress.dfm:36 frmRecipient.dfm:70
+#: frmConfig.dfm:163
+#: frmProgress.dfm:36
+#: frmRecipient.dfm:70
 #: frmSelect.dfm:53
 msgid "Cancel"
 msgstr "Abbrechen"
@@ -54,11 +72,13 @@ msgstr "Imagicle Server"
 msgid "Notification email"
 msgstr "E-Mail-Benachrichtigung"
 
-#: frmConfig.dfm:201 frmConfig.dfm:432
+#: frmConfig.dfm:201
+#: frmConfig.dfm:432
 msgid "Password"
 msgstr "Passwort"
 
-#: frmConfig.dfm:209 frmConfig.dfm:425
+#: frmConfig.dfm:209
+#: frmConfig.dfm:425
 msgid "Username"
 msgstr "Benutzername"
 
@@ -66,12 +86,14 @@ msgstr "Benutzername"
 msgid "Imagicle server address"
 msgstr "Imagicle Server-Adresse"
 
-#: frmConfig.dfm:224 frmMain.dfm:566
+#: frmConfig.dfm:224
+#: frmMain.dfm:566
 msgid "Events will be notified to this email address."
 msgstr ""
 "Benachrichtigungen über Ereignisse werden an diese E-Mail-Adresse gesendet."
 
-#: frmConfig.dfm:234 frmConfig.dfm:479
+#: frmConfig.dfm:234
+#: frmConfig.dfm:479
 msgid "●"
 msgstr ""
 
@@ -95,7 +117,8 @@ msgstr "Adressbuch"
 msgid "Address book type"
 msgstr "Adressbuchtyp"
 
-#: frmConfig.dfm:306 frmConfig.dfm:364
+#: frmConfig.dfm:306
+#: frmConfig.dfm:364
 msgid "CSV"
 msgstr ""
 
@@ -114,7 +137,8 @@ msgstr ""
 msgid "Browse..."
 msgstr "Durchsuchen ..."
 
-#: frmConfig.dfm:336 Main.dfm:239
+#: frmConfig.dfm:336
+#: Main.dfm:239
 msgid "..."
 msgstr ""
 
@@ -131,15 +155,18 @@ msgstr "Standard"
 msgid "Choose the type of address book."
 msgstr "Typ des Adressbuchs auswählen"
 
-#: frmConfig.dfm:361 frmConfig.dfm:363
+#: frmConfig.dfm:361
+#: frmConfig.dfm:363
 msgid "No address book"
 msgstr "Kein Adressbuch"
 
-#: frmConfig.dfm:365 frmConfig.dfm:374
+#: frmConfig.dfm:365
+#: frmConfig.dfm:374
 msgid "Extended MAPI"
 msgstr "Erweiterte MAPI"
 
-#: frmConfig.dfm:366 frmConfig.dfm:411
+#: frmConfig.dfm:366
+#: frmConfig.dfm:411
 msgid "ODBC"
 msgstr ""
 
@@ -267,11 +294,13 @@ msgstr ""
 "Zum Sortieren die Dokumente an die gewünschte Position ziehen oder die "
 "Pfeiltasten verwenden. Per Rechtsklick das Pop-up-Menü öffnen."
 
-#: frmMain.dfm:212 frmMain.dfm:720
+#: frmMain.dfm:212
+#: frmMain.dfm:720
 msgid "Up"
 msgstr "Nach oben"
 
-#: frmMain.dfm:354 frmMain.dfm:724
+#: frmMain.dfm:354
+#: frmMain.dfm:724
 msgid "Down"
 msgstr "Nach unten"
 
@@ -299,7 +328,8 @@ msgstr "Separat senden"
 msgid "Enter multiple recipients separated by semicolons."
 msgstr "Mehrere Empfänger getrennt durch Semikolons eingeben"
 
-#: frmMain.dfm:558 /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:84
+#: frmMain.dfm:558
+#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:84
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:433
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:690
 msgid "Select from address book"
@@ -321,11 +351,13 @@ msgstr "Betreff:"
 msgid "Comments:"
 msgstr "Anmerkungen:"
 
-#: frmMain.dfm:654 frmRecipient.dfm:34
+#: frmMain.dfm:654
+#: frmRecipient.dfm:34
 msgid "Recipient's name:"
 msgstr "Name des Empfängers:"
 
-#: frmMain.dfm:664 /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:1086
+#: frmMain.dfm:664
+#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:1086
 msgid "<from address book>"
 msgstr "<aus Adressbuch>"
 
@@ -345,7 +377,8 @@ msgstr "Eintrag löschen"
 msgid "Configure"
 msgstr "Konfigurieren"
 
-#: frmMain.dfm:740 /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:93
+#: frmMain.dfm:740
+#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:93
 msgid "Close"
 msgstr "Schließen"
 
@@ -361,11 +394,13 @@ msgstr "Hilfe"
 msgid "Add file..."
 msgstr "Datei hinzufügen ..."
 
-#: frmMain.dfm:766 frmSelect.dfm:62
+#: frmMain.dfm:766
+#: frmSelect.dfm:62
 msgid "Select All"
 msgstr "Alle auswählen"
 
-#: frmMain.dfm:770 frmSelect.dfm:66
+#: frmMain.dfm:770
+#: frmSelect.dfm:66
 msgid "Select None"
 msgstr "Alle abwählen"
 

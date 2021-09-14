@@ -19,14 +19,27 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.8\n"
 
-#: frmConfig.dfm:7 frmMain.dfm:6 frmMain.dfm:105
+#: frmConfig.dfm:7
+#: frmMain.dfm:6
+#: frmMain.dfm:105
 msgid "Imagicle print2fax"
 msgstr ""
 
-#: frmConfig.dfm:14 frmConfig.dfm:114 frmConfig.dfm:129 frmConfirm.dfm:11
-#: frmConfirm.dfm:45 frmMain.dfm:13 frmMain.dfm:109 frmMain.dfm:124
-#: frmMain.dfm:178 frmProgress.dfm:12 frmRecipient.dfm:12 frmSelect.dfm:11
-#: Main.dfm:12 Main.dfm:230 Main.dfm:243
+#: frmConfig.dfm:14
+#: frmConfig.dfm:114
+#: frmConfig.dfm:129
+#: frmConfirm.dfm:11
+#: frmConfirm.dfm:45
+#: frmMain.dfm:13
+#: frmMain.dfm:109
+#: frmMain.dfm:124
+#: frmMain.dfm:178
+#: frmProgress.dfm:12
+#: frmRecipient.dfm:12
+#: frmSelect.dfm:11
+#: Main.dfm:12
+#: Main.dfm:230
+#: Main.dfm:243
 msgid "Tahoma"
 msgstr ""
 
@@ -34,15 +47,20 @@ msgstr ""
 msgid "Configure Imagicle print2fax"
 msgstr "Сконфигурировать Imagicle print2fax"
 
-#: frmConfig.dfm:125 frmMain.dfm:120
+#: frmConfig.dfm:125
+#: frmMain.dfm:120
 msgid "rel. X.X.X"
 msgstr ""
 
-#: frmConfig.dfm:151 frmRecipient.dfm:59 frmSelect.dfm:41
+#: frmConfig.dfm:151
+#: frmRecipient.dfm:59
+#: frmSelect.dfm:41
 msgid "OK"
 msgstr "ОК"
 
-#: frmConfig.dfm:163 frmProgress.dfm:36 frmRecipient.dfm:70
+#: frmConfig.dfm:163
+#: frmProgress.dfm:36
+#: frmRecipient.dfm:70
 #: frmSelect.dfm:53
 msgid "Cancel"
 msgstr "Отменить"
@@ -55,11 +73,13 @@ msgstr "Сервер Imagicle"
 msgid "Notification email"
 msgstr "Электронное уведомление"
 
-#: frmConfig.dfm:201 frmConfig.dfm:432
+#: frmConfig.dfm:201
+#: frmConfig.dfm:432
 msgid "Password"
 msgstr "Пароль"
 
-#: frmConfig.dfm:209 frmConfig.dfm:425
+#: frmConfig.dfm:209
+#: frmConfig.dfm:425
 msgid "Username"
 msgstr "Имя пользователя"
 
@@ -67,11 +87,13 @@ msgstr "Имя пользователя"
 msgid "Imagicle server address"
 msgstr "Адрес сервера Imagicle"
 
-#: frmConfig.dfm:224 frmMain.dfm:566
+#: frmConfig.dfm:224
+#: frmMain.dfm:566
 msgid "Events will be notified to this email address."
 msgstr "Уведомления о событиях будут приходить на этот адрес электронной почты."
 
-#: frmConfig.dfm:234 frmConfig.dfm:479
+#: frmConfig.dfm:234
+#: frmConfig.dfm:479
 msgid "●"
 msgstr ""
 
@@ -95,7 +117,8 @@ msgstr "Адресная книга"
 msgid "Address book type"
 msgstr "Тип адресной книги"
 
-#: frmConfig.dfm:306 frmConfig.dfm:364
+#: frmConfig.dfm:306
+#: frmConfig.dfm:364
 msgid "CSV"
 msgstr ""
 
@@ -114,7 +137,8 @@ msgstr ""
 msgid "Browse..."
 msgstr "Обзор..."
 
-#: frmConfig.dfm:336 Main.dfm:239
+#: frmConfig.dfm:336
+#: Main.dfm:239
 msgid "..."
 msgstr ""
 
@@ -131,15 +155,18 @@ msgstr "По умолчанию"
 msgid "Choose the type of address book."
 msgstr "Выбрать тип адресной книги."
 
-#: frmConfig.dfm:361 frmConfig.dfm:363
+#: frmConfig.dfm:361
+#: frmConfig.dfm:363
 msgid "No address book"
 msgstr "Адресная книга отсутствует"
 
-#: frmConfig.dfm:365 frmConfig.dfm:374
+#: frmConfig.dfm:365
+#: frmConfig.dfm:374
 msgid "Extended MAPI"
 msgstr "Расширенный интерфейс MAPI"
 
-#: frmConfig.dfm:366 frmConfig.dfm:411
+#: frmConfig.dfm:366
+#: frmConfig.dfm:411
 msgid "ODBC"
 msgstr ""
 
@@ -268,11 +295,13 @@ msgstr ""
 "Перетащите документы или используйте стрелки для сортировки. Щелкните правой "
 "кнопкой мыши, чтобы открыть всплывающее меню."
 
-#: frmMain.dfm:212 frmMain.dfm:720
+#: frmMain.dfm:212
+#: frmMain.dfm:720
 msgid "Up"
 msgstr "Вверх"
 
-#: frmMain.dfm:354 frmMain.dfm:724
+#: frmMain.dfm:354
+#: frmMain.dfm:724
 msgid "Down"
 msgstr "Вниз"
 
@@ -300,7 +329,8 @@ msgstr "Отправить по отдельности"
 msgid "Enter multiple recipients separated by semicolons."
 msgstr "При вводе нескольких получателей они разделяются точкой с запятой."
 
-#: frmMain.dfm:558 /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:84
+#: frmMain.dfm:558
+#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:84
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:433
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:690
 msgid "Select from address book"
@@ -322,11 +352,13 @@ msgstr "Тема:"
 msgid "Comments:"
 msgstr "Комментарии:"
 
-#: frmMain.dfm:654 frmRecipient.dfm:34
+#: frmMain.dfm:654
+#: frmRecipient.dfm:34
 msgid "Recipient's name:"
 msgstr "Имя получателя:"
 
-#: frmMain.dfm:664 /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:1086
+#: frmMain.dfm:664
+#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:1086
 msgid "<from address book>"
 msgstr "<из адресной книги>"
 
@@ -346,7 +378,8 @@ msgstr "Удалить запись"
 msgid "Configure"
 msgstr "Сконфигурировать"
 
-#: frmMain.dfm:740 /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:93
+#: frmMain.dfm:740
+#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:93
 msgid "Close"
 msgstr "Закрыть"
 
@@ -362,11 +395,13 @@ msgstr "Помощь"
 msgid "Add file..."
 msgstr "Добавить файл..."
 
-#: frmMain.dfm:766 frmSelect.dfm:62
+#: frmMain.dfm:766
+#: frmSelect.dfm:62
 msgid "Select All"
 msgstr "Выбрать Все"
 
-#: frmMain.dfm:770 frmSelect.dfm:66
+#: frmMain.dfm:770
+#: frmSelect.dfm:66
 msgid "Select None"
 msgstr "Выбрать Нет"
 

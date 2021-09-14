@@ -19,7 +19,7 @@ msgid "Confirm"
 msgstr "Confirmar"
 
 msgid "&Yes"
-msgstr "&SÃ­"
+msgstr "&Sí"
 
 msgid "&No"
 msgstr "&No"

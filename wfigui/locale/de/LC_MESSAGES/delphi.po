@@ -16,7 +16,7 @@ msgstr ""
 "X-Generator: Weblate 4.8\n"
 
 msgid "Confirm"
-msgstr "BestÃ¤tigen"
+msgstr "Bestätigen"
 
 msgid "&Yes"
 msgstr "&Ja"
