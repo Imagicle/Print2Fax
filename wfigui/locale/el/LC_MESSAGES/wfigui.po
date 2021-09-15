@@ -40,7 +40,7 @@ msgstr ""
 #. FormNotify..Font.Name
 #. FormNotify..Label1..Font.Name
 #. FormNotify..lblNumber..Font.Name
-#: frmConfig.dfm:14 frmConfig.dfm:114 frmConfig.dfm:129 frmConfirm.dfm:11
+#: frmConfig.dfm:14 frmConfig.dfm:114 frmConfig.dfm:129 frmConfirm.dfm:11
 #: frmConfirm.dfm:45 frmMain.dfm:13 frmMain.dfm:109 frmMain.dfm:124
 #: frmMain.dfm:178 frmProgress.dfm:12 frmRecipient.dfm:12 frmSelect.dfm:11
 #: Main.dfm:12 Main.dfm:230 Main.dfm:243
