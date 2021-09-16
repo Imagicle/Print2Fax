@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-18 11:55+0200\n"
-"PO-Revision-Date: 2021-08-04 10:46+0000\n"
+"PO-Revision-Date: 2021-09-16 08:05+0000\n"
 "Last-Translator: Luca Campo Dall'Orto <luca.campodallorto@imagicle.com>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #: frmConfig.dfm:7
 #: frmMain.dfm:6
@@ -44,7 +44,7 @@ msgstr ""
 
 #: frmConfig.dfm:110
 msgid "Configure Imagicle print2fax"
-msgstr ""
+msgstr "Configurer Imagicle print2fax"
 
 #: frmConfig.dfm:125
 #: frmMain.dfm:120
@@ -55,41 +55,41 @@ msgstr ""
 #: frmRecipient.dfm:59
 #: frmSelect.dfm:41
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: frmConfig.dfm:163
 #: frmProgress.dfm:36
 #: frmRecipient.dfm:70
 #: frmSelect.dfm:53
 msgid "Cancel"
-msgstr ""
+msgstr "Annuler"
 
 #: frmConfig.dfm:179
 msgid "Imagicle server"
-msgstr ""
+msgstr "Serveur Imagicle"
 
 #: frmConfig.dfm:193
 msgid "Notification email"
-msgstr ""
+msgstr "E-mail de notification"
 
 #: frmConfig.dfm:201
 #: frmConfig.dfm:432
 msgid "Password"
-msgstr ""
+msgstr "Mot de passe"
 
 #: frmConfig.dfm:209
 #: frmConfig.dfm:425
 msgid "Username"
-msgstr ""
+msgstr "Nom d'utilisateur"
 
 #: frmConfig.dfm:217
 msgid "Imagicle server address"
-msgstr ""
+msgstr "Adresse du serveur Imagicle"
 
 #: frmConfig.dfm:224
 #: frmMain.dfm:566
 msgid "Events will be notified to this email address."
-msgstr ""
+msgstr "Les événements seront signalés à cette adresse électronique."
 
 #: frmConfig.dfm:234
 #: frmConfig.dfm:479
@@ -98,23 +98,23 @@ msgstr ""
 
 #: frmConfig.dfm:259
 msgid "Notify status"
-msgstr ""
+msgstr "Statut de notification"
 
 #: frmConfig.dfm:268
 msgid "Use secure connection (https)"
-msgstr ""
+msgstr "Utiliser une connexion sécurisée (https)"
 
 #: frmConfig.dfm:278
 msgid "Skip server certificate validity checks"
-msgstr ""
+msgstr "Ignorer les contrôles de validité des certificats du serveur"
 
 #: frmConfig.dfm:283
 msgid "Address book"
-msgstr ""
+msgstr "Carnet d'adresses"
 
 #: frmConfig.dfm:298
 msgid "Address book type"
-msgstr ""
+msgstr "Type de carnet d’adresses"
 
 #: frmConfig.dfm:306
 #: frmConfig.dfm:364
@@ -123,16 +123,18 @@ msgstr ""
 
 #: frmConfig.dfm:316
 msgid "Address book location"
-msgstr ""
+msgstr "Emplacement du carnet d’adresses"
 
 #: frmConfig.dfm:325
 msgid ""
 "The path to addressbook.csv. File must be in CSV format delimited by commas."
 msgstr ""
+"Le chemin d’accès au fichier addressbook.csv. doit être dans le format CSV "
+"séparé par des virgules."
 
 #: frmConfig.dfm:334
 msgid "Browse..."
-msgstr ""
+msgstr "Parcourir..."
 
 #: frmConfig.dfm:336
 #: Main.dfm:239
@@ -142,25 +144,25 @@ msgstr ""
 #: frmConfig.dfm:345
 #, no-object-pascal-format
 msgid "Set to default location (%APPDATA%\\Imagicle print2fax)"
-msgstr ""
+msgstr "Défini à l’emplacement par défaut (%APPDATA%\\Imagicle print2fax)"
 
 #: frmConfig.dfm:347
 msgid "Default"
-msgstr ""
+msgstr "Par défaut"
 
 #: frmConfig.dfm:357
 msgid "Choose the type of address book."
-msgstr ""
+msgstr "Choisir le type de carnet d’adresses."
 
 #: frmConfig.dfm:361
 #: frmConfig.dfm:363
 msgid "No address book"
-msgstr ""
+msgstr "Aucun carnet d'adresses"
 
 #: frmConfig.dfm:365
 #: frmConfig.dfm:374
 msgid "Extended MAPI"
-msgstr ""
+msgstr "Extended MAPI"
 
 #: frmConfig.dfm:366
 #: frmConfig.dfm:411
@@ -169,11 +171,11 @@ msgstr ""
 
 #: frmConfig.dfm:384
 msgid "Use default profile"
-msgstr ""
+msgstr "Utiliser le profil par défaut"
 
 #: frmConfig.dfm:392
 msgid "Use this profile:"
-msgstr ""
+msgstr "Utiliser ce profil :"
 
 #: frmConfig.dfm:418
 msgid "DSN"
@@ -181,91 +183,95 @@ msgstr ""
 
 #: frmConfig.dfm:439
 msgid "Fax field"
-msgstr ""
+msgstr "Champ du fax"
 
 #: frmConfig.dfm:446
 msgid "Name field"
-msgstr ""
+msgstr "Champ du nom"
 
 #: frmConfig.dfm:453
 msgid "Table"
-msgstr ""
+msgstr "Tableau"
 
 #: frmConfig.dfm:462
 msgid ""
 "Data Source Name for the ODBC connection. Use ODBC administration tool to "
 "setup."
 msgstr ""
+"Nom de la source des données pour la connexion ODBC. Utiliser l’outil d’"
+"administration ODBC pour la configuration."
 
 #: frmConfig.dfm:470
 msgid "Optional. User name for the ODBC connection."
-msgstr ""
+msgstr "En option. Nom d’utilisateur pour la connexion ODBC."
 
 #: frmConfig.dfm:478
 msgid "Optional. Password for the ODBC connection."
-msgstr ""
+msgstr "En option. Mot de passe pour la connexion ODBC."
 
 #: frmConfig.dfm:487
 msgid "Name of the field containing the \"Fax number\"."
-msgstr ""
+msgstr "Nom du champ contenant le « numéro de fax »."
 
 #: frmConfig.dfm:495
 msgid "Name of the table containing data."
-msgstr ""
+msgstr "Nom du tableau contenant les données."
 
 #: frmConfig.dfm:503
 msgid "Name of the field containing the \"Recipient\"."
-msgstr ""
+msgstr "Nom du champ contenant le « destinataire »."
 
 #: frmConfig.dfm:513
 msgid ""
 "Check this if ODBC should authenticate with user and password. Leave blank "
 "for anonymous access."
 msgstr ""
+"Vérifier ceci si ODBC doit authentifier avec un nom d’utilisateur et un mot "
+"de passe. Laisser vide pour un accès anonyme."
 
 #: frmConfig.dfm:514
 msgid "ODBC authentication"
-msgstr ""
+msgstr "Authentification ODBC"
 
 #: frmConfig.dfm:521
 msgid "Other options"
-msgstr ""
+msgstr "Autres options"
 
 #: frmConfig.dfm:533
 msgid "Language"
-msgstr ""
+msgstr "Langue"
 
 #: frmConfig.dfm:541
 msgid "Log level"
-msgstr ""
+msgstr "Niveau du journal"
 
 #: frmConfig.dfm:559
 msgid "None"
-msgstr ""
+msgstr "Aucun"
 
 #: frmConfig.dfm:560
 msgid "Errors"
-msgstr ""
+msgstr "Erreurs"
 
 #: frmConfig.dfm:561
 msgid "Debug"
-msgstr ""
+msgstr "Débogage"
 
 #: frmConfirm.dfm:4
 msgid "Job submission"
-msgstr ""
+msgstr "Envoi de la tâche"
 
 #: frmConfirm.dfm:41
 msgid "Result"
-msgstr ""
+msgstr "Résultat"
 
 #: frmConfirm.dfm:54
 msgid "Details:"
-msgstr ""
+msgstr "Détails :"
 
 #: frmConfirm.dfm:70
 msgid "Ok"
-msgstr ""
+msgstr "OK"
 
 #: frmMain.dfm:136
 msgid "<a href=\"https://www.imagicle.com/\">https://www.imagicle.com/</a>"
@@ -273,161 +279,166 @@ msgstr ""
 
 #: frmMain.dfm:165
 msgid "Documents to send:"
-msgstr ""
+msgstr "Documents à envoyer :"
 
 #: frmMain.dfm:174
 msgid "You can append new pages, or send selected documents now."
 msgstr ""
+"Vous pouvez ajouter de nouvelles pages ou envoyer maintenant les documents "
+"sélectionnés."
 
 #: frmMain.dfm:192
 msgid "Drag documents or use arrows to sort. Right click for popup menu."
 msgstr ""
+"Faire glisser les documents ou utiliser les flèches pour les trier. Cliquer "
+"avec le bouton droit de la souris pour obtenir un menu contextuel."
 
 #: frmMain.dfm:212
 #: frmMain.dfm:720
 msgid "Up"
-msgstr ""
+msgstr "Haut"
 
 #: frmMain.dfm:354
 #: frmMain.dfm:724
 msgid "Down"
-msgstr ""
+msgstr "Bas"
 
 #: frmMain.dfm:500
 msgid "Fax"
-msgstr ""
+msgstr "Fax"
 
 #: frmMain.dfm:510
 msgid "FAX numbers"
-msgstr ""
+msgstr "Numéros de fax"
 
 #: frmMain.dfm:518
 msgid "Notify E-Mail"
-msgstr ""
+msgstr "Signaler par e-mail"
 
 #: frmMain.dfm:525
 msgid "Send as a single fax"
-msgstr ""
+msgstr "Envoyer en tant que fax unique"
 
 #: frmMain.dfm:536
 msgid "Send individually"
-msgstr ""
+msgstr "Envoyer individuellement"
 
 #: frmMain.dfm:545
 msgid "Enter multiple recipients separated by semicolons."
-msgstr ""
+msgstr "Saisir des destinataires multiples séparés par des points virgules."
 
 #: frmMain.dfm:558
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:84
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:433
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:690
 msgid "Select from address book"
-msgstr ""
+msgstr "Sélectionner dans le carnet d'adresses"
 
 #: frmMain.dfm:600
 msgid "Fax cover"
-msgstr ""
+msgstr "Couverture du fax"
 
 #: frmMain.dfm:614
 msgid "Use fax cover"
-msgstr ""
+msgstr "Utiliser une couverture de fax"
 
 #: frmMain.dfm:630
 msgid "Subject:"
-msgstr ""
+msgstr "Objet :"
 
 #: frmMain.dfm:646
 msgid "Comments:"
-msgstr ""
+msgstr "Commentaires :"
 
 #: frmMain.dfm:654
 #: frmRecipient.dfm:34
 msgid "Recipient's name:"
-msgstr ""
+msgstr "Nom du destinataire :"
 
 #: frmMain.dfm:664
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:1086
 msgid "<from address book>"
-msgstr ""
+msgstr "<dans le carnet d'adresses>"
 
 #: frmMain.dfm:716
 msgid "Send"
-msgstr ""
+msgstr "Envoyer"
 
 #: frmMain.dfm:728
 msgid "Save Number"
-msgstr ""
+msgstr "Enregistrer le numéro"
 
 #: frmMain.dfm:732
 msgid "Delete Entry"
-msgstr ""
+msgstr "Supprimer l’entrée"
 
 #: frmMain.dfm:736
 msgid "Configure"
-msgstr ""
+msgstr "Configurer"
 
 #: frmMain.dfm:740
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:93
 msgid "Close"
-msgstr ""
+msgstr "Fermer"
 
 #: frmMain.dfm:744
 msgid "Select..."
-msgstr ""
+msgstr "Sélectionner..."
 
 #: frmMain.dfm:748
 msgid "Help"
-msgstr ""
+msgstr "Aide"
 
 #: frmMain.dfm:762
 msgid "Add file..."
-msgstr ""
+msgstr "Ajouter un fichier..."
 
 #: frmMain.dfm:766
 #: frmSelect.dfm:62
 msgid "Select All"
-msgstr ""
+msgstr "Tout sélectionner"
 
 #: frmMain.dfm:770
 #: frmSelect.dfm:66
 msgid "Select None"
-msgstr ""
+msgstr "Désélectionner"
 
 #: frmMain.dfm:775
 msgid "All supported files|*.ps;*.pdf;*.tif;*.tiff;*.pcl|All files|*.*"
 msgstr ""
+"Tous les fichiers pris en charge|*.ps;*.pdf;*.tif;*.tiff;*.pcl|All files|*.*"
 
 #: frmProgress.dfm:5
 msgid "Fax processing"
-msgstr ""
+msgstr "Traitement du fax"
 
 #: frmProgress.dfm:28
 msgid "Status:"
-msgstr ""
+msgstr "Statut :"
 
 #: frmProgress.dfm:51
 msgid "Recipients"
-msgstr ""
+msgstr "Destinataires"
 
 #: frmProgress.dfm:55
 msgid "Subject"
-msgstr ""
+msgstr "Objet"
 
 #: frmProgress.dfm:59
 msgid "Status"
-msgstr ""
+msgstr "Statut"
 
 #: frmRecipient.dfm:5
 msgid "Recipient's name"
-msgstr ""
+msgstr "Nom du destinataire"
 
 #: frmRecipient.dfm:26
 msgid "FAX number:"
-msgstr ""
+msgstr "Numéro de FAX :"
 
 #: frmSelect.dfm:4
 msgid "Select Recipients"
-msgstr ""
+msgstr "Sélectionner les destinataires"
 
 #: Main.dfm:36
 msgid "X"
@@ -439,98 +450,100 @@ msgstr ""
 
 #: Main.dfm:226
 msgid "Fax sent to:"
-msgstr ""
+msgstr "Fax envoyé à :"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookCSV.cpp:60
 msgid "Unable to lock addressbook.csv!"
-msgstr ""
+msgstr "Impossible de verrouiller addressbook.csv !"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookCSV.cpp:103
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:274
 msgid "Call to curl_easy_init failed"
-msgstr ""
+msgstr "Échec de l’appel à curl_easy_init"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookCSV.cpp:188
 msgid "Unable to create addressbook.csv!"
-msgstr ""
+msgstr "Impossible de créer addressbook.csv !"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:95
 msgid "Unable to query address book contents table: 0x"
-msgstr ""
+msgstr "Impossible d’interroger le tableau de contenu du carnet d'adresses : 0x"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:201
 msgid "Unable to query address book hierarchy table: 0x"
 msgstr ""
+"Impossible d’interroger le tableau de hiérarchie du carnet d'adresses : 0x"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:235
 msgid "Unable to open address book sub container: 0x"
-msgstr ""
+msgstr "Impossible d’ouvrir le conteneur secondaire du carnet d'adresses : 0x"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:294
 msgid "Unable to initialize MAPI: 0x"
-msgstr ""
+msgstr "Impossible d’initialiser MAPI : 0x"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:315
 msgid "Unable to logon to MAPI: 0x"
-msgstr ""
+msgstr "Impossible de se connecter à MAPI : 0x"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:320
 msgid "Unable to open MAPI address book: 0x"
-msgstr ""
+msgstr "Impossible d’ouvrir le carnet d'adresses MAPI : 0x"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:325
 msgid "Unable to open MAPI address book container: 0x"
-msgstr ""
+msgstr "Impossible d’ouvrir le conteneur du carnet d'adresses MAPI : 0x"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:85
 msgid "Unable to initialize ODBC: "
-msgstr ""
+msgstr "Impossible d’initialiser ODBC : "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:90
 msgid "Unable to setup ODBC: "
-msgstr ""
+msgstr "Impossible de paramétrer ODBC : "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:96
 msgid "Unable to create ODBC connection: "
-msgstr ""
+msgstr "Impossible de créer une connexion ODBC : "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:101
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:106
 msgid "Unable to setup ODBC connection: "
-msgstr ""
+msgstr "Impossible de paramétrer la connexion ODBC : "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:118
 msgid "Unable to open ODBC connection: "
-msgstr ""
+msgstr "Impossible d’ouvrir la connexion ODBC : "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:134
 msgid "Unable to create ODBC statement: "
-msgstr ""
+msgstr "Impossible de créer un message ODBC : "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:153
 msgid "Unable to execute ODBC statement: "
-msgstr ""
+msgstr "Impossible d’exécuter le message ODBC : "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:159
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:164
 msgid "Unable to bind ODBC column: "
-msgstr ""
+msgstr "Impossible de lier la colonne ODBC : "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:171
 msgid "Unable to fetch ODBC data: "
-msgstr ""
+msgstr "Impossible de récupérer les données ODBC : "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/ConfigSerializerIni.cpp:54
 msgid "Client is not configured. Would you like to configure it now?"
 msgstr ""
+"Le client n'est pas configuré. Souhaitez-vous le configurer maintenant ?"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmConfig.cpp:65
 msgid "Choose address book location"
-msgstr ""
+msgstr "Choisissez l’emplacement du carnet d’adresses"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmConfig.cpp:99
 msgid "Specify a valid path for the Address Book"
-msgstr ""
+msgstr "Indiquez un chemin d’accès valide pour le carnet d'adresses"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmConfig.cpp:119
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:460
@@ -542,83 +555,87 @@ msgid ""
 " is already present in the address book.\n"
 "Do you want to modify the associated number?"
 msgstr ""
+" est déjà présent dans le carnet d'adresses.\n"
+"Souhaitez-vous modifier le numéro associé ?"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:625
 msgid "Unsent faxes will be lost. Are you sure you want to exit?"
-msgstr ""
+msgstr "Les fax non envoyés seront perdus. Êtes-vous sûr de vouloir sortir ?"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:684
 msgid "Delete recipient?"
-msgstr ""
+msgstr "Supprimer le destinataire ?"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:60
 msgid "Converting file to PDF..."
-msgstr ""
+msgstr "Conversion du fichier en PDF..."
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:65
 msgid "File conversion succeeded"
-msgstr ""
+msgstr "Conversion du fichier effectuée"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:70
 msgid "An unknown error has occurred. File has not been converted"
-msgstr ""
+msgstr "Une erreur inconnue s’est produite. Le fichier n’a pas été converti"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:76
 msgid "Sending fax..."
-msgstr ""
+msgstr "Envoi du fax..."
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:81
 msgid "Fax correctly sent"
-msgstr ""
+msgstr "Fax envoyé correctement"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:86
 msgid "An unknown error has occurred. Fax has not been sent"
-msgstr ""
+msgstr "Une erreur inconnue s’est produite. Le fax n’a pas été envoyé"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:95
 msgid "Job completed successfully"
-msgstr ""
+msgstr "Tâche accomplie avec succès"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:97
 msgid "Job completed with errors"
-msgstr ""
+msgstr "Tâche accomplie avec des erreurs"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:186
 msgid ""
 "Bad username/password. Please enter correct values in the configuration "
 "dialog."
 msgstr ""
+"Nom d’utilisateur/mot de passe incorrect. Veuillez saisir les valeurs "
+"correctes dans le dialogue de configuration."
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/HttpClient.cpp:30
 #, c-format
 msgid "The server responded with a status code of %d"
-msgstr ""
+msgstr "Le serveur a répondu avec un code de statut %d"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/HttpClient.cpp:35
 msgid "Bad username/password"
-msgstr ""
+msgstr "Nom d’utilisateur/mot de passe incorrect"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/HttpClient.cpp:66
 #, c-format
 msgid "Call to curl_easy_perform failed: code=%i message=%hs"
-msgstr ""
+msgstr "Échec de l’appel à curl_easy_perform : code=%i message=%hs"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/ProcessorStoneFax.cpp:49
 msgid "Cannot initialize libmagic"
-msgstr ""
+msgstr "Initialisation de libmagic impossible"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/ProcessorStoneFax.cpp:62
 msgid "Cannot load magic.mgc"
-msgstr ""
+msgstr "Chargement de magic.mgc impossible"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/ProcessorStoneFax.cpp:105
 #, c-format
 msgid "Call to magic_buffer failed: message=%hs"
-msgstr ""
+msgstr "Échec de l’appel à magic_buffer : message=%hs"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/ProcessorStoneFax.cpp:147
 msgid "Ghostscript failed"
-msgstr ""
+msgstr "Échec de Ghostscript"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:75
 #, c-format
@@ -626,15 +643,17 @@ msgid ""
 "The server responded with a status code of %d and provided the following "
 "error message: %s"
 msgstr ""
+"Le serveur a répondu avec un code de statut %d et a fourni le message d’"
+"erreur suivant : %s"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:146
 msgid "Server response is not JSON"
-msgstr ""
+msgstr "La réponse du serveur n’est pas JSON"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:153
 msgid "Error parsing JSON response"
-msgstr ""
+msgstr "Erreur d’analyse de la réponse JSON"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:277
 msgid "Call to curl_mime_init failed"
-msgstr ""
+msgstr "Échec de l’appel à curl_mime_init"
