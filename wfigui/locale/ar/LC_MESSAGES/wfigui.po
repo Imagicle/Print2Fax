@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-18 11:55+0200\n"
-"PO-Revision-Date: 2021-08-09 08:02+0000\n"
+"PO-Revision-Date: 2021-09-16 08:05+0000\n"
 "Last-Translator: Luca Campo Dall'Orto <luca.campodallorto@imagicle.com>\n"
 "Language-Team: Arabic <https://weblate.imagicle.com/projects/"
 "imagicle-print-to-fax/wfigui/ar/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #: frmConfig.dfm:7
 #: frmMain.dfm:6
@@ -46,7 +46,7 @@ msgstr ""
 
 #: frmConfig.dfm:110
 msgid "Configure Imagicle print2fax"
-msgstr ""
+msgstr "تهيئة Imagicle print2fax"
 
 #: frmConfig.dfm:125
 #: frmMain.dfm:120
@@ -57,41 +57,41 @@ msgstr ""
 #: frmRecipient.dfm:59
 #: frmSelect.dfm:41
 msgid "OK"
-msgstr ""
+msgstr "موافقة"
 
 #: frmConfig.dfm:163
 #: frmProgress.dfm:36
 #: frmRecipient.dfm:70
 #: frmSelect.dfm:53
 msgid "Cancel"
-msgstr ""
+msgstr "إلغاء"
 
 #: frmConfig.dfm:179
 msgid "Imagicle server"
-msgstr ""
+msgstr "خادم Imagicle"
 
 #: frmConfig.dfm:193
 msgid "Notification email"
-msgstr ""
+msgstr "إشعار عبر البريد الإلكتروني"
 
 #: frmConfig.dfm:201
 #: frmConfig.dfm:432
 msgid "Password"
-msgstr ""
+msgstr "كلمة المرور"
 
 #: frmConfig.dfm:209
 #: frmConfig.dfm:425
 msgid "Username"
-msgstr ""
+msgstr "اسم المستخدم"
 
 #: frmConfig.dfm:217
 msgid "Imagicle server address"
-msgstr ""
+msgstr "عنوان خادم Imagicle"
 
 #: frmConfig.dfm:224
 #: frmMain.dfm:566
 msgid "Events will be notified to this email address."
-msgstr ""
+msgstr "ستُرسَل إشعارات بالأحداث إلى عنوان البريد الإلكتروني هذا."
 
 #: frmConfig.dfm:234
 #: frmConfig.dfm:479
@@ -100,23 +100,23 @@ msgstr ""
 
 #: frmConfig.dfm:259
 msgid "Notify status"
-msgstr ""
+msgstr "إشعار بالحالة"
 
 #: frmConfig.dfm:268
 msgid "Use secure connection (https)"
-msgstr ""
+msgstr "استخدام اتصال آمن (https)"
 
 #: frmConfig.dfm:278
 msgid "Skip server certificate validity checks"
-msgstr ""
+msgstr "تخطي التحقق من صحة شهادة الخادم"
 
 #: frmConfig.dfm:283
 msgid "Address book"
-msgstr ""
+msgstr "دفتر العناوين"
 
 #: frmConfig.dfm:298
 msgid "Address book type"
-msgstr ""
+msgstr "نوع دفتر العناوين"
 
 #: frmConfig.dfm:306
 #: frmConfig.dfm:364
@@ -125,16 +125,17 @@ msgstr ""
 
 #: frmConfig.dfm:316
 msgid "Address book location"
-msgstr ""
+msgstr "موقع دفتر العناوين"
 
 #: frmConfig.dfm:325
 msgid ""
 "The path to addressbook.csv. File must be in CSV format delimited by commas."
 msgstr ""
+"المسار إلى .addressbook.csv. يجب أن يكون الملف بصيغة CSV ومحددًا بفواصل."
 
 #: frmConfig.dfm:334
 msgid "Browse..."
-msgstr ""
+msgstr "استعراض..."
 
 #: frmConfig.dfm:336
 #: Main.dfm:239
@@ -144,25 +145,25 @@ msgstr ""
 #: frmConfig.dfm:345
 #, no-object-pascal-format
 msgid "Set to default location (%APPDATA%\\Imagicle print2fax)"
-msgstr ""
+msgstr "التعيين بالموقع الافتراضي (%APPDATA%\\Imagicle print2fax)"
 
 #: frmConfig.dfm:347
 msgid "Default"
-msgstr ""
+msgstr "الافتراضي"
 
 #: frmConfig.dfm:357
 msgid "Choose the type of address book."
-msgstr ""
+msgstr "اختيار نوع دفتر العناوين"
 
 #: frmConfig.dfm:361
 #: frmConfig.dfm:363
 msgid "No address book"
-msgstr ""
+msgstr "لا يوجد دفتر عناوين"
 
 #: frmConfig.dfm:365
 #: frmConfig.dfm:374
 msgid "Extended MAPI"
-msgstr ""
+msgstr "واجهة برمجة تطبيق رسائل ممتدة"
 
 #: frmConfig.dfm:366
 #: frmConfig.dfm:411
@@ -171,11 +172,11 @@ msgstr ""
 
 #: frmConfig.dfm:384
 msgid "Use default profile"
-msgstr ""
+msgstr "استخدام الملف التعريفي الافتراضي"
 
 #: frmConfig.dfm:392
 msgid "Use this profile:"
-msgstr ""
+msgstr "استخدام هذا الملف التعريفي:"
 
 #: frmConfig.dfm:418
 msgid "DSN"
@@ -183,91 +184,95 @@ msgstr ""
 
 #: frmConfig.dfm:439
 msgid "Fax field"
-msgstr ""
+msgstr "خانة الفاكس"
 
 #: frmConfig.dfm:446
 msgid "Name field"
-msgstr ""
+msgstr "خانة الاسم"
 
 #: frmConfig.dfm:453
 msgid "Table"
-msgstr ""
+msgstr "الجدول"
 
 #: frmConfig.dfm:462
 msgid ""
 "Data Source Name for the ODBC connection. Use ODBC administration tool to "
 "setup."
 msgstr ""
+"اسم مصدر البيانات لاتصال قاعدة البيانات المفتوحة. استخدام أداة إدارة اتصال "
+"قاعدة البيانات المفتوحة للإعداد."
 
 #: frmConfig.dfm:470
 msgid "Optional. User name for the ODBC connection."
-msgstr ""
+msgstr "اختياري. اسم المستخدم لاتصال قاعدة البيانات المفتوحة."
 
 #: frmConfig.dfm:478
 msgid "Optional. Password for the ODBC connection."
-msgstr ""
+msgstr "اختياري. كلمة المرور لاتصال قاعدة البيانات المفتوحة."
 
 #: frmConfig.dfm:487
 msgid "Name of the field containing the \"Fax number\"."
-msgstr ""
+msgstr "اسم الخانة التي تتضمن \"رقم الفاكس\"."
 
 #: frmConfig.dfm:495
 msgid "Name of the table containing data."
-msgstr ""
+msgstr "اسم الجدول الذي يتضمن البيانات."
 
 #: frmConfig.dfm:503
 msgid "Name of the field containing the \"Recipient\"."
-msgstr ""
+msgstr "اسم الخانة التي تتضمن \"المستلم\"."
 
 #: frmConfig.dfm:513
 msgid ""
 "Check this if ODBC should authenticate with user and password. Leave blank "
 "for anonymous access."
 msgstr ""
+"ضع علامة هنا في حال وجوب مصادقة اتصال قاعدة البيانات المفتوحة من خلال "
+"المستخدم وكلمة المرور. لا تضع علامة للوصول مجهول الهوية."
 
 #: frmConfig.dfm:514
 msgid "ODBC authentication"
-msgstr ""
+msgstr "مصادقة اتصال قاعدة البيانات المفتوحة"
 
 #: frmConfig.dfm:521
 msgid "Other options"
-msgstr ""
+msgstr "خيارات أخرى"
 
 #: frmConfig.dfm:533
 msgid "Language"
-msgstr ""
+msgstr "اللغة"
 
 #: frmConfig.dfm:541
 msgid "Log level"
-msgstr ""
+msgstr "مستوى التسجيل"
 
 #: frmConfig.dfm:559
 msgid "None"
-msgstr ""
+msgstr "لا شيء"
 
 #: frmConfig.dfm:560
 msgid "Errors"
-msgstr ""
+msgstr "أخطاء"
 
 #: frmConfig.dfm:561
 msgid "Debug"
-msgstr ""
+msgstr "تصحيح"
 
 #: frmConfirm.dfm:4
 msgid "Job submission"
-msgstr ""
+msgstr "تقديم المهمة"
 
 #: frmConfirm.dfm:41
 msgid "Result"
-msgstr ""
+msgstr "النتيجة"
 
 #: frmConfirm.dfm:54
 msgid "Details:"
-msgstr ""
+msgstr "التفاصيل:"
 
 #: frmConfirm.dfm:70
 msgid "Ok"
-msgstr ""
+msgstr "موافقة"
 
 #: frmMain.dfm:136
 msgid "<a href=\"https://www.imagicle.com/\">https://www.imagicle.com/</a>"
@@ -275,161 +280,163 @@ msgstr ""
 
 #: frmMain.dfm:165
 msgid "Documents to send:"
-msgstr ""
+msgstr "المستندات التي يجب إرسالها:"
 
 #: frmMain.dfm:174
 msgid "You can append new pages, or send selected documents now."
-msgstr ""
+msgstr "يمكنك أن تُلحق صفحات جديدة، أو ترسل مستندات محددة الآن."
 
 #: frmMain.dfm:192
 msgid "Drag documents or use arrows to sort. Right click for popup menu."
 msgstr ""
+"اسحب المستندات أو استخدم الأسهم للتصنيف. اضغط على اليمين لإظهار القائمة "
+"المنبثقة."
 
 #: frmMain.dfm:212
 #: frmMain.dfm:720
 msgid "Up"
-msgstr ""
+msgstr "أعلى"
 
 #: frmMain.dfm:354
 #: frmMain.dfm:724
 msgid "Down"
-msgstr ""
+msgstr "أسفل"
 
 #: frmMain.dfm:500
 msgid "Fax"
-msgstr ""
+msgstr "الفاكس"
 
 #: frmMain.dfm:510
 msgid "FAX numbers"
-msgstr ""
+msgstr "أرقام الفاكس"
 
 #: frmMain.dfm:518
 msgid "Notify E-Mail"
-msgstr ""
+msgstr "إشعار عبر البريد الإلكتروني"
 
 #: frmMain.dfm:525
 msgid "Send as a single fax"
-msgstr ""
+msgstr "إرسال كفاكس منفرد"
 
 #: frmMain.dfm:536
 msgid "Send individually"
-msgstr ""
+msgstr "إرسال منفرد"
 
 #: frmMain.dfm:545
 msgid "Enter multiple recipients separated by semicolons."
-msgstr ""
+msgstr "إدخال عدة مستلمين منفصلين بفاصلة منقوطة"
 
 #: frmMain.dfm:558
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:84
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:433
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:690
 msgid "Select from address book"
-msgstr ""
+msgstr "تحديد من دفتر العناوين"
 
 #: frmMain.dfm:600
 msgid "Fax cover"
-msgstr ""
+msgstr "غلاف الفاكس"
 
 #: frmMain.dfm:614
 msgid "Use fax cover"
-msgstr ""
+msgstr "استخدام غلاف الفاكس"
 
 #: frmMain.dfm:630
 msgid "Subject:"
-msgstr ""
+msgstr "الموضوع:"
 
 #: frmMain.dfm:646
 msgid "Comments:"
-msgstr ""
+msgstr "التعليقات:"
 
 #: frmMain.dfm:654
 #: frmRecipient.dfm:34
 msgid "Recipient's name:"
-msgstr ""
+msgstr "اسم المستلم:"
 
 #: frmMain.dfm:664
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:1086
 msgid "<from address book>"
-msgstr ""
+msgstr "<من دفتر العناوين>"
 
 #: frmMain.dfm:716
 msgid "Send"
-msgstr ""
+msgstr "إرسال"
 
 #: frmMain.dfm:728
 msgid "Save Number"
-msgstr ""
+msgstr "حفظ الرقم"
 
 #: frmMain.dfm:732
 msgid "Delete Entry"
-msgstr ""
+msgstr "حذف المدخلات"
 
 #: frmMain.dfm:736
 msgid "Configure"
-msgstr ""
+msgstr "تهيئة"
 
 #: frmMain.dfm:740
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:93
 msgid "Close"
-msgstr ""
+msgstr "إغلاق"
 
 #: frmMain.dfm:744
 msgid "Select..."
-msgstr ""
+msgstr "تحديد..."
 
 #: frmMain.dfm:748
 msgid "Help"
-msgstr ""
+msgstr "مساعدة"
 
 #: frmMain.dfm:762
 msgid "Add file..."
-msgstr ""
+msgstr "إضافة ملف..."
 
 #: frmMain.dfm:766
 #: frmSelect.dfm:62
 msgid "Select All"
-msgstr ""
+msgstr "تحديد الكل"
 
 #: frmMain.dfm:770
 #: frmSelect.dfm:66
 msgid "Select None"
-msgstr ""
+msgstr "تحديد لا شيء"
 
 #: frmMain.dfm:775
 msgid "All supported files|*.ps;*.pdf;*.tif;*.tiff;*.pcl|All files|*.*"
-msgstr ""
+msgstr "جميع الملفات المدعومة|*.ps;*.pdf;*.tif;*.tiff;*.pcl|جميع الملفات|*.*"
 
 #: frmProgress.dfm:5
 msgid "Fax processing"
-msgstr ""
+msgstr "معالجة الفاكس"
 
 #: frmProgress.dfm:28
 msgid "Status:"
-msgstr ""
+msgstr "الحالة:"
 
 #: frmProgress.dfm:51
 msgid "Recipients"
-msgstr ""
+msgstr "المستلمون"
 
 #: frmProgress.dfm:55
 msgid "Subject"
-msgstr ""
+msgstr "الموضوع"
 
 #: frmProgress.dfm:59
 msgid "Status"
-msgstr ""
+msgstr "الحالة"
 
 #: frmRecipient.dfm:5
 msgid "Recipient's name"
-msgstr ""
+msgstr "اسم المستلم"
 
 #: frmRecipient.dfm:26
 msgid "FAX number:"
-msgstr ""
+msgstr "رقم الفاكس:"
 
 #: frmSelect.dfm:4
 msgid "Select Recipients"
-msgstr ""
+msgstr "تحديد المستلمين"
 
 #: Main.dfm:36
 msgid "X"
@@ -441,98 +448,98 @@ msgstr ""
 
 #: Main.dfm:226
 msgid "Fax sent to:"
-msgstr ""
+msgstr "فاكس مرسل إلى:"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookCSV.cpp:60
 msgid "Unable to lock addressbook.csv!"
-msgstr ""
+msgstr "تعذر قفل addressbook.csv!"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookCSV.cpp:103
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:274
 msgid "Call to curl_easy_init failed"
-msgstr ""
+msgstr "فشل استدعاء curl_easy_init"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookCSV.cpp:188
 msgid "Unable to create addressbook.csv!"
-msgstr ""
+msgstr "تعذر إنشاء addressbook.csv!"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:95
 msgid "Unable to query address book contents table: 0x"
-msgstr ""
+msgstr "تعذر طلب جدول محتويات دفتر العناوين: 0x"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:201
 msgid "Unable to query address book hierarchy table: 0x"
-msgstr ""
+msgstr "تعذر طلب جدول تدرج دفتر العناوين: 0x"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:235
 msgid "Unable to open address book sub container: 0x"
-msgstr ""
+msgstr "تعذر فتح الحاوية الفرعية لدفتر العناوين: 0x"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:294
 msgid "Unable to initialize MAPI: 0x"
-msgstr ""
+msgstr "تعذر تمهيد الواجهة البرمجية لتطبيق الرسائل: 0x"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:315
 msgid "Unable to logon to MAPI: 0x"
-msgstr ""
+msgstr "تعذر تسجيل الدخول إلى الواجهة البرمجية لتطبيق الرسائل: 0x"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:320
 msgid "Unable to open MAPI address book: 0x"
-msgstr ""
+msgstr "تعذر فتح دفتر عناوين الواجهة البرمجية لتطبيق الرسائل: 0x"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:325
 msgid "Unable to open MAPI address book container: 0x"
-msgstr ""
+msgstr "تعذر فتح حاوية دفتر عناوين الواجهة البرمجية لتطبيق الرسائل: 0x"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:85
 msgid "Unable to initialize ODBC: "
-msgstr ""
+msgstr "تعذر تمهيد اتصال قاعدة البيانات المفتوحة: "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:90
 msgid "Unable to setup ODBC: "
-msgstr ""
+msgstr "تعذر إعداد اتصال قاعدة البيانات المفتوحة: "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:96
 msgid "Unable to create ODBC connection: "
-msgstr ""
+msgstr "تعذر إنشاء ارتباط اتصال قاعدة البيانات المفتوحة: "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:101
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:106
 msgid "Unable to setup ODBC connection: "
-msgstr ""
+msgstr "تعذر إعداد ارتباط اتصال قاعدة البيانات المفتوحة: "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:118
 msgid "Unable to open ODBC connection: "
-msgstr ""
+msgstr "تعذر فتح ارتباط اتصال قاعدة البيانات المفتوحة: "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:134
 msgid "Unable to create ODBC statement: "
-msgstr ""
+msgstr "تعذر إنشاء بيان اتصال قاعدة البيانات المفتوحة: "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:153
 msgid "Unable to execute ODBC statement: "
-msgstr ""
+msgstr "تعذر تنفيذ بيان اتصال قاعدة البيانات المفتوحة: "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:159
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:164
 msgid "Unable to bind ODBC column: "
-msgstr ""
+msgstr "تعذر ربط عمود اتصال قاعدة البيانات المفتوحة: "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:171
 msgid "Unable to fetch ODBC data: "
-msgstr ""
+msgstr "تعذر جلب بيانات اتصال قاعدة البيانات المفتوحة: "
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/ConfigSerializerIni.cpp:54
 msgid "Client is not configured. Would you like to configure it now?"
-msgstr ""
+msgstr "عميل غير مهيَّأ. هل تريد تهيئته الآن؟"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmConfig.cpp:65
 msgid "Choose address book location"
-msgstr ""
+msgstr "اختيار موقع دفتر العناوين"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmConfig.cpp:99
 msgid "Specify a valid path for the Address Book"
-msgstr ""
+msgstr "تحديد مسار صحيح لدفتر العناوين"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmConfig.cpp:119
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:460
@@ -543,100 +550,101 @@ msgstr ""
 msgid ""
 " is already present in the address book.\n"
 "Do you want to modify the associated number?"
-msgstr ""
+msgstr " موجود بالفعل في دفتر العناوين. هل تريد تعديل الرقم المرتبط؟"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:625
 msgid "Unsent faxes will be lost. Are you sure you want to exit?"
-msgstr ""
+msgstr "ستفقد رسائل الفاكس غير المرسلة. هل أنت متأكد من أنك تريد الخروج؟"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:684
 msgid "Delete recipient?"
-msgstr ""
+msgstr "هل تريد حذف المستلم؟"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:60
 msgid "Converting file to PDF..."
-msgstr ""
+msgstr "جارٍ تحويل الملف إلى PDF..."
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:65
 msgid "File conversion succeeded"
-msgstr ""
+msgstr "تم تحويل الملف بنجاح."
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:70
 msgid "An unknown error has occurred. File has not been converted"
-msgstr ""
+msgstr "حدث خطأ غير معروف. لم يتم تحويل الملف."
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:76
 msgid "Sending fax..."
-msgstr ""
+msgstr "جارٍ إرسال الفاكس..."
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:81
 msgid "Fax correctly sent"
-msgstr ""
+msgstr "تم إرسال الفاكس على نحو صحيح."
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:86
 msgid "An unknown error has occurred. Fax has not been sent"
-msgstr ""
+msgstr "حدث خطأ غير معروف. لم يُرسَل الفاكس."
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:95
 msgid "Job completed successfully"
-msgstr ""
+msgstr "تمت المهمة بنجاح."
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:97
 msgid "Job completed with errors"
-msgstr ""
+msgstr "تمت المهمة مع وجود أخطاء."
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:186
 msgid ""
 "Bad username/password. Please enter correct values in the configuration "
 "dialog."
 msgstr ""
+"خطأ في اسم المستخدم/ كلمة المرور. يُرجى إدخال القيم الصحيحة في مربع التهيئة."
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/HttpClient.cpp:30
 #, c-format
 msgid "The server responded with a status code of %d"
-msgstr ""
+msgstr "استجاب الخادم بكود حالة d%."
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/HttpClient.cpp:35
 msgid "Bad username/password"
-msgstr ""
+msgstr "خطأ في اسم المستخدم/ كلمة المرور."
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/HttpClient.cpp:66
 #, c-format
 msgid "Call to curl_easy_perform failed: code=%i message=%hs"
-msgstr ""
+msgstr "فشل استدعاء curl_easy_perform: الكود=i%، الرسالة=hs%"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/ProcessorStoneFax.cpp:49
 msgid "Cannot initialize libmagic"
-msgstr ""
+msgstr "تعذرت تهيئة libmagic"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/ProcessorStoneFax.cpp:62
 msgid "Cannot load magic.mgc"
-msgstr ""
+msgstr "تعذر تحميل magic.mgc"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/ProcessorStoneFax.cpp:105
 #, c-format
 msgid "Call to magic_buffer failed: message=%hs"
-msgstr ""
+msgstr "فشل استدعاء magic_buffer: الرسالة=hs%"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/ProcessorStoneFax.cpp:147
 msgid "Ghostscript failed"
-msgstr ""
+msgstr "فشل Ghostscript"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:75
 #, c-format
 msgid ""
 "The server responded with a status code of %d and provided the following "
 "error message: %s"
-msgstr ""
+msgstr "استجاب الخادم بكود حالة d%، وأظهر رسالة الخطأ التالية: s%"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:146
 msgid "Server response is not JSON"
-msgstr ""
+msgstr "استجابة الخادم ليست JSON."
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:153
 msgid "Error parsing JSON response"
-msgstr ""
+msgstr "خطأ في تحليل استجابة JSON"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:277
 msgid "Call to curl_mime_init failed"
-msgstr ""
+msgstr "فشل استدعاء curl_mime_init"
