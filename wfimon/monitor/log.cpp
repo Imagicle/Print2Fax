@@ -50,7 +50,8 @@ CWfiLog::CWfiLog()
 CWfiLog::~CWfiLog()
 {
 	SetEvent(m_hStop);
-	WaitForSingleObject(m_hThread, INFINITE);
+	if (WaitForSingleObject(m_hThread, 10000) != WAIT_OBJECT_0)
+		TerminateThread(m_hThread, 255);
 	CloseHandle(m_hThread);
 	CloseHandle(m_hStop);
 
@@ -69,7 +70,7 @@ DWORD WINAPI CWfiLog::FlushThread(LPVOID pParam)
 	{
 		switch (WaitForSingleObject(pLog->m_hStop, 10000))
 		{
-		case WAIT_OBJECT_0 + 0:
+		case WAIT_OBJECT_0:
 			return 0;
 			break;
 
@@ -80,6 +81,7 @@ DWORD WINAPI CWfiLog::FlushThread(LPVOID pParam)
 				FlushFileBuffers(pLog->m_hLogFile);
 
 			LeaveCriticalSection(&pLog->m_CSLog);
+			break;
 		}
 	}
 }

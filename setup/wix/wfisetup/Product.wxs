@@ -20,10 +20,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
   <?include defines.wxi ?>
   
-  <Product Id="E0893BCC-5935-4B09-8D59-AC15120F28C2" Name="!(loc.ApplicationName)" Language="!(loc.Language)" Codepage="UTF-8" Version="$(var.VersionNumber)" Manufacturer="Imagicle Spa" UpgradeCode="E295AFB0-2424-4BD6-957F-B8F45A342926">
+  <Product Id="*" Name="!(loc.ApplicationName)" Language="!(loc.Language)" Codepage="UTF-8" Version="$(var.VersionNumber)" Manufacturer="Imagicle Spa" UpgradeCode="E295AFB0-2424-4BD6-957F-B8F45A342926">
     <Package InstallerVersion="301" Compressed="yes" InstallScope="perMachine" Comments="Copyright © 2021 Lorenzo Monti" />
 
-    <MajorUpgrade DowngradeErrorMessage="!(loc.NewerInstalled)" />
+    <MajorUpgrade DowngradeErrorMessage="!(loc.NewerInstalled)" AllowSameVersionUpgrades="yes" />
     <MediaTemplate EmbedCab="yes" />
 
     <?if $(var.Platform)=x64 ?>
@@ -162,6 +162,46 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
   <Fragment>
     <DirectoryRef Id="LOCALEDIR">
+      <Directory Id="DIR_ar" Name="ar">
+        <Directory Id="DIR_ar_LC_MESSAGES" Name="LC_MESSAGES">
+          <Component Id="CMP_ar_delphi_mo" Guid="{A910F273-847A-4ED8-BE50-A87C2428D7AC}" Win64="no">
+            <File Id="AR_DELPHIMO" Source="..\..\..\wfigui\locale\ar\LC_MESSAGES\delphi.mo" KeyPath="yes" />
+          </Component>
+          <Component Id="CMP_ar_wfigui_mo" Guid="{B8EDF940-3A5F-47BF-BB8D-D21496A5986F}" Win64="no">
+            <File Id="AR_WFIGUIMO" Source="..\..\..\wfigui\locale\ar\LC_MESSAGES\wfigui.mo" KeyPath="yes" />
+          </Component>
+        </Directory>
+      </Directory>
+      <Directory Id="DIR_de" Name="de">
+        <Directory Id="DIR_de_LC_MESSAGES" Name="LC_MESSAGES">
+          <Component Id="CMP_de_delphi_mo" Guid="{7E407A14-F711-4BFB-85D4-3722FC0AA671}" Win64="no">
+            <File Id="DE_DELPHIMO" Source="..\..\..\wfigui\locale\de\LC_MESSAGES\delphi.mo" KeyPath="yes" />
+          </Component>
+          <Component Id="CMP_de_wfigui_mo" Guid="{4FF252A8-93CD-45A5-97D8-D004CB7BC862}" Win64="no">
+            <File Id="DE_WFIGUIMO" Source="..\..\..\wfigui\locale\de\LC_MESSAGES\wfigui.mo" KeyPath="yes" />
+          </Component>
+        </Directory>
+      </Directory>
+      <Directory Id="DIR_es" Name="es">
+        <Directory Id="DIR_es_LC_MESSAGES" Name="LC_MESSAGES">
+          <Component Id="CMP_es_delphi_mo" Guid="{AEC40978-CB3C-4DCF-A662-56F103A34040}" Win64="no">
+            <File Id="ES_DELPHIMO" Source="..\..\..\wfigui\locale\es\LC_MESSAGES\delphi.mo" KeyPath="yes" />
+          </Component>
+          <Component Id="CMP_es_wfigui_mo" Guid="{67D2FE9C-7F5A-4E44-96D0-79E9C80FE5C6}" Win64="no">
+            <File Id="ES_WFIGUIMO" Source="..\..\..\wfigui\locale\es\LC_MESSAGES\wfigui.mo" KeyPath="yes" />
+          </Component>
+        </Directory>
+      </Directory>
+      <Directory Id="DIR_fr" Name="fr">
+        <Directory Id="DIR_fr_LC_MESSAGES" Name="LC_MESSAGES">
+          <Component Id="CMP_fr_delphi_mo" Guid="{68CD797A-89A6-402D-826F-BD7B38F24E01}" Win64="no">
+            <File Id="FR_DELPHIMO" Source="..\..\..\wfigui\locale\fr\LC_MESSAGES\delphi.mo" KeyPath="yes" />
+          </Component>
+          <Component Id="CMP_fr_wfigui_mo" Guid="{84F700B1-5E95-459B-98FD-82982BFDE8B1}" Win64="no">
+            <File Id="FR_WFIGUIMO" Source="..\..\..\wfigui\locale\fr\LC_MESSAGES\wfigui.mo" KeyPath="yes" />
+          </Component>
+        </Directory>
+      </Directory>
       <Directory Id="DIR_it" Name="it">
         <Directory Id="DIR_it_LC_MESSAGES" Name="LC_MESSAGES">
           <Component Id="CMP_it_delphi_mo" Guid="{CE52CC92-1051-4784-9E21-B190ADB00798}" Win64="no">
@@ -172,13 +212,33 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
           </Component>
         </Directory>
       </Directory>
+      <Directory Id="DIR_ru" Name="ru">
+        <Directory Id="DIR_ru_LC_MESSAGES" Name="LC_MESSAGES">
+          <Component Id="CMP_ru_delphi_mo" Guid="{32C9676D-0837-42B8-B532-CC2A093EF523}" Win64="no">
+            <File Id="RU_DELPHIMO" Source="..\..\..\wfigui\locale\ru\LC_MESSAGES\delphi.mo" KeyPath="yes" />
+          </Component>
+          <Component Id="CMP_ru_wfigui_mo" Guid="{97927D09-7EE4-4546-B14B-690EEE150D41}" Win64="no">
+            <File Id="RU_WFIGUIMO" Source="..\..\..\wfigui\locale\ru\LC_MESSAGES\wfigui.mo" KeyPath="yes" />
+          </Component>
+        </Directory>
+      </Directory>
     </DirectoryRef>
   </Fragment>
 
   <Fragment>
     <ComponentGroup Id="LocaleComponents">
+      <ComponentRef Id="CMP_ar_delphi_mo" />
+      <ComponentRef Id="CMP_ar_wfigui_mo" />
+      <ComponentRef Id="CMP_de_delphi_mo" />
+      <ComponentRef Id="CMP_de_wfigui_mo" />
+      <ComponentRef Id="CMP_es_delphi_mo" />
+      <ComponentRef Id="CMP_es_wfigui_mo" />
+      <ComponentRef Id="CMP_fr_delphi_mo" />
+      <ComponentRef Id="CMP_fr_wfigui_mo" />
       <ComponentRef Id="CMP_it_delphi_mo" />
       <ComponentRef Id="CMP_it_wfigui_mo" />
+      <ComponentRef Id="CMP_ru_delphi_mo" />
+      <ComponentRef Id="CMP_ru_wfigui_mo" />
     </ComponentGroup>
   </Fragment>
 </Wix>

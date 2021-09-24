@@ -329,7 +329,7 @@ void WfiPrinter::AddWfiPrinterMonitor()
 	MONITOR_INFO_2W minfo = { 0 };
 
 	minfo.pName = _wcsdup(pMonitorName);
-	minfo.pEnvironment = NULL;
+	minfo.pEnvironment = FEnvironment.c_str();
 	minfo.pDLLName = _wcsdup(pDllName);
 
 	try {
@@ -417,23 +417,49 @@ void WfiPrinter::DeleteWfiPrinter()
 		}
 
 		if (!DeletePrinter(hPrinter)) {
-			err.printf(L"call to DeleteMonitorW failed. GetLastError=0x%08X", GetLastError());
+			err.printf(L"call to DeletePrinter failed. GetLastError=0x%08X", GetLastError());
 			throw Exception(err);
 		}
 	}
 	__finally {
 		free(pName);
 
-		if (hPrinter)
-			ClosePrinter(hPrinter);
+		if (hPrinter) {
+			if (!ClosePrinter(hPrinter)) {
+				err.printf(L"call to ClosePrinter failed. GetLastError=0x%08X", GetLastError());
+				throw Exception(err);
+			}
+		}
 	}
 }
 //---------------------------------------------------------------------------
 
 void WfiPrinter::RestartSpooler()
 {
-	StopServiceByName(NULL, pSpooler);
-	StartServiceByName(NULL, pSpooler);
+	TJclNtService *Service = NULL;
+	TJclSCManager *SCManager = new TJclSCManager(L"", DefaultSCMDesiredAccess, SERVICES_ACTIVE_DATABASE);
+	try {
+        SCManager->Refresh(true);
+		SCManager->FindService(pSpooler, Service);
+
+		if (Service == NULL)
+			throw Exception(L"cannot open the spooler service");
+
+		std::wcout << L"Stopping spooler...";
+		std::wcout.flush();
+		Service->Stop(true);
+		std::wcout << L" done" << std::endl;
+		Sleep(5000);
+
+		std::wcout << L"Starting spooler...";
+		std::wcout.flush();
+		Service->Start(true);
+		std::wcout << L" done" << std::endl;
+		Sleep(5000);
+	}
+	__finally {
+		delete SCManager;
+	}
 }
 //---------------------------------------------------------------------------
 
@@ -453,7 +479,7 @@ void WfiPrinter::PurgePrinterJobs()
 		}
 
 		if (!SetPrinter(hPrinter, 0, NULL, PRINTER_CONTROL_PURGE)) {
-			err.printf(L"call to OpenPrinterW failed. GetLastError=0x%08X", GetLastError());
+			err.printf(L"call to SetPrinter failed. GetLastError=0x%08X", GetLastError());
 			throw Exception(err);
 		}
 	}
@@ -468,39 +494,46 @@ void WfiPrinter::PurgePrinterJobs()
 
 void WfiPrinter::Install(bool quiet)
 {
-	RestartSpooler();
+	//RestartSpooler();
 
 	if (quiet) {
+		std::wcout << L"Installing certificate" << std::endl;
 		InstallCertificateIfMissing();
 	}
 
+	std::wcout << L"Installing driver" << std::endl;
 	InstallDriverIfMissing(quiet);
 
 	if (!IsMonitorInstalled()) {
+		std::wcout << L"Installing print monitor" << std::endl;
 		AddWfiPrinterMonitor();
-		RestartSpooler();
+		//RestartSpooler();
 	}
 
+	std::wcout << L"Installing printer" << std::endl;
 	AddWfiPrinter();
 }
 //---------------------------------------------------------------------------
 
 void WfiPrinter::UninstallMonitor()
 {
+	std::wcout << L"Uninstalling print monitor" << std::endl;
 	DeleteWfiPrinterMonitor();
 }
 //---------------------------------------------------------------------------
 
 void WfiPrinter::UninstallPrinter()
 {
+	std::wcout << L"Purging print queue" << std::endl;
 	PurgePrinterJobs();
+	std::wcout << L"Uninstalling printer" << std::endl;
 	DeleteWfiPrinter();
 }
 //---------------------------------------------------------------------------
 
 void WfiPrinter::Uninstall()
 {
-	RestartSpooler();
+	//RestartSpooler();
 
 	try {
 		UninstallPrinter();
@@ -509,7 +542,7 @@ void WfiPrinter::Uninstall()
 		Warning(e.Message);
 	}
 
-	RestartSpooler();
+	//RestartSpooler();
 
 	try {
 		UninstallMonitor();

@@ -364,6 +364,15 @@ BOOL WINAPI WfiXcvClosePort(HANDLE hXcv)
 VOID WINAPI WfiShutdown(HANDLE hMonitor)
 {
 	UNREFERENCED_PARAMETER(hMonitor);
+
+	if (g_pPortList)
+		delete g_pPortList;
+
+	if (g_pLog)
+	{
+		g_pLog->Always(L"*** WFIMON log end ***");
+		delete g_pLog;
+	}
 }
 
 //-------------------------------------------------------------------------------------
@@ -435,9 +444,6 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD dwReason, LPVOID lpvReserved)
 		break;
 
 	case DLL_PROCESS_DETACH:
-		delete g_pPortList;
-		g_pLog->Always(L"*** WFIMON log end ***");
-		delete g_pLog;
 		break;
 	}
 
