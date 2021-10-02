@@ -23,7 +23,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   <Product Id="*" Name="!(loc.ApplicationName)" Language="!(loc.Language)" Codepage="UTF-8" Version="$(var.VersionNumber)" Manufacturer="Imagicle Spa" UpgradeCode="E295AFB0-2424-4BD6-957F-B8F45A342926">
     <Package InstallerVersion="301" Compressed="yes" InstallScope="perMachine" Comments="Copyright © 2021 Lorenzo Monti" />
 
-    <MajorUpgrade DowngradeErrorMessage="!(loc.NewerInstalled)" AllowSameVersionUpgrades="yes" />
+    <MajorUpgrade DowngradeErrorMessage="!(loc.NewerInstalled)" />
     <MediaTemplate EmbedCab="yes" />
 
     <?if $(var.Platform)=x64 ?>
