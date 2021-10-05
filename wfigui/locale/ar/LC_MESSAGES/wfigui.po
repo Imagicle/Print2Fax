@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-18 11:55+0200\n"
-"PO-Revision-Date: 2021-09-16 08:05+0000\n"
+"PO-Revision-Date: 2021-10-05 10:36+0000\n"
 "Last-Translator: Luca Campo Dall'Orto <luca.campodallorto@imagicle.com>\n"
 "Language-Team: Arabic <https://weblate.imagicle.com/projects/"
 "imagicle-print-to-fax/wfigui/ar/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.8.1\n"
 
 #: frmConfig.dfm:7
 #: frmMain.dfm:6
@@ -176,7 +176,7 @@ msgstr "استخدام الملف التعريفي الافتراضي"
 
 #: frmConfig.dfm:392
 msgid "Use this profile:"
-msgstr "استخدام هذا الملف التعريفي:"
+msgstr "استخدام هذا الملف التعريفي"
 
 #: frmConfig.dfm:418
 msgid "DSN"
@@ -268,7 +268,7 @@ msgstr "النتيجة"
 
 #: frmConfirm.dfm:54
 msgid "Details:"
-msgstr "التفاصيل:"
+msgstr "التفاصيل"
 
 #: frmConfirm.dfm:70
 msgid "Ok"
@@ -280,7 +280,7 @@ msgstr ""
 
 #: frmMain.dfm:165
 msgid "Documents to send:"
-msgstr "المستندات التي يجب إرسالها:"
+msgstr "المستندات التي يجب إرسالها"
 
 #: frmMain.dfm:174
 msgid "You can append new pages, or send selected documents now."
@@ -343,16 +343,16 @@ msgstr "استخدام غلاف الفاكس"
 
 #: frmMain.dfm:630
 msgid "Subject:"
-msgstr "الموضوع:"
+msgstr "الموضوع"
 
 #: frmMain.dfm:646
 msgid "Comments:"
-msgstr "التعليقات:"
+msgstr "التعليقات"
 
 #: frmMain.dfm:654
 #: frmRecipient.dfm:34
 msgid "Recipient's name:"
-msgstr "اسم المستلم:"
+msgstr "اسم المستلم"
 
 #: frmMain.dfm:664
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:1086
@@ -412,7 +412,7 @@ msgstr "معالجة الفاكس"
 
 #: frmProgress.dfm:28
 msgid "Status:"
-msgstr "الحالة:"
+msgstr "الحالة"
 
 #: frmProgress.dfm:51
 msgid "Recipients"
@@ -432,7 +432,7 @@ msgstr "اسم المستلم"
 
 #: frmRecipient.dfm:26
 msgid "FAX number:"
-msgstr "رقم الفاكس:"
+msgstr "رقم الفاكس"
 
 #: frmSelect.dfm:4
 msgid "Select Recipients"
@@ -448,7 +448,7 @@ msgstr ""
 
 #: Main.dfm:226
 msgid "Fax sent to:"
-msgstr "فاكس مرسل إلى:"
+msgstr "فاكس مرسل إلى"
 
 #: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookCSV.cpp:60
 msgid "Unable to lock addressbook.csv!"
