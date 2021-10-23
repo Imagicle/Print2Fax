@@ -110,30 +110,30 @@ LPBYTE CPortList::CopyPortToBuffer(CPort* pPort, DWORD dwLevel, LPBYTE pStart, L
 	{
 	case 1:
 		{
-			PORT_INFO_1W* pPortInfo = (PORT_INFO_1W*)pStart;
+			PORT_INFO_1W* pPortInfo = reinterpret_cast<PORT_INFO_1W*>(pStart);
 			len = wcslen(pPort->PortName()) + 1;
 			pEnd -= len * sizeof(WCHAR);
-			wcscpy_s((LPWSTR)pEnd, len, pPort->PortName());
-			pPortInfo->pName = (LPWSTR)pEnd;
+			wcscpy_s(reinterpret_cast<LPWSTR>(pEnd), len, pPort->PortName());
+			pPortInfo->pName = reinterpret_cast<LPWSTR>(pEnd);
 			break;
 		}
 	case 2:
 		{
-			PORT_INFO_2W* pPortInfo = (PORT_INFO_2W*)pStart;
+			PORT_INFO_2W* pPortInfo = reinterpret_cast<PORT_INFO_2W*>(pStart);
 			len = wcslen(m_szMonitorName) + 1;
 			pEnd -= len * sizeof(WCHAR);
-			wcscpy_s((LPWSTR)pEnd, len, m_szMonitorName);
-			pPortInfo->pMonitorName = (LPWSTR)pEnd;
+			wcscpy_s(reinterpret_cast<LPWSTR>(pEnd), len, m_szMonitorName);
+			pPortInfo->pMonitorName = reinterpret_cast<LPWSTR>(pEnd);
 
 			len = wcslen(m_szPortDesc) + 1;
 			pEnd -= len * sizeof(WCHAR);
-			wcscpy_s((LPWSTR)pEnd, len, m_szPortDesc);
-			pPortInfo->pDescription = (LPWSTR)pEnd;
+			wcscpy_s(reinterpret_cast<LPWSTR>(pEnd), len, m_szPortDesc);
+			pPortInfo->pDescription = reinterpret_cast<LPWSTR>(pEnd);
 
 			len = wcslen(pPort->PortName()) + 1;
 			pEnd -= len * sizeof(WCHAR);
-			wcscpy_s((LPWSTR)pEnd, len, pPort->PortName());
-			pPortInfo->pPortName = (LPWSTR)pEnd;
+			wcscpy_s(reinterpret_cast<LPWSTR>(pEnd), len, pPort->PortName());
+			pPortInfo->pPortName = reinterpret_cast<LPWSTR>(pEnd);
 
 			pPortInfo->fPortType = 0;
 			pPortInfo->Reserved = 0;
@@ -143,7 +143,7 @@ LPBYTE CPortList::CopyPortToBuffer(CPort* pPort, DWORD dwLevel, LPBYTE pStart, L
 		break;
 	}
 
-    return pEnd;
+	return pEnd;
 }
 
 //-------------------------------------------------------------------------------------
@@ -225,12 +225,12 @@ void CPortList::LoadConfiguration()
 {
 #ifndef _DEBUG
 	PMONITORREG pReg = g_pMonitorInit->pMonitorReg;
-	HKEY hRoot = (HKEY)g_pMonitorInit->hckRegistryRoot;
-	DWORD nLogLevel;
+	HKEY hRoot = static_cast<HKEY>(g_pMonitorInit->hckRegistryRoot);
+	DWORD nLogLevel = LOGLEVEL_DEBUG;
 	DWORD cbData;
 
 	cbData = sizeof(nLogLevel);
-	if (pReg->fpQueryValue(hRoot, szLogLevelKey, NULL, (LPBYTE)&nLogLevel, &cbData,
+	if (pReg->fpQueryValue(hRoot, szLogLevelKey, NULL, reinterpret_cast<LPBYTE>(&nLogLevel), &cbData,
 		g_pMonitorInit->hSpooler) != ERROR_SUCCESS)
 	{
 		nLogLevel = LOGLEVEL_DEBUG;
@@ -265,8 +265,10 @@ void CPortList::SaveConfiguration()
 	//let's revert to unprivileged user
 	if (hToken)
 	{
-		SetThreadToken(NULL, hToken);
+		if (!SetThreadToken(NULL, hToken))
+			g_pLog->Error(L"CPortList::SaveConfiguration: SetThreadToken failed (%i)", GetLastError());
 		CloseHandle(hToken);
 		g_pLog->Debug(L"CPortList::SaveConfiguration: reverting to unprivileged user");
 	}
 }
+

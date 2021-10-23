@@ -43,16 +43,23 @@ CWfiLog::CWfiLog()
 
 	InitializeCriticalSection(&m_CSLog);
 
-	ResumeThread(m_hThread);
+	if (m_hThread)
+		ResumeThread(m_hThread);
 }
 //---------------------------------------------------------------------------
 
 CWfiLog::~CWfiLog()
 {
 	SetEvent(m_hStop);
-	if (WaitForSingleObject(m_hThread, 10000) != WAIT_OBJECT_0)
-		TerminateThread(m_hThread, 255);
-	CloseHandle(m_hThread);
+
+	if (m_hThread)
+	{
+		if (WaitForSingleObject(m_hThread, 10000) != WAIT_OBJECT_0)
+			TerminateThread(m_hThread, 255);
+
+		CloseHandle(m_hThread);
+	}
+
 	CloseHandle(m_hStop);
 
 	if (m_hLogFile != INVALID_HANDLE_VALUE)
@@ -257,10 +264,12 @@ void CWfiLog::Critical(LPCWSTR szFormat, ...)
 
 void CWfiLog::LogArgs(LPCWSTR szFormat, LPCWSTR szType, va_list args)
 {
-	WCHAR szMessage[MAXLOGLINE];
+	WCHAR* szMessage = new WCHAR[MAXLOGLINE];
 
-	vswprintf_s(szMessage, LENGTHOF(szMessage), szFormat, args);
+	vswprintf_s(szMessage, MAXLOGLINE, szFormat, args);
 	Log(szType, szMessage);
+
+	delete[] szMessage;
 }
 //---------------------------------------------------------------------------
 

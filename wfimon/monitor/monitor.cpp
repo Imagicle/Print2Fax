@@ -57,7 +57,7 @@ BOOL WINAPI WfiOpenPort(HANDLE hMonitor, LPWSTR pName, PHANDLE pHandle)
 	g_pLog->Debug(L"WfiOpenPort called (%s)", pName);
 
 	CPort* pPort = g_pPortList->FindPort(pName);
-	*pHandle = (HANDLE)pPort;
+	*pHandle = static_cast<HANDLE>(pPort);
 	if (!pPort)
 	{
 		g_pLog->Critical(L"WfiOpenPort: can't find port %s", pName);
@@ -83,8 +83,8 @@ BOOL WINAPI WfiStartDocPort(HANDLE hPort, LPWSTR pPrinterName, DWORD JobId,
 		return FALSE;
 	}
 
-	CPort* pPort = (CPort*)hPort;
-	DOC_INFO_1W* pdi = (DOC_INFO_1W*)pDocInfo;
+	CPort* pPort = static_cast<CPort*>(hPort);
+	DOC_INFO_1W* pdi = reinterpret_cast<DOC_INFO_1W*>(pDocInfo);
 
 	g_pLog->Debug(L"WfiStartDocPort called (%s)", pPort->PortName());
 
@@ -123,7 +123,7 @@ BOOL WINAPI WfiWritePort(HANDLE hPort, LPBYTE pBuffer,
 		return FALSE;
 	}
 
-	CPort* pPort = (CPort*)hPort;
+	CPort* pPort = static_cast<CPort*>(hPort);
 
 	g_pLog->Debug(L"WfiWritePort called (%s)", pPort->PortName());
 
@@ -182,7 +182,7 @@ BOOL WINAPI WfiEndDocPort(HANDLE hPort)
 		return FALSE;
 	}
 
-	CPort* pPort = (CPort*)hPort;
+	CPort* pPort = static_cast<CPort*>(hPort);
 
 	g_pLog->Debug(L"WfiEndDocPort called (%s)", pPort->PortName());
 
@@ -214,14 +214,14 @@ BOOL WINAPI WfiXcvOpenPort(HANDLE hMonitor, LPCWSTR pszObject,
 
 	LPXCVDATA pXCVDATA = new XCVDATA;
 
-	*phXcv = (HANDLE)pXCVDATA;
+	*phXcv = static_cast<HANDLE>(pXCVDATA);
 
 	if (pszObject)
-		pXCVDATA->pPort = g_pPortList->FindPort((LPWSTR)pszObject);
+		pXCVDATA->pPort = g_pPortList->FindPort(pszObject);
 
 	pXCVDATA->GrantedAccess = GrantedAccess;
 
-	g_pLog->Debug(L"WfiXcvOpenPort returning TRUE (%s)", (LPWSTR)pszObject);
+	g_pLog->Debug(L"WfiXcvOpenPort returning TRUE (%s)", pszObject);
 
 	return TRUE;
 }
@@ -233,7 +233,7 @@ DWORD WINAPI WfiXcvDataPort(HANDLE hXcv, LPCWSTR pszDataName, PBYTE pInputData,
 {
 	g_pLog->Debug(L"WfiXcvDataPort called (%s)", pszDataName);
 
-	LPXCVDATA pXCVDATA = (LPXCVDATA)hXcv;
+	LPXCVDATA pXCVDATA = static_cast<LPXCVDATA>(hXcv);
 
 	if (wcscmp(pszDataName, L"AddPort") == 0)
 	{
@@ -249,7 +249,7 @@ DWORD WINAPI WfiXcvDataPort(HANDLE hXcv, LPCWSTR pszDataName, PBYTE pInputData,
 	}
 	else if (wcscmp(pszDataName, L"PortExists") == 0)
 	{
-		LPWSTR szPortName = (LPWSTR)pInputData;
+		LPCWSTR szPortName = reinterpret_cast<LPCWSTR>(pInputData);
 		DWORD needed, returned;
 		if (EnumPorts(NULL, 1, NULL, 0, &needed, &returned) == 0 &&
 			GetLastError() == ERROR_INSUFFICIENT_BUFFER)
@@ -262,13 +262,13 @@ DWORD WINAPI WfiXcvDataPort(HANDLE hXcv, LPCWSTR pszDataName, PBYTE pInputData,
 			}
 			if (EnumPorts(NULL, 1, pBuf, needed, &needed, &returned))
 			{
-				PORT_INFO_1W* pPorts = (PORT_INFO_1W*)pBuf;
+				PORT_INFO_1W* pPorts = reinterpret_cast<PORT_INFO_1W*>(pBuf);
 				while (returned--)
 				{
 					if (_wcsicmp(szPortName, pPorts->pName) == 0)
 					{
 						g_pLog->Debug(L"WfiXcvDataPort: port already exists (%s)", szPortName);
-						*((BOOL*)pOutputData) = TRUE;
+						*(reinterpret_cast<BOOL*>(pOutputData)) = TRUE;
 						break;
 					}
 					pPorts++;
@@ -294,7 +294,7 @@ DWORD WINAPI WfiXcvDataPort(HANDLE hXcv, LPCWSTR pszDataName, PBYTE pInputData,
 					pXCVDATA->GrantedAccess);
 				return ERROR_ACCESS_DENIED;
 			}
-			LPPORTCONFIG ppc = (LPPORTCONFIG)pInputData;
+			LPPORTCONFIG ppc = reinterpret_cast<LPPORTCONFIG>(pInputData);
 			pXCVDATA->pPort->SetConfig(ppc);
 			g_pPortList->SaveConfiguration();
 			g_pLog->Debug(L"WfiXcvDataPort returning ERROR_SUCCESS");
@@ -345,7 +345,7 @@ DWORD WINAPI WfiXcvDataPort(HANDLE hXcv, LPCWSTR pszDataName, PBYTE pInputData,
 //-------------------------------------------------------------------------------------
 BOOL WINAPI WfiXcvClosePort(HANDLE hXcv)
 {
-	LPXCVDATA pXCVDATA = (LPXCVDATA)hXcv;
+	LPXCVDATA pXCVDATA = static_cast<LPXCVDATA>(hXcv);
 
 	g_pLog->Debug(L"WfiXcvClosePort called");
 
@@ -370,7 +370,8 @@ VOID WINAPI WfiShutdown(HANDLE hMonitor)
 
 	if (g_pLog)
 	{
-		g_pLog->Always(L"*** WFIMON log end ***");
+		g_pLog->Debug(L"WfiShutdown called");
+		g_pLog->Done(L"*** WFIMON log end ***");
 		delete g_pLog;
 	}
 }
@@ -378,9 +379,9 @@ VOID WINAPI WfiShutdown(HANDLE hMonitor)
 //-------------------------------------------------------------------------------------
 LPMONITOR2 WINAPI InitializePrintMonitor2(_In_ PMONITORINIT pMonitorInit, _Out_ PHANDLE phMonitor)
 {
-	phMonitor = NULL;
+	static MONITOR2 themon = { 0 };
 
-	static MONITOR2 themon;
+	phMonitor = NULL;
 
 	if (!pMonitorInit->bLocal)
 	{

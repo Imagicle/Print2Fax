@@ -17,12 +17,9 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-#ifndef _RESOURCE_H
-#define _RESOURCE_H
+#pragma once
 
 #define ID_TEXT							-1
 
 #define IDD_MONITORUI					100
 #define ID_CBLOGLEVEL					101
-
-#endif

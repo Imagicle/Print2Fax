@@ -35,7 +35,7 @@ private:
 
 public:
 	CPort();
-	CPort(LPCWSTR szPortName);
+	explicit CPort(LPCWSTR szPortName);
 	virtual ~CPort();
 	CPattern* GetPattern() const { return m_pPattern; }
 	void SetFilePatternString(LPCWSTR szPattern);
@@ -54,12 +54,12 @@ public:
 	LPCWSTR FilePattern() const;
 	LPWSTR PrinterName() const { return m_szPrinterName; }
 	DWORD JobId() const { return m_nJobId; }
-	LPWSTR JobTitle() const { return m_pJobInfo2 ? m_pJobInfo2->pDocument : (LPWSTR)L""; }
+	LPCWSTR JobTitle() const { return m_pJobInfo2 ? m_pJobInfo2->pDocument : (LPWSTR)L""; }
 	LPCWSTR UserName() const { return m_pJobInfo2 ? m_pJobInfo2->pUserName : (LPWSTR)L""; }
 	LPCWSTR ComputerName() const;
-	LPWSTR FileName() const { return (LPWSTR)m_szFileName; }
-	LPWSTR Path() const { return (LPWSTR)m_szParent; }
-	LPWSTR Bin() const;
+	LPCWSTR FileName() const { return (LPWSTR)m_szFileName; }
+	LPCWSTR Path() const { return (LPWSTR)m_szParent; }
+	LPCWSTR Bin() const;
 	DWORD TotalPages() const { return m_pJobInfo2 ? (m_pJobInfo2->TotalPages ? m_pJobInfo2->TotalPages : m_pJobInfo2->PagesPrinted) : 0; }
 	DWORD Priority() const { return m_pJobInfo2 ? m_pJobInfo2->Priority : DEF_PRIORITY; }
 	SYSTEMTIME& Submitted() const { return m_pJobInfo2 ? m_pJobInfo2->Submitted : m_DefSysTime; }

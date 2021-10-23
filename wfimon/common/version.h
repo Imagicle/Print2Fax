@@ -1,5 +1,5 @@
 #pragma once
 
-#define nVersion				1,6,0,505
-#define szVersion				"1, 6, 0, 505\0"
-#define szVersionShort			L"1.6.0"
+#define nVersion				1,6,1,1023
+#define szVersion				"1, 6, 1, 1023\0"
+#define szVersionShort			L"1.6.1"

@@ -27,9 +27,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 HINSTANCE g_hInstance = NULL;
 
-static LPWSTR szLogLevelNone = L"None";
-static LPWSTR szLogLevelErrors = L"Errors";
-static LPWSTR szLogLevelDebug = L"Debug";
+static LPCWSTR szLogLevelNone = L"None";
+static LPCWSTR szLogLevelErrors = L"Errors";
+static LPCWSTR szLogLevelDebug = L"Debug";
 
 //-------------------------------------------------------------------------------------
 static void UpdateCaption(HWND hDlg)
@@ -53,14 +53,14 @@ static BOOL CALLBACK MonitorUIDlgProc(HWND hDlg, UINT uMessage, WPARAM wParam, L
 	case WM_INITDIALOG:
 		UpdateCaption(hDlg);
 
-		ppc = (LPPORTCONFIG)lParam;
+		ppc = reinterpret_cast<LPPORTCONFIG>(lParam);
 		//Log Level
 		hWnd = GetDlgItem(hDlg, ID_CBLOGLEVEL);
 		if (hWnd)
 		{
-			SendMessageW(hWnd, CB_ADDSTRING, 0, (LPARAM)szLogLevelNone);
-			SendMessageW(hWnd, CB_ADDSTRING, 0, (LPARAM)szLogLevelErrors);
-			SendMessageW(hWnd, CB_ADDSTRING, 0, (LPARAM)szLogLevelDebug);
+			SendMessageW(hWnd, CB_ADDSTRING, 0, reinterpret_cast<LPARAM>(szLogLevelNone));
+			SendMessageW(hWnd, CB_ADDSTRING, 0, reinterpret_cast<LPARAM>(szLogLevelErrors));
+			SendMessageW(hWnd, CB_ADDSTRING, 0, reinterpret_cast<LPARAM>(szLogLevelDebug));
 			SendMessageW(hWnd, CB_SETCURSEL, ppc->nLogLevel, 0);
 		}
 		return TRUE;
@@ -69,15 +69,15 @@ static BOOL CALLBACK MonitorUIDlgProc(HWND hDlg, UINT uMessage, WPARAM wParam, L
 		switch (LOWORD(wParam))
 		{
 		case IDOK:
-		{
-			//Log Level
-			hWnd = GetDlgItem(hDlg, ID_CBLOGLEVEL);
-			if (hWnd)
-				ppc->nLogLevel = (int)SendMessageW(hWnd, CB_GETCURSEL, 0, 0);
+			{
+				//Log Level
+				hWnd = GetDlgItem(hDlg, ID_CBLOGLEVEL);
+				if (hWnd)
+					ppc->nLogLevel = static_cast<int>(SendMessageW(hWnd, CB_GETCURSEL, 0, 0));
 
-			EndDialog(hDlg, IDOK);
-			return TRUE;
-		}
+				EndDialog(hDlg, IDOK);
+				return TRUE;
+			}
 		case IDCANCEL:
 			EndDialog(hDlg, IDCANCEL);
 			return TRUE;
@@ -138,7 +138,7 @@ BOOL WINAPI WfiConfigurePortUI(PCWSTR pszServer, HWND hWnd, PCWSTR pszPortName)
 	DWORD cbOutputNeeded, dwStatus;
 
 	bRes = XcvDataW(printer, L"GetConfig", NULL, 0,
-		(PBYTE)&pc, sizeof(pc), &cbOutputNeeded, &dwStatus);
+		reinterpret_cast<PBYTE>(&pc), sizeof(pc), &cbOutputNeeded, &dwStatus);
 	if (!bRes || dwStatus != ERROR_SUCCESS)
 	{
 		SetLastError(dwStatus);
@@ -147,7 +147,7 @@ BOOL WINAPI WfiConfigurePortUI(PCWSTR pszServer, HWND hWnd, PCWSTR pszPortName)
 
 	//chiediamo la configurazione al nostro utente
 	if (DialogBoxParamW(g_hInstance, MAKEINTRESOURCE(IDD_MONITORUI),
-		hWnd, (DLGPROC)MonitorUIDlgProc, (LPARAM)&pc) == IDCANCEL)
+		hWnd, reinterpret_cast<DLGPROC>(MonitorUIDlgProc), reinterpret_cast<LPARAM>(&pc)) == IDCANCEL)
 	{
 		SetLastError(ERROR_CANCELLED);
 		return FALSE;
@@ -202,7 +202,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD dwReason, LPVOID lpvReserved)
 			g_hInstance = hinstDLL;
 // see here http://msdn.microsoft.com/en-us/library/ms682659%28v=vs.85%29.aspx
 // why the following call should not be done
-//			DisableThreadLibraryCalls((HMODULE)hinstDLL);
+//			DisableThreadLibraryCalls(hinstDLL);
 			break;
 		}
 	case DLL_PROCESS_DETACH:

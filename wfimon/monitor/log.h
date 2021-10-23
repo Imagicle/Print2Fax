@@ -44,6 +44,7 @@ protected:
 public:
 	void SetLogLevel(DWORD nLevel);
 	DWORD GetLogLevel() const { return m_nLogLevel; }
+
 	void Always(LPCWSTR szFormat, ...);
 	void Debug(LPCWSTR szFormat, ...);
 	void Info(LPCWSTR szFormat, ...);

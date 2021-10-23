@@ -364,7 +364,7 @@ void CPort::StartExe(LPCWSTR szExeName, LPCWSTR szWorkingDir, LPWSTR szCmdLine,
 		ZeroMemory(&pi, sizeof(pi));
 
 		si.cb = sizeof(si);
-		si.lpDesktop = L"winsta0\\default";
+		si.lpDesktop = _wcsdup(L"winsta0\\default");
 		si.dwFlags |= STARTF_USESHOWWINDOW;
 		si.wShowWindow = SW_SHOWNORMAL;
 
@@ -430,6 +430,9 @@ void CPort::StartExe(LPCWSTR szExeName, LPCWSTR szWorkingDir, LPWSTR szCmdLine,
 		}
 		else
 			g_pLog->Critical(L"CPort::StartExe: %s failed: 0x%0.8X", (htok ? L"CreateProcessAsUserW" : L"CreateProcessW"), GetLastError());
+
+		if (si.lpDesktop)
+			free(si.lpDesktop);
 
 		//distruzione environment
 		if (lpEnv)
@@ -850,7 +853,7 @@ BOOL CPort::EndJob()
 		0,
 		NULL);
 
-	LPWSTR szTitle = JobTitle();
+	LPCWSTR szTitle = JobTitle();
 
 	if (hPipe != INVALID_HANDLE_VALUE)
 	{
@@ -984,7 +987,7 @@ LPCWSTR CPort::ComputerName() const
 }
 
 //-------------------------------------------------------------------------------------
-LPWSTR CPort::Bin() const
+LPCWSTR CPort::Bin() const
 {
 	static WCHAR szBinName[16];
 

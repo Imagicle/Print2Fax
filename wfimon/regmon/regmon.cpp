@@ -50,7 +50,7 @@ static BOOL ListRegisteredMonitors()
 	DWORD pcbNeeded = 0;
 	DWORD pcReturned = 0;
 
-	EnumMonitors(NULL, 2, (LPBYTE)NULL, 0, &pcbNeeded, &pcReturned);
+	EnumMonitors(NULL, 2, NULL, 0, &pcbNeeded, &pcReturned);
 	if (GetLastError() != ERROR_INSUFFICIENT_BUFFER)
 	{
 		//_tprintf(_T("%s\n"), "ERROR_INSUFFICIENT_BUFFER");
@@ -70,19 +70,18 @@ static BOOL ListRegisteredMonitors()
 		DWORD dwErr = GetLastError();
 		delete[] pPorts;
 		SetLastError(dwErr);
-		//_tprintf(_T("%s\n"), "Could not get monitors.");
 		return FALSE;
 	}
 
 	MONITOR_INFO_2 *pinfo = reinterpret_cast<MONITOR_INFO_2*>(pPorts);
 
-	for (DWORD i = 0; i < pcReturned; i++, pinfo++)
+	for (; pcReturned-- > 0; pinfo++)
 	{
 		_tprintf(_T("%s\n"), pinfo->pName);
 	}
 
 	delete[] pPorts;
-	
+
 	return TRUE;
 }
 
