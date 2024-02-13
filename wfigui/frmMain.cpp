@@ -1119,7 +1119,7 @@ void __fastcall TMainForm::actSendExecute(TObject *Sender)
 					if (chkFaxcover->Checked) {
 						//TODO: gestire nome attuale della cover
 						pFax->UseCover = true;
-						pFax->CoverPageName = L"BusinessCover";
+						pFax->CoverPageName = L"<default>";
 					}
 
 					pFax->Subject = edtSubject->Text;
