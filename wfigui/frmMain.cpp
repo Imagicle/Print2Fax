@@ -120,6 +120,12 @@ __fastcall TMainForm::TMainForm(TComponent *Owner)
 	}
 
 	SetErrorMode(oldMode | SEM_NOGPFAULTERRORBOX);
+
+	FCoverPagesTransport = new TTransportStoneFax();
+	FCoverPagesTransport->SetServer(Config->Server, Config->UseSSL, Config->SkipCertificateCheck);
+	FCoverPagesTransport->SetUsername(Config->Username);
+	FCoverPagesTransport->SetPassword(Config->Password);
+	FCoverPagesTransport->OnCoverPages(this);
 }
 //---------------------------------------------------------------------------
 
@@ -464,7 +470,6 @@ void __fastcall TMainForm::FormCreate(TObject *Sender)
 	TConfig *Config = TConfig::GetInstance();
 
 	edtNotificationEmail->Text = Config->NotificationEmail;
-	chkFaxcover->Checked = true;
 
 	//got parameters from the command line?
 	if ((n = ParamCount()) > 0) {
@@ -507,6 +512,8 @@ void __fastcall TMainForm::FormCreate(TObject *Sender)
 	}
 
 	DragAcceptFiles(Handle, TRUE);
+
+    DownloadCoverPages();
 }
 //---------------------------------------------------------------------------
 
@@ -1116,10 +1123,10 @@ void __fastcall TMainForm::actSendExecute(TObject *Sender)
                         needsNumbers = false;
 					}
 
-					if (chkFaxcover->Checked) {
+					if (cbCoverPages->ItemIndex > 0) {
 						//TODO: gestire nome attuale della cover
 						pFax->UseCover = true;
-						pFax->CoverPageName = L"<default>";
+						pFax->CoverPageName = cbCoverPages->Text;
 					}
 
 					pFax->Subject = edtSubject->Text;
@@ -1228,6 +1235,47 @@ void __fastcall TMainForm::lblLinkLinkClick(TObject *Sender, const UnicodeString
 void __fastcall TMainForm::actHelpExecute(TObject *Sender)
 {
 	ShellExecuteW(Handle, L"open", L"https://www.imagicle.com/knowledgebase", NULL, NULL, SW_SHOW);
+}
+//---------------------------------------------------------------------------
+
+void TMainForm::DownloadCoverPages()
+{
+	TThread *task = TThread::CreateAnonymousThread([&]() {
+        FCoverPagesTransport->GetCoverPages(&FCoverPages);
+	});
+
+	task->Start();
+}
+
+void TMainForm::StartDownloadCoverPages()
+{
+	FCoverPages.clear();
+	cbCoverPages->Clear();
+	cbCoverPages->Items->Add(_(L"<none>"));
+}
+//---------------------------------------------------------------------------
+
+void TMainForm::EndDownloadCoverPages()
+{
+	CoverPages::const_iterator it;
+	int nIdx = -1, i = 1;
+
+	for (it = FCoverPages.begin(); it != FCoverPages.end(); it++, i++) {
+		cbCoverPages->Items->Add(it->name);
+		if (it->isDefault)
+			nIdx = i;
+	}
+
+	if (nIdx >= 0)
+		cbCoverPages->ItemIndex = nIdx;
+	else
+        cbCoverPages->ItemIndex = 0;
+}
+//---------------------------------------------------------------------------
+
+void TMainForm::ErrorDownloadCoverPages()
+{
+
 }
 //---------------------------------------------------------------------------
 

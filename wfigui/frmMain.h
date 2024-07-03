@@ -60,7 +60,7 @@ public:
 };
 //---------------------------------------------------------------------------
 
-class TMainForm : public TForm, public ITransportNotify
+class TMainForm : public TForm, public ITransportNotify, public ITransportCoverPages
 {
 __published:	// IDE-managed Components
 	TPanel *Panel1;
@@ -106,7 +106,6 @@ __published:	// IDE-managed Components
 	TBitBtn *btnDown;
 	TLabel *Label7;
 	TTabSheet *tsFaxcover;
-	TCheckBox *chkFaxcover;
 	TEdit *edtSubject;
 	TStaticText *StaticText1;
 	TMemo *memComments;
@@ -116,6 +115,8 @@ __published:	// IDE-managed Components
 	TLinkLabel *lblLink;
 	TButton *Button1;
 	TAction *actHelp;
+	TComboBox *cbCoverPages;
+	TStaticText *StaticText4;
 	void __fastcall FormCreate(TObject *Sender);
 	void __fastcall cbABNamesChange(TObject *Sender);
 	void __fastcall actionsUpdate(TBasicAction *Action, bool &Handled);
@@ -156,6 +157,8 @@ private:	// User declarations
 	UnicodeString SelectFromAB;
 	TPoint DragPoint;
 	UnicodeString FFileBeingSent;
+	ITransport *FCoverPagesTransport;
+    CoverPages FCoverPages;
 	bool FSending, FSettingNumberEdit, FSuccess;
 	bool FHasNumber, FHasManyNumbers;
 	bool FImmediateSend, FAutoClose;
@@ -180,6 +183,7 @@ private:	// User declarations
 		const UnicodeString &FileName, DWORD Pages, bool FromSpooler = false);
 	void MoveWindowAway();
 	void MoveWindowToCorner();
+    void DownloadCoverPages();
 	MESSAGE void __fastcall HandleWMAddFax(TMessage &Message);
 	MESSAGE void __fastcall HandleWMImmediateSend(TMessage &Message);
 	MESSAGE void __fastcall HandleWMDropFiles(TWMDropFiles &Message);
@@ -196,6 +200,11 @@ public:		// User declarations
 
 public: // ITransportNotify
 	virtual void TransportNotify(TTransportEvent aEvent, TFax *pFax, bool result, Exception *pError);
+
+public: // ITransportCoverPages
+	virtual void StartDownloadCoverPages();
+	virtual void EndDownloadCoverPages();
+	virtual void ErrorDownloadCoverPages();
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TMainForm *MainForm;

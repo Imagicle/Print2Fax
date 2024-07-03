@@ -130,11 +130,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <Shortcut Id="WFIGUILNK" Advertise="yes" Directory="LinksDir" Name="Imagicle print2fax GUI" WorkingDirectory="BINDIR" />
         <RemoveFolder Id="CLN_LinksDir" Directory="LinksDir" On="uninstall"/>
       </Component>
-      <Component Id="CMP_icudt68_dll" Guid="{6B9B2A4A-9083-4E6C-BB08-7C02CB84A327}" Win64="no">
-        <File Id="ICUDT68DLL" Source="..\..\..\wfigui\Release\icudt68.dll" KeyPath="yes" />
+      <Component Id="CMP_icudt75_dll" Guid="{E3E7ADE8-47DE-4777-9BE7-2A430C61EF9E}" Win64="no">
+        <File Id="ICUDT75DLL" Source="..\..\..\wfigui\Release\icudt75.dll" KeyPath="yes" />
       </Component>
-      <Component Id="CMP_icuuc68_dll" Guid="{48ADF1FA-C477-460D-B64E-9AE6D7B94663}" Win64="no">
-        <File Id="ICUUC68DLL" Source="..\..\..\wfigui\Release\icuuc68.dll" KeyPath="yes" />
+      <Component Id="CMP_icuuc75_dll" Guid="{ABECA0A4-5C0C-48FE-9BEA-42C6A998E2DA}" Win64="no">
+        <File Id="ICUUC75DLL" Source="..\..\..\wfigui\Release\icuuc75.dll" KeyPath="yes" />
       </Component>
       <Component Id="CMP_libmagic_dll" Guid="{AC22265F-23F1-4915-82CF-C47E67DF81BA}" Win64="no">
         <File Id="LIBMAGICDLL" Source="..\..\..\wfigui\Release\libmagic.dll" KeyPath="yes" />

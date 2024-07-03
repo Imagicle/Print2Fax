@@ -12,7 +12,6 @@ object MainForm: TMainForm
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   Position = poDesigned
   ShowHint = True
   OnActivate = FormActivate
@@ -20,7 +19,6 @@ object MainForm: TMainForm
   OnConstrainedResize = FormConstrainedResize
   OnCreate = FormCreate
   OnResize = FormResize
-  PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
     Left = 0
@@ -599,24 +597,12 @@ object MainForm: TMainForm
       object tsFaxcover: TTabSheet
         Caption = 'Fax cover'
         ImageIndex = 2
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 0
-        ExplicitHeight = 0
         DesignSize = (
           520
           187)
-        object chkFaxcover: TCheckBox
-          Left = 3
-          Top = 3
-          Width = 111
-          Height = 17
-          Caption = 'Use fax cover'
-          TabOrder = 0
-        end
         object edtSubject: TEdit
           Left = 120
-          Top = 53
+          Top = 30
           Width = 391
           Height = 21
           Anchors = [akLeft, akTop, akRight]
@@ -624,44 +610,61 @@ object MainForm: TMainForm
         end
         object StaticText1: TStaticText
           Left = 3
-          Top = 57
+          Top = 32
           Width = 44
           Height = 17
           Caption = 'Subject:'
-          TabOrder = 1
+          TabOrder = 0
         end
         object memComments: TMemo
           Left = 120
-          Top = 80
+          Top = 84
           Width = 391
           Height = 100
           Anchors = [akLeft, akTop, akRight, akBottom]
-          TabOrder = 6
+          TabOrder = 7
         end
         object StaticText2: TStaticText
           Left = 3
-          Top = 82
+          Top = 84
           Width = 58
           Height = 17
           Caption = 'Comments:'
-          TabOrder = 2
+          TabOrder = 1
         end
         object StaticText3: TStaticText
           Left = 3
-          Top = 30
+          Top = 5
           Width = 88
           Height = 17
           Caption = 'Recipient'#39's name:'
-          TabOrder = 3
+          TabOrder = 2
         end
         object edtRecipientName: TEdit
           Left = 120
-          Top = 26
+          Top = 3
           Width = 391
           Height = 21
           Anchors = [akLeft, akTop, akRight]
           TabOrder = 4
           Text = '<from address book>'
+        end
+        object cbCoverPages: TComboBox
+          Left = 120
+          Top = 57
+          Width = 391
+          Height = 21
+          Style = csDropDownList
+          Anchors = [akLeft, akTop, akRight]
+          TabOrder = 6
+        end
+        object StaticText4: TStaticText
+          Left = 3
+          Top = 59
+          Width = 37
+          Height = 17
+          Caption = 'Cover:'
+          TabOrder = 3
         end
       end
     end

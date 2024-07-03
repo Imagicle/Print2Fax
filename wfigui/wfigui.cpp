@@ -39,7 +39,7 @@ USEFORM("frmConfig.cpp", ConfigForm);
 //---------------------------------------------------------------------------
 #pragma link "gnugettext.lib"
 #pragma link "odbc32.lib"
-#pragma link "icuuc.lib"
+#pragma link "icuuc75.lib"
 #pragma link "quick.lib"
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)

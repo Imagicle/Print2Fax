@@ -62,6 +62,39 @@ void TFaxesOutboundPOSTResponse::Deserialize(const JsonValue *val)
 }
 //---------------------------------------------------------------------------
 
+void TCoverPagesGETResponse::Deserialize(const JsonValue *val)
+{
+	assert(val);
+    assert(FCoverPages);
+	const JsonValue *arr[] = {
+		JsonPointer(L"/group").Get(*val),
+		JsonPointer(L"/personal").Get(*val),
+	};
+	bool bPersonal = false;
+
+	for (int i = 0; i < 2; i++, bPersonal = true) {
+		const JsonValue *pElement = arr[i];
+
+		if (pElement && pElement->IsArray()) {
+			JsonValue::ConstValueIterator it;
+
+			for (it = pElement->Begin(); it != pElement->End(); it++) {
+				const JsonValue &cover = *it;
+
+				if (cover.IsObject()) {
+					const JsonValue *def = JsonPointer(L"/isDefault").Get(cover);
+					const JsonValue *name = JsonPointer(L"/name").Get(cover);
+
+					if (def && def->IsBool() && name && name->IsString()) {
+						FCoverPages->push_back({bPersonal, def->GetBool(), name->GetString()});
+                    }
+				}
+			}
+		}
+	}
+}
+//---------------------------------------------------------------------------
+
 void EStoneFaxError::Deserialize(const JsonValue *val)
 {
 	assert(val);
@@ -137,6 +170,8 @@ void TTransportStoneFax::DeserializeResponse(CURL *curl, IJsonSerializable *resp
 	if (aCode == 401) {
 		throw EUnauthorizedError();
 	}
+
+	LOG_DEBUG2(L"TTransportStoneFax::DeserializeResponse: code=%d body=%s", aCode, resp.c_str());
 
 	if (aContentType.CompareIC(L"application/json") != 0) {
 		if (aCode >= 400 && aCode <= 499) {
@@ -219,6 +254,30 @@ void TTransportStoneFax::freefunc(void *arg)
 void TTransportStoneFax::Enqueue(TFax *pFax)
 {
 	FFaxes.push_back(pFax);
+}
+//---------------------------------------------------------------------------
+
+void TTransportStoneFax::SetupCurl(CURL *curl, const AnsiString& endpoint)
+{
+	AnsiString aURL;
+	aURL.printf("%s://%ls%s", (FUseSSL ? "https" : "http"), FServer.c_str(), endpoint.c_str());
+	curl_easy_setopt(curl, CURLOPT_URL, aURL.c_str());
+
+	LOG_INFO1(L"TTransportStoneFax::SetupCurl: endpoint is %s", aURL);
+
+	if (FUseSSL && FSkipCertificateCheck) {
+		curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0);
+		curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0);
+	}
+
+	curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1);
+	curl_easy_setopt(curl, CURLOPT_POSTREDIR, CURL_REDIR_POST_ALL);
+	curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT, 10);
+
+	curl_easy_setopt(curl, CURLOPT_XFERINFOFUNCTION, progress_callback);
+	curl_easy_setopt(curl, CURLOPT_XFERINFODATA, this);
+
+	curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
 }
 //---------------------------------------------------------------------------
 
@@ -316,25 +375,7 @@ void TTransportStoneFax::Send(TFax *pFax)
 
 			curl_easy_setopt(curl, CURLOPT_MIMEPOST, form);
 
-			AnsiString aURL;
-			aURL.printf("%s://%ls/fw/Apps/StoneFax/WebAPI/Faxes/Outbound", (FUseSSL ? "https" : "http"), FServer.c_str());
-			curl_easy_setopt(curl, CURLOPT_URL, aURL.c_str());
-
-			LOG_INFO1(L"TTransportStoneFax::Send: endpoint is %s", aURL);
-
-			if (FUseSSL && FSkipCertificateCheck) {
-				curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0);
-				curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0);
-			}
-
-			curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1);
-			curl_easy_setopt(curl, CURLOPT_POSTREDIR, CURL_REDIR_POST_ALL);
-			curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT, 10);
-
-			curl_easy_setopt(curl, CURLOPT_XFERINFOFUNCTION, progress_callback);
-			curl_easy_setopt(curl, CURLOPT_XFERINFODATA, this);
-
-			curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+			SetupCurl(curl, "/fw/Apps/StoneFax/WebAPI/Faxes/Outbound");
 
 			LOG_INFO0(L"TTransportStoneFax::Send: sending fax");
 			NotifyAll(teFaxSendBegin, pFax, true, NULL);
@@ -415,6 +456,87 @@ void TTransportStoneFax::SendAllAsync()
 	});
 
 	task->Start();
+}
+//---------------------------------------------------------------------------
+
+void TTransportStoneFax::GetCoverPages(CoverPages *pCoverPages)
+{
+	try {
+		CURL *curl = NULL;
+
+		try {
+			if ((curl = curl_easy_init()) == NULL)
+				throw ECurlException(_(L"Call to curl_easy_init failed"));
+
+			SetupCurl(curl, "/fw/Apps/StoneFax/WebAPI/CoverPages");
+
+			LOG_INFO0(L"TTransportStoneFax::GetCoverPages: sending request");
+			if (FCoverPagesTarget) {
+				TThread::Synchronize(TThread::Current, [&]() {
+					try {
+						FCoverPagesTarget->StartDownloadCoverPages();
+					}
+					catch (...) {
+					}
+				});
+			}
+
+			TCoverPagesGETResponse response(pCoverPages);
+
+LRetry:
+			curl_easy_setopt(curl, CURLOPT_USERNAME, AnsiString(FUsername).c_str());
+			curl_easy_setopt(curl, CURLOPT_PASSWORD, AnsiString(FPassword).c_str());
+			try {
+				DeserializeResponse(curl, &response);
+			}
+			catch (EUnauthorizedError &e) {
+				bool bRetry = false;
+
+				if (FUnauthorizedTarget) {
+					TThread::Synchronize(TThread::Current, [&]() {
+						try {
+							bRetry = FUnauthorizedTarget->HandleUnauthorized();
+						}
+						catch (...) {
+							//TODO: loggare errori?
+						}
+					});
+				}
+
+				if (bRetry) {
+					goto LRetry;
+				}
+
+				throw;
+			}
+
+			LOG_DONE0(L"TTransportStoneFax::GetCoverPages: cover pages received");
+			if (FCoverPagesTarget) {
+				TThread::Synchronize(TThread::Current, [&]() {
+					try {
+						FCoverPagesTarget->EndDownloadCoverPages();
+					}
+					catch (...) {
+					}
+				});
+			}
+		}
+		__finally {
+			if (curl) curl_easy_cleanup(curl);
+		}
+	}
+	catch (Exception &e) {
+		LOG_ERROR2(L"TTransportStoneFax::GetCoverPages: %s error: %s", e.ClassName(), e.Message);
+		if (FCoverPagesTarget) {
+			TThread::Synchronize(TThread::Current, [&]() {
+				try {
+					FCoverPagesTarget->ErrorDownloadCoverPages();
+				}
+				catch (...) {
+				}
+			});
+		}
+	}
 }
 //---------------------------------------------------------------------------
 

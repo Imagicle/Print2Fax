@@ -56,6 +56,28 @@ public:
 };
 //---------------------------------------------------------------------------
 
+class TCoverPagesGETResponse : public IJsonSerializable
+{
+private:
+	CoverPages *FCoverPages;
+	bool bOwnsCoverPages;
+public:
+	TCoverPagesGETResponse(CoverPages *pCoverPages = NULL)
+	{
+		if (pCoverPages) {
+			FCoverPages = pCoverPages;
+			bOwnsCoverPages = false;
+		} else {
+			FCoverPages = new CoverPages();
+			bOwnsCoverPages = true;
+        }
+	}
+	const CoverPages * GetCoverPages() const { return FCoverPages; }
+	virtual ~TCoverPagesGETResponse() { if (bOwnsCoverPages) delete FCoverPages; }
+	virtual void Deserialize(const JsonValue *val);
+};
+//---------------------------------------------------------------------------
+
 class TTransportStoneFax : public TTransport
 {
 private:
@@ -74,6 +96,7 @@ private:
 	void DeserializeResponse(CURL *curl, IJsonSerializable *response);
 	void ResetCurlCountdown();
 	bool CurlCountdownExpired();
+    void SetupCurl(CURL *curl, const AnsiString& endpoint);
 
 public:
 	TTransportStoneFax();
@@ -81,6 +104,7 @@ public:
 
 	virtual void Enqueue(TFax *pFax);
 	virtual void SendAllAsync();
+	virtual void GetCoverPages(CoverPages *pCoverPages);
 };
 //---------------------------------------------------------------------------
 #endif

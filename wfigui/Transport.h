@@ -60,13 +60,38 @@ public:
 };
 //---------------------------------------------------------------------------
 
+class ITransportCoverPages
+{
+public:
+	virtual void StartDownloadCoverPages() = 0;
+	virtual void EndDownloadCoverPages() = 0;
+    virtual void ErrorDownloadCoverPages() = 0;
+};
+//---------------------------------------------------------------------------
+
+struct CoverPage
+{
+	bool personal;
+	bool isDefault;
+	UnicodeString name;
+	CoverPage(bool _personal, bool _isDefault, const UnicodeString& _name)
+	{
+        personal = _personal;
+		isDefault = _isDefault;
+		name = _name;
+	}
+};
+
+typedef std::vector<CoverPage> CoverPages;
+//---------------------------------------------------------------------------
+
 class ITransport
 {
 public:
 	virtual ~ITransport() {}
-	virtual void Subscribe(ITransportNotify *pNotify) = 0;
-	virtual void Unsubscribe(ITransportNotify *pNotify) = 0;
-	virtual void OnUnauthorized(ITransportUnauthorized *pUnauthorized) = 0;
+	virtual void Subscribe(ITransportNotify *pTarget) = 0;
+	virtual void Unsubscribe(ITransportNotify *pTarget) = 0;
+	virtual void OnUnauthorized(ITransportUnauthorized *pTarget) = 0;
 	virtual void SetServer(const UnicodeString &aServer, bool aUseSSL, bool aSkipCertificateCheck) = 0;
 	virtual void SetUsername(const UnicodeString &aUsername) = 0;
 	virtual void SetPassword(const UnicodeString &aPassword) = 0;
@@ -74,6 +99,8 @@ public:
 	virtual void Enqueue(TFax *pFax) = 0;
 	virtual void SendAllAsync() = 0;
 	virtual void Cancel() = 0;
+	virtual void GetCoverPages(CoverPages *pCoverPages) = 0;
+	virtual void OnCoverPages(ITransportCoverPages *pTarget) = 0;
 };
 //---------------------------------------------------------------------------
 
@@ -84,7 +111,8 @@ protected:
 	UnicodeString FServer, FUsername, FPassword;
 	bool FUseSSL, FSkipCertificateCheck;
 	std::vector<ITransportNotify *> FNotifyTargets;
-    ITransportUnauthorized *FUnauthorizedTarget;
+	ITransportUnauthorized *FUnauthorizedTarget;
+	ITransportCoverPages *FCoverPagesTarget;
 	bool FCancelled;
 	virtual void NotifyAll(TTransportEvent aEvent, TFax *pFax, bool result, Exception *pError);
 
@@ -95,17 +123,19 @@ public:
 		FProcessor(NULL),
 		FUseSSL(true),
 		FSkipCertificateCheck(false),
-		FUnauthorizedTarget(NULL)
+		FUnauthorizedTarget(NULL),
+        FCoverPagesTarget(NULL)
 	{}
-	virtual void Subscribe(ITransportNotify *pNotify) { FNotifyTargets.push_back(pNotify); }
-	virtual void Unsubscribe(ITransportNotify *pNotify) { FNotifyTargets.erase(std::remove(FNotifyTargets.begin(), FNotifyTargets.end(), pNotify), FNotifyTargets.end()); }
-	virtual void OnUnauthorized(ITransportUnauthorized *pUnauthorized) { FUnauthorizedTarget = pUnauthorized; }
+	virtual void Subscribe(ITransportNotify *pTarget) { FNotifyTargets.push_back(pTarget); }
+	virtual void Unsubscribe(ITransportNotify *pTarget) { FNotifyTargets.erase(std::remove(FNotifyTargets.begin(), FNotifyTargets.end(), pTarget), FNotifyTargets.end()); }
+	virtual void OnUnauthorized(ITransportUnauthorized *pTarget) { FUnauthorizedTarget = pTarget; }
 	virtual void SetServer(const UnicodeString &aServer, bool aUseSSL, bool aSkipCertificateCheck) { FServer = aServer; FUseSSL = aUseSSL; FSkipCertificateCheck = aSkipCertificateCheck; }
 	virtual void SetUsername(const UnicodeString &aUsername) { FUsername = aUsername; }
 	virtual void SetPassword(const UnicodeString &aPassword) { FPassword = aPassword; }
 	virtual void SetProcessor(IProcessor *pProcessor) { FProcessor = pProcessor; }
 	virtual void Cancel() { FCancelled = true; }
-    __property bool Cancelled = { read = FCancelled, write = FCancelled };
+	virtual void OnCoverPages(ITransportCoverPages *pTarget) { FCoverPagesTarget = pTarget; }
+	__property bool Cancelled = { read = FCancelled, write = FCancelled };
 };
 //---------------------------------------------------------------------------
 #endif

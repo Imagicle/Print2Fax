@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-18 11:55+0200\n"
+"POT-Creation-Date: 2024-06-26 18:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 #. ConfigForm..Caption
 #. MainForm..Caption
 #. MainForm..Panel1..Label4..Caption
-#: frmConfig.dfm:7 frmMain.dfm:6 frmMain.dfm:105
+#: frmConfig.dfm:7 frmMain.dfm:6 frmMain.dfm:103
 msgid "Imagicle print2fax"
 msgstr ""
 
@@ -36,13 +36,9 @@ msgstr ""
 #. FormProgress..Font.Name
 #. RecipientName..Font.Name
 #. SelectRcpt..Font.Name
-#. FormNotify..Font.Name
-#. FormNotify..Label1..Font.Name
-#. FormNotify..lblNumber..Font.Name
 #: frmConfig.dfm:14 frmConfig.dfm:114 frmConfig.dfm:129 frmConfirm.dfm:11
-#: frmConfirm.dfm:45 frmMain.dfm:13 frmMain.dfm:109 frmMain.dfm:124
-#: frmMain.dfm:178 frmProgress.dfm:12 frmRecipient.dfm:12 frmSelect.dfm:11
-#: Main.dfm:12 Main.dfm:230 Main.dfm:243
+#: frmConfirm.dfm:45 frmMain.dfm:13 frmMain.dfm:107 frmMain.dfm:122
+#: frmMain.dfm:176 frmProgress.dfm:12 frmRecipient.dfm:12 frmSelect.dfm:11
 msgid "Tahoma"
 msgstr ""
 
@@ -53,7 +49,7 @@ msgstr ""
 
 #. ConfigForm..Panel1..lblVersion..Caption
 #. MainForm..Panel1..lblVersion..Caption
-#: frmConfig.dfm:125 frmMain.dfm:120
+#: frmConfig.dfm:125 frmMain.dfm:118
 msgid "rel. X.X.X"
 msgstr ""
 
@@ -102,7 +98,7 @@ msgstr ""
 
 #. ConfigForm..tabs..tsServer..edtNotificationEmail..Hint
 #. MainForm..Panel2..PageControl1..tsFax..edtNotificationEmail..Hint
-#: frmConfig.dfm:224 frmMain.dfm:566
+#: frmConfig.dfm:224 frmMain.dfm:564
 msgid "Events will be notified to this email address."
 msgstr ""
 
@@ -160,8 +156,7 @@ msgid "Browse..."
 msgstr ""
 
 #. ConfigForm..tabs..tsAddrBook..gbAddressBook..btnBrowse..Caption
-#. FormNotify..lblNumber..Caption
-#: frmConfig.dfm:336 Main.dfm:239
+#: frmConfig.dfm:336
 msgid "..."
 msgstr ""
 
@@ -324,159 +319,159 @@ msgid "Ok"
 msgstr ""
 
 #. MainForm..Panel1..lblLink....Caption
-#: frmMain.dfm:136
+#: frmMain.dfm:134
 msgid "<a href=\"https://www.imagicle.com/\">https://www.imagicle.com/</a>"
 msgstr ""
 
 #. MainForm..Panel2..Panel4..Label5..Caption
-#: frmMain.dfm:165
+#: frmMain.dfm:163
 msgid "Documents to send:"
 msgstr ""
 
 #. MainForm..Panel2..Panel4..Label7..Caption
-#: frmMain.dfm:174
+#: frmMain.dfm:172
 msgid "You can append new pages, or send selected documents now."
 msgstr ""
 
 #. MainForm..Panel2..Panel4..lbDocuments....Hint
-#: frmMain.dfm:192
+#: frmMain.dfm:190
 msgid "Drag documents or use arrows to sort. Right click for popup menu."
 msgstr ""
 
 #. MainForm..Panel2..Panel4..btnUp..Caption
 #. MainForm..actions..actUp..Caption
-#: frmMain.dfm:212 frmMain.dfm:720
+#: frmMain.dfm:210 frmMain.dfm:723
 msgid "Up"
 msgstr ""
 
 #. MainForm..Panel2..Panel4..btnDown..Caption
 #. MainForm..actions..actDown..Caption
-#: frmMain.dfm:354 frmMain.dfm:724
+#: frmMain.dfm:352 frmMain.dfm:727
 msgid "Down"
 msgstr ""
 
 #. MainForm..Panel2..PageControl1..tsFax..Caption
-#: frmMain.dfm:500
+#: frmMain.dfm:498
 msgid "Fax"
 msgstr ""
 
 #. MainForm..Panel2..PageControl1..tsFax..Label1..Caption
-#: frmMain.dfm:510
+#: frmMain.dfm:508
 msgid "FAX numbers"
 msgstr ""
 
 #. MainForm..Panel2..PageControl1..tsFax..Label3..Caption
-#: frmMain.dfm:518
+#: frmMain.dfm:516
 msgid "Notify E-Mail"
 msgstr ""
 
 #. MainForm..Panel2..PageControl1..tsFax..rbSendTogether..Caption
-#: frmMain.dfm:525
+#: frmMain.dfm:523
 msgid "Send as a single fax"
 msgstr ""
 
 #. MainForm..Panel2..PageControl1..tsFax..rbSendIndividually..Caption
-#: frmMain.dfm:536
+#: frmMain.dfm:534
 msgid "Send individually"
 msgstr ""
 
 #. MainForm..Panel2..PageControl1..tsFax..edtFAXNumber..Hint
-#: frmMain.dfm:545
+#: frmMain.dfm:543
 msgid "Enter multiple recipients separated by semicolons."
 msgstr ""
 
 #. MainForm..Panel2..PageControl1..tsFax..cbABNames..Text
-#: frmMain.dfm:558 /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:84
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:433
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:690
+#: frmMain.dfm:556 /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:84
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:439
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:697
 msgid "Select from address book"
 msgstr ""
 
 #. MainForm..Panel2..PageControl1..tsFaxcover..Caption
-#: frmMain.dfm:600
+#: frmMain.dfm:598
 msgid "Fax cover"
 msgstr ""
 
-#. MainForm..Panel2..PageControl1..tsFaxcover..chkFaxcover..Caption
-#: frmMain.dfm:614
-msgid "Use fax cover"
-msgstr ""
-
 #. MainForm..Panel2..PageControl1..tsFaxcover..StaticText1..Caption
-#: frmMain.dfm:630
+#: frmMain.dfm:616
 msgid "Subject:"
 msgstr ""
 
 #. MainForm..Panel2..PageControl1..tsFaxcover..StaticText2..Caption
-#: frmMain.dfm:646
+#: frmMain.dfm:632
 msgid "Comments:"
 msgstr ""
 
 #. MainForm..Panel2..PageControl1..tsFaxcover..StaticText3..Caption
 #. RecipientName..Label2..Caption
-#: frmMain.dfm:654 frmRecipient.dfm:34
+#: frmMain.dfm:640 frmRecipient.dfm:34
 msgid "Recipient's name:"
 msgstr ""
 
 #. MainForm..Panel2..PageControl1..tsFaxcover..edtRecipientName..Text
-#: frmMain.dfm:664 /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:1086
+#: frmMain.dfm:650 /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:1093
 msgid "<from address book>"
 msgstr ""
 
+#. MainForm..Panel2..PageControl1..tsFaxcover..StaticText4..Caption
+#: frmMain.dfm:666
+msgid "Cover:"
+msgstr ""
+
 #. MainForm..actions..actSend..Caption
-#: frmMain.dfm:716
+#: frmMain.dfm:719
 msgid "Send"
 msgstr ""
 
 #. MainForm..actions..actSave..Caption
-#: frmMain.dfm:728
+#: frmMain.dfm:731
 msgid "Save Number"
 msgstr ""
 
 #. MainForm..actions..actDelete..Caption
-#: frmMain.dfm:732
+#: frmMain.dfm:735
 msgid "Delete Entry"
 msgstr ""
 
 #. MainForm..actions..actConfigure..Caption
-#: frmMain.dfm:736
+#: frmMain.dfm:739
 msgid "Configure"
 msgstr ""
 
 #. MainForm..actions..actClose..Caption
-#: frmMain.dfm:740 /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:93
+#: frmMain.dfm:743 /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:93
 msgid "Close"
 msgstr ""
 
 #. MainForm..actions..actSelect..Caption
-#: frmMain.dfm:744
+#: frmMain.dfm:747
 msgid "Select..."
 msgstr ""
 
 #. MainForm..actions..actHelp..Caption
-#: frmMain.dfm:748
+#: frmMain.dfm:751
 msgid "Help"
 msgstr ""
 
 #. MainForm..popup..mnuAddfile..Caption
-#: frmMain.dfm:762
+#: frmMain.dfm:765
 msgid "Add file..."
 msgstr ""
 
 #. MainForm..popup..mnuSelectAll..Caption
 #. SelectRcpt..popup..mnuSelectAll..Caption
-#: frmMain.dfm:766 frmSelect.dfm:62
+#: frmMain.dfm:769 frmSelect.dfm:62
 msgid "Select All"
 msgstr ""
 
 #. MainForm..popup..mnuSelectNone..Caption
 #. SelectRcpt..popup..mnuSelectNone..Caption
-#: frmMain.dfm:770 frmSelect.dfm:66
+#: frmMain.dfm:773 frmSelect.dfm:66
 msgid "Select None"
 msgstr ""
 
 #. MainForm..opendlg..Filter
-#: frmMain.dfm:775
+#: frmMain.dfm:778
 msgid "All supported files|*.ps;*.pdf;*.tif;*.tiff;*.pcl|All files|*.*"
 msgstr ""
 
@@ -520,215 +515,205 @@ msgstr ""
 msgid "Select Recipients"
 msgstr ""
 
-#. FormNotify..btnClose..Caption
-#: Main.dfm:36
-msgid "X"
-msgstr ""
-
-#. FormNotify..btnClose..Font.Name
-#: Main.dfm:40
-msgid "Verdana"
-msgstr ""
-
-#. FormNotify..Label1..Caption
-#: Main.dfm:226
-msgid "Fax sent to:"
-msgstr ""
-
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookCSV.cpp:60
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookCSV.cpp:60
 msgid "Unable to lock addressbook.csv!"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookCSV.cpp:103
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:274
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookCSV.cpp:103
+#: /cygdrive/d/proj/Print2Fax/wfigui/TransportStoneFax.cpp:333
+#: /cygdrive/d/proj/Print2Fax/wfigui/TransportStoneFax.cpp:469
 msgid "Call to curl_easy_init failed"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookCSV.cpp:188
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookCSV.cpp:188
 msgid "Unable to create addressbook.csv!"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:95
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookMAPI.cpp:95
 msgid "Unable to query address book contents table: 0x"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:201
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookMAPI.cpp:201
 msgid "Unable to query address book hierarchy table: 0x"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:235
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookMAPI.cpp:235
 msgid "Unable to open address book sub container: 0x"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:294
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookMAPI.cpp:294
 msgid "Unable to initialize MAPI: 0x"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:315
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookMAPI.cpp:315
 msgid "Unable to logon to MAPI: 0x"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:320
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookMAPI.cpp:320
 msgid "Unable to open MAPI address book: 0x"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:325
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookMAPI.cpp:325
 msgid "Unable to open MAPI address book container: 0x"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:85
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:85
 msgid "Unable to initialize ODBC: "
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:90
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:90
 msgid "Unable to setup ODBC: "
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:96
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:96
 msgid "Unable to create ODBC connection: "
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:101
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:106
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:101
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:106
 msgid "Unable to setup ODBC connection: "
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:118
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:118
 msgid "Unable to open ODBC connection: "
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:134
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:134
 msgid "Unable to create ODBC statement: "
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:153
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:153
 msgid "Unable to execute ODBC statement: "
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:159
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:164
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:159
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:164
 msgid "Unable to bind ODBC column: "
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:171
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:171
 msgid "Unable to fetch ODBC data: "
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/ConfigSerializerIni.cpp:54
+#: /cygdrive/d/proj/Print2Fax/wfigui/ConfigSerializerIni.cpp:54
 msgid "Client is not configured. Would you like to configure it now?"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmConfig.cpp:65
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmConfig.cpp:65
 msgid "Choose address book location"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmConfig.cpp:99
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmConfig.cpp:99
 msgid "Specify a valid path for the Address Book"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmConfig.cpp:119
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:460
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmConfig.cpp:119
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:466
 msgid "rel. "
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:424
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:430
 msgid ""
 " is already present in the address book.\n"
 "Do you want to modify the associated number?"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:625
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:632
 msgid "Unsent faxes will be lost. Are you sure you want to exit?"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:684
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:691
 msgid "Delete recipient?"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:60
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:1254
+msgid "<none>"
+msgstr ""
+
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:60
 msgid "Converting file to PDF..."
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:65
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:65
 msgid "File conversion succeeded"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:70
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:70
 msgid "An unknown error has occurred. File has not been converted"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:76
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:76
 msgid "Sending fax..."
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:81
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:81
 msgid "Fax correctly sent"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:86
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:86
 msgid "An unknown error has occurred. Fax has not been sent"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:95
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:95
 msgid "Job completed successfully"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:97
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:97
 msgid "Job completed with errors"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:186
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:186
 msgid ""
 "Bad username/password. Please enter correct values in the configuration "
 "dialog."
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/HttpClient.cpp:30
+#: /cygdrive/d/proj/Print2Fax/wfigui/HttpClient.cpp:30
 #, c-format
 msgid "The server responded with a status code of %d"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/HttpClient.cpp:35
+#: /cygdrive/d/proj/Print2Fax/wfigui/HttpClient.cpp:35
 msgid "Bad username/password"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/HttpClient.cpp:66
+#: /cygdrive/d/proj/Print2Fax/wfigui/HttpClient.cpp:66
 #, c-format
 msgid "Call to curl_easy_perform failed: code=%i message=%hs"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/ProcessorStoneFax.cpp:49
+#: /cygdrive/d/proj/Print2Fax/wfigui/ProcessorStoneFax.cpp:49
 msgid "Cannot initialize libmagic"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/ProcessorStoneFax.cpp:62
+#: /cygdrive/d/proj/Print2Fax/wfigui/ProcessorStoneFax.cpp:62
 msgid "Cannot load magic.mgc"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/ProcessorStoneFax.cpp:105
+#: /cygdrive/d/proj/Print2Fax/wfigui/ProcessorStoneFax.cpp:105
 #, c-format
 msgid "Call to magic_buffer failed: message=%hs"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/ProcessorStoneFax.cpp:147
+#: /cygdrive/d/proj/Print2Fax/wfigui/ProcessorStoneFax.cpp:147
 msgid "Ghostscript failed"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:75
+#: /cygdrive/d/proj/Print2Fax/wfigui/TransportStoneFax.cpp:108
 #, c-format
 msgid ""
 "The server responded with a status code of %d and provided the following "
 "error message: %s"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:146
+#: /cygdrive/d/proj/Print2Fax/wfigui/TransportStoneFax.cpp:181
 msgid "Server response is not JSON"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:153
+#: /cygdrive/d/proj/Print2Fax/wfigui/TransportStoneFax.cpp:188
 msgid "Error parsing JSON response"
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:277
+#: /cygdrive/d/proj/Print2Fax/wfigui/TransportStoneFax.cpp:336
 msgid "Call to curl_mime_init failed"
 msgstr ""
