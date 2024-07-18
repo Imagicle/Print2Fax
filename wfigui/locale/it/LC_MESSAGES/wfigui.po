@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Imagicle print2fax\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-26 18:09+0200\n"
-"PO-Revision-Date: 2024-06-26 18:10+0200\n"
+"PO-Revision-Date: 2024-07-18 10:17+0200\n"
 "Last-Translator: Marco Da Rios <marco.darios@imagicle.com>\n"
 "Language-Team: Italian <https://weblate.imagicle.com/projects/imagicle-print-"
 "to-fax/wfigui/it/>\n"
@@ -164,12 +164,12 @@ msgstr ""
 #: frmConfig.dfm:345
 #, no-object-pascal-format
 msgid "Set to default location (%APPDATA%\\Imagicle print2fax)"
-msgstr "Imposta la posizione di default (%APPDATA%\\Imagicle print2fax)"
+msgstr "Imposta la posizione predefinita (%APPDATA%\\Imagicle print2fax)"
 
 #. ConfigForm..tabs..tsAddrBook..gbAddressBook..btnDefault..Caption
 #: frmConfig.dfm:347
 msgid "Default"
-msgstr ""
+msgstr "Predefinita"
 
 #. ConfigForm..tabs..tsAddrBook..cbAddrBookType..Hint
 #: frmConfig.dfm:357
@@ -186,7 +186,7 @@ msgstr "Nessuna rubrica"
 #. ConfigForm..tabs..tsAddrBook..gbMAPI..Caption
 #: frmConfig.dfm:365
 msgid "Extended MAPI"
-msgstr ""
+msgstr "MAPI esteso"
 
 #. ConfigForm..tabs..tsAddrBook..cbAddrBookType....Items.Strings
 #. ConfigForm..tabs..tsAddrBook..gbODBC..Caption
@@ -197,7 +197,7 @@ msgstr ""
 #. ConfigForm..tabs..tsAddrBook..gbMAPI..rbMAPIDefProfile..Caption
 #: frmConfig.dfm:384
 msgid "Use default profile"
-msgstr "Usa il profilo di default"
+msgstr "Usa il profilo predefinito"
 
 #. ConfigForm..tabs..tsAddrBook..gbMAPI..rbMAPIUseProfile..Caption
 #: frmConfig.dfm:392
