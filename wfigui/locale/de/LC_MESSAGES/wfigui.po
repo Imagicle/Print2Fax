@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-26 18:09+0200\n"
-"PO-Revision-Date: 2021-09-08 10:51+0000\n"
-"Last-Translator: Luca Campo Dall'Orto <luca.campodallorto@imagicle.com>\n"
+"PO-Revision-Date: 2024-07-18 09:18+0000\n"
+"Last-Translator: Cristian Dittamo <cristian.dittamo@imagicle.com>\n"
 "Language-Team: none\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 5.5.2\n"
 
 #. ConfigForm..Caption
 #. MainForm..Caption
@@ -428,7 +428,7 @@ msgstr "<aus Adressbuch>"
 #. MainForm..Panel2..PageControl1..tsFaxcover..StaticText4..Caption
 #: frmMain.dfm:666
 msgid "Cover:"
-msgstr ""
+msgstr "Deckblatt:"
 
 #. MainForm..actions..actSend..Caption
 #: frmMain.dfm:719
@@ -646,7 +646,7 @@ msgstr "Empfänger löschen?"
 
 #: /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:1254
 msgid "<none>"
-msgstr ""
+msgstr "<keine>"
 
 #: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:60
 msgid "Converting file to PDF..."
