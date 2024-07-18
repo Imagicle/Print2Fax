@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-18 11:55+0200\n"
+"POT-Creation-Date: 2024-06-26 18:09+0200\n"
 "PO-Revision-Date: 2021-09-08 10:51+0000\n"
 "Last-Translator: Luca Campo Dall'Orto <luca.campodallorto@imagicle.com>\n"
 "Language-Team: none\n"
@@ -19,113 +19,135 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.8\n"
 
-#: frmConfig.dfm:7
-#: frmMain.dfm:6
-#: frmMain.dfm:105
+#. ConfigForm..Caption
+#. MainForm..Caption
+#. MainForm..Panel1..Label4..Caption
+#: frmConfig.dfm:7 frmMain.dfm:6 frmMain.dfm:103
 msgid "Imagicle print2fax"
 msgstr ""
 
-#: frmConfig.dfm:14
-#: frmConfig.dfm:114
-#: frmConfig.dfm:129
-#: frmConfirm.dfm:11
-#: frmConfirm.dfm:45
-#: frmMain.dfm:13
-#: frmMain.dfm:109
-#: frmMain.dfm:124
-#: frmMain.dfm:178
-#: frmProgress.dfm:12
-#: frmRecipient.dfm:12
-#: frmSelect.dfm:11
-#: Main.dfm:12
-#: Main.dfm:230
-#: Main.dfm:243
+#. ConfigForm..Font.Name
+#. ConfigForm..Panel1..Label5..Font.Name
+#. ConfigForm..Panel1..lblVersion..Font.Name
+#. Confirmation..Font.Name
+#. Confirmation..Panel1..Result..Font.Name
+#. MainForm..Font.Name
+#. MainForm..Panel1..Label4..Font.Name
+#. MainForm..Panel1..lblVersion..Font.Name
+#. MainForm..Panel2..Panel4..Label7..Font.Name
+#. FormProgress..Font.Name
+#. RecipientName..Font.Name
+#. SelectRcpt..Font.Name
+#: frmConfig.dfm:14 frmConfig.dfm:114 frmConfig.dfm:129 frmConfirm.dfm:11
+#: frmConfirm.dfm:45 frmMain.dfm:13 frmMain.dfm:107 frmMain.dfm:122
+#: frmMain.dfm:176 frmProgress.dfm:12 frmRecipient.dfm:12 frmSelect.dfm:11
 msgid "Tahoma"
 msgstr ""
 
+#. ConfigForm..Panel1..Label5..Caption
 #: frmConfig.dfm:110
 msgid "Configure Imagicle print2fax"
 msgstr "Сконфигурировать Imagicle print2fax"
 
-#: frmConfig.dfm:125
-#: frmMain.dfm:120
+#. ConfigForm..Panel1..lblVersion..Caption
+#. MainForm..Panel1..lblVersion..Caption
+#: frmConfig.dfm:125 frmMain.dfm:118
 msgid "rel. X.X.X"
 msgstr ""
 
-#: frmConfig.dfm:151
-#: frmRecipient.dfm:59
-#: frmSelect.dfm:41
+#. ConfigForm..Panel3..btnOK..Caption
+#. RecipientName..OK..Caption
+#. SelectRcpt..OK..Caption
+#: frmConfig.dfm:151 frmRecipient.dfm:59 frmSelect.dfm:41
 msgid "OK"
 msgstr "ОК"
 
-#: frmConfig.dfm:163
-#: frmProgress.dfm:36
-#: frmRecipient.dfm:70
+#. ConfigForm..Panel3..btnCancel..Caption
+#. FormProgress..btnCancelClose..Caption
+#. RecipientName..Cancel..Caption
+#. SelectRcpt..Cancel..Caption
+#: frmConfig.dfm:163 frmProgress.dfm:36 frmRecipient.dfm:70
 #: frmSelect.dfm:53
 msgid "Cancel"
 msgstr "Отменить"
 
+#. ConfigForm..tabs..tsServer..Caption
 #: frmConfig.dfm:179
 msgid "Imagicle server"
 msgstr "Сервер Imagicle"
 
+#. ConfigForm..tabs..tsServer..Default..Caption
 #: frmConfig.dfm:193
 msgid "Notification email"
 msgstr "Электронное уведомление"
 
-#: frmConfig.dfm:201
-#: frmConfig.dfm:432
+#. ConfigForm..tabs..tsServer..Label3..Caption
+#. ConfigForm..tabs..tsAddrBook..gbODBC..Label17..Caption
+#: frmConfig.dfm:201 frmConfig.dfm:432
 msgid "Password"
 msgstr "Пароль"
 
-#: frmConfig.dfm:209
-#: frmConfig.dfm:425
+#. ConfigForm..tabs..tsServer..Label2..Caption
+#. ConfigForm..tabs..tsAddrBook..gbODBC..Label16..Caption
+#: frmConfig.dfm:209 frmConfig.dfm:425
 msgid "Username"
 msgstr "Имя пользователя"
 
+#. ConfigForm..tabs..tsServer..Label1..Caption
 #: frmConfig.dfm:217
 msgid "Imagicle server address"
 msgstr "Адрес сервера Imagicle"
 
-#: frmConfig.dfm:224
-#: frmMain.dfm:566
+#. ConfigForm..tabs..tsServer..edtNotificationEmail..Hint
+#. MainForm..Panel2..PageControl1..tsFax..edtNotificationEmail..Hint
+#: frmConfig.dfm:224 frmMain.dfm:564
 msgid "Events will be notified to this email address."
-msgstr "Уведомления о событиях будут приходить на этот адрес электронной почты."
+msgstr ""
+"Уведомления о событиях будут приходить на этот адрес электронной почты."
 
-#: frmConfig.dfm:234
-#: frmConfig.dfm:479
+#. ConfigForm..tabs..tsServer..edtPassword..PasswordChar
+#. ConfigForm..tabs..tsAddrBook..gbODBC..edtODBCPassword..PasswordChar
+#: frmConfig.dfm:234 frmConfig.dfm:479
 msgid "●"
 msgstr ""
 
+#. ConfigForm..tabs..tsServer..chkNotify..Caption
 #: frmConfig.dfm:259
 msgid "Notify status"
 msgstr "Статус уведомления"
 
+#. ConfigForm..tabs..tsServer..chkUseSSL..Caption
 #: frmConfig.dfm:268
 msgid "Use secure connection (https)"
 msgstr "Использовать безопасное соединение (https)"
 
+#. ConfigForm..tabs..tsServer..chkSkipCertificateCheck..Caption
 #: frmConfig.dfm:278
 msgid "Skip server certificate validity checks"
 msgstr "Пропустить проверку действительности сертификата сервера"
 
+#. ConfigForm..tabs..tsAddrBook..Caption
 #: frmConfig.dfm:283
 msgid "Address book"
 msgstr "Адресная книга"
 
+#. ConfigForm..tabs..tsAddrBook..Label14..Caption
 #: frmConfig.dfm:298
 msgid "Address book type"
 msgstr "Тип адресной книги"
 
-#: frmConfig.dfm:306
-#: frmConfig.dfm:364
+#. ConfigForm..tabs..tsAddrBook..gbAddressBook..Caption
+#. ConfigForm..tabs..tsAddrBook..cbAddrBookType....Items.Strings
+#: frmConfig.dfm:306 frmConfig.dfm:364
 msgid "CSV"
 msgstr ""
 
+#. ConfigForm..tabs..tsAddrBook..gbAddressBook..Label13..Caption
 #: frmConfig.dfm:316
 msgid "Address book location"
 msgstr "Местонахождение адресной книги"
 
+#. ConfigForm..tabs..tsAddrBook..gbAddressBook..edtAddressBook....Hint
 #: frmConfig.dfm:325
 msgid ""
 "The path to addressbook.csv. File must be in CSV format delimited by commas."
@@ -133,67 +155,82 @@ msgstr ""
 "Путь сохранения addressbook.csv. Файл должен быть в формате CSV и разделен  "
 "запятыми."
 
+#. ConfigForm..tabs..tsAddrBook..gbAddressBook..btnBrowse..Hint
 #: frmConfig.dfm:334
 msgid "Browse..."
 msgstr "Обзор..."
 
+#. ConfigForm..tabs..tsAddrBook..gbAddressBook..btnBrowse..Caption
 #: frmConfig.dfm:336
-#: Main.dfm:239
 msgid "..."
 msgstr ""
 
+#. ConfigForm..tabs..tsAddrBook..gbAddressBook..btnDefault..Hint
 #: frmConfig.dfm:345
 #, no-object-pascal-format
 msgid "Set to default location (%APPDATA%\\Imagicle print2fax)"
-msgstr "Установить местонахождение по умолчанию (%APPDATA%\\Imagicle print2fax)"
+msgstr ""
+"Установить местонахождение по умолчанию (%APPDATA%\\Imagicle print2fax)"
 
+#. ConfigForm..tabs..tsAddrBook..gbAddressBook..btnDefault..Caption
 #: frmConfig.dfm:347
 msgid "Default"
 msgstr "По умолчанию"
 
+#. ConfigForm..tabs..tsAddrBook..cbAddrBookType..Hint
 #: frmConfig.dfm:357
 msgid "Choose the type of address book."
 msgstr "Выбрать тип адресной книги."
 
-#: frmConfig.dfm:361
-#: frmConfig.dfm:363
+#. ConfigForm..tabs..tsAddrBook..cbAddrBookType..Text
+#. ConfigForm..tabs..tsAddrBook..cbAddrBookType....Items.Strings
+#: frmConfig.dfm:361 frmConfig.dfm:363
 msgid "No address book"
 msgstr "Адресная книга отсутствует"
 
-#: frmConfig.dfm:365
-#: frmConfig.dfm:374
+#. ConfigForm..tabs..tsAddrBook..cbAddrBookType....Items.Strings
+#. ConfigForm..tabs..tsAddrBook..gbMAPI..Caption
+#: frmConfig.dfm:365 frmConfig.dfm:374
 msgid "Extended MAPI"
 msgstr "Расширенный интерфейс MAPI"
 
-#: frmConfig.dfm:366
-#: frmConfig.dfm:411
+#. ConfigForm..tabs..tsAddrBook..cbAddrBookType....Items.Strings
+#. ConfigForm..tabs..tsAddrBook..gbODBC..Caption
+#: frmConfig.dfm:366 frmConfig.dfm:411
 msgid "ODBC"
 msgstr ""
 
+#. ConfigForm..tabs..tsAddrBook..gbMAPI..rbMAPIDefProfile..Caption
 #: frmConfig.dfm:384
 msgid "Use default profile"
 msgstr "Использовать профиль по умолчанию"
 
+#. ConfigForm..tabs..tsAddrBook..gbMAPI..rbMAPIUseProfile..Caption
 #: frmConfig.dfm:392
 msgid "Use this profile:"
 msgstr "Использовать этот профиль"
 
+#. ConfigForm..tabs..tsAddrBook..gbODBC..Label15..Caption
 #: frmConfig.dfm:418
 msgid "DSN"
 msgstr ""
 
+#. ConfigForm..tabs..tsAddrBook..gbODBC..Label18..Caption
 #: frmConfig.dfm:439
 msgid "Fax field"
 msgstr "Поле факса"
 
+#. ConfigForm..tabs..tsAddrBook..gbODBC..Label19..Caption
 #: frmConfig.dfm:446
 msgid "Name field"
 msgstr "Поле имени"
 
+#. ConfigForm..tabs..tsAddrBook..gbODBC..Label20..Caption
 #: frmConfig.dfm:453
 msgid "Table"
 msgstr "Таблица"
 
+#. ConfigForm..tabs..tsAddrBook..gbODBC..edtODBCDSN....Hint
 #: frmConfig.dfm:462
 msgid ""
 "Data Source Name for the ODBC connection. Use ODBC administration tool to "
@@ -202,26 +239,32 @@ msgstr ""
 "Имя источника данных для соединения ODBC. Использовать открытый интерфейс "
 "доступа к базам данных (ODBC) для настройки."
 
+#. ConfigForm..tabs..tsAddrBook..gbODBC..edtODBCUser..Hint
 #: frmConfig.dfm:470
 msgid "Optional. User name for the ODBC connection."
 msgstr "Факультативно. Имя пользователя  для соединения ODBC."
 
+#. ConfigForm..tabs..tsAddrBook..gbODBC..edtODBCPassword..Hint
 #: frmConfig.dfm:478
 msgid "Optional. Password for the ODBC connection."
 msgstr "Факультативно. Пароль для соединения ODBC."
 
+#. ConfigForm..tabs..tsAddrBook..gbODBC..edtODBCFax..Hint
 #: frmConfig.dfm:487
 msgid "Name of the field containing the \"Fax number\"."
 msgstr "Наименование поля, содержащего “Номер факса”"
 
+#. ConfigForm..tabs..tsAddrBook..gbODBC..edtODBCTable..Hint
 #: frmConfig.dfm:495
 msgid "Name of the table containing data."
 msgstr "Наименование таблицы, содержащей данные."
 
+#. ConfigForm..tabs..tsAddrBook..gbODBC..edtODBCName..Hint
 #: frmConfig.dfm:503
 msgid "Name of the field containing the \"Recipient\"."
 msgstr "Наименование поля, содержащего “Получателя”."
 
+#. ConfigForm..tabs..tsAddrBook..gbODBC..chkODBCAuth....Hint
 #: frmConfig.dfm:513
 msgid ""
 "Check this if ODBC should authenticate with user and password. Leave blank "
@@ -231,325 +274,360 @@ msgstr ""
 "данным (ODBC) требуется авторизация с введением имени пользователя и пароля. "
 "Оставьте поле пустым для анонимного доступа"
 
+#. ConfigForm..tabs..tsAddrBook..gbODBC..chkODBCAuth..Caption
 #: frmConfig.dfm:514
 msgid "ODBC authentication"
 msgstr "Авторизация ODBC"
 
+#. ConfigForm..tabs..tsOptions..Caption
 #: frmConfig.dfm:521
 msgid "Other options"
 msgstr "Другие опции"
 
+#. ConfigForm..tabs..tsOptions..Label11..Caption
 #: frmConfig.dfm:533
 msgid "Language"
 msgstr "Язык"
 
+#. ConfigForm..tabs..tsOptions..Label4..Caption
 #: frmConfig.dfm:541
 msgid "Log level"
 msgstr "Уровень регистрации данных"
 
+#. ConfigForm..tabs..tsOptions..cbLogLevel....Items.Strings
 #: frmConfig.dfm:559
 msgid "None"
 msgstr "Нет"
 
+#. ConfigForm..tabs..tsOptions..cbLogLevel....Items.Strings
 #: frmConfig.dfm:560
 msgid "Errors"
 msgstr "Ошибки"
 
+#. ConfigForm..tabs..tsOptions..cbLogLevel....Items.Strings
 #: frmConfig.dfm:561
 msgid "Debug"
 msgstr "Корректировка"
 
+#. Confirmation..Caption
 #: frmConfirm.dfm:4
 msgid "Job submission"
 msgstr "Отправка задания"
 
+#. Confirmation..Panel1..Result..Caption
 #: frmConfirm.dfm:41
 msgid "Result"
 msgstr "Результат"
 
+#. Confirmation..Panel1..Label2..Caption
 #: frmConfirm.dfm:54
 msgid "Details:"
 msgstr "Описание:"
 
+#. Confirmation..Panel2..Close..Caption
 #: frmConfirm.dfm:70
 msgid "Ok"
 msgstr "Ок"
 
-#: frmMain.dfm:136
+#. MainForm..Panel1..lblLink....Caption
+#: frmMain.dfm:134
 msgid "<a href=\"https://www.imagicle.com/\">https://www.imagicle.com/</a>"
 msgstr ""
 
-#: frmMain.dfm:165
+#. MainForm..Panel2..Panel4..Label5..Caption
+#: frmMain.dfm:163
 msgid "Documents to send:"
 msgstr "Документы для отправки:"
 
-#: frmMain.dfm:174
+#. MainForm..Panel2..Panel4..Label7..Caption
+#: frmMain.dfm:172
 msgid "You can append new pages, or send selected documents now."
 msgstr ""
 "Вы можете добавить новые страницы или отправить выбранные документы прямо "
 "сейчас."
 
-#: frmMain.dfm:192
+#. MainForm..Panel2..Panel4..lbDocuments....Hint
+#: frmMain.dfm:190
 msgid "Drag documents or use arrows to sort. Right click for popup menu."
 msgstr ""
 "Перетащите документы или используйте стрелки для сортировки. Щелкните правой "
 "кнопкой мыши, чтобы открыть всплывающее меню."
 
-#: frmMain.dfm:212
-#: frmMain.dfm:720
+#. MainForm..Panel2..Panel4..btnUp..Caption
+#. MainForm..actions..actUp..Caption
+#: frmMain.dfm:210 frmMain.dfm:723
 msgid "Up"
 msgstr "Вверх"
 
-#: frmMain.dfm:354
-#: frmMain.dfm:724
+#. MainForm..Panel2..Panel4..btnDown..Caption
+#. MainForm..actions..actDown..Caption
+#: frmMain.dfm:352 frmMain.dfm:727
 msgid "Down"
 msgstr "Вниз"
 
-#: frmMain.dfm:500
+#. MainForm..Panel2..PageControl1..tsFax..Caption
+#: frmMain.dfm:498
 msgid "Fax"
 msgstr "Факс"
 
-#: frmMain.dfm:510
+#. MainForm..Panel2..PageControl1..tsFax..Label1..Caption
+#: frmMain.dfm:508
 msgid "FAX numbers"
 msgstr "Номера факсов"
 
-#: frmMain.dfm:518
+#. MainForm..Panel2..PageControl1..tsFax..Label3..Caption
+#: frmMain.dfm:516
 msgid "Notify E-Mail"
 msgstr "Уведомление по электронной почте"
 
-#: frmMain.dfm:525
+#. MainForm..Panel2..PageControl1..tsFax..rbSendTogether..Caption
+#: frmMain.dfm:523
 msgid "Send as a single fax"
 msgstr "Отправить в одном факсе"
 
-#: frmMain.dfm:536
+#. MainForm..Panel2..PageControl1..tsFax..rbSendIndividually..Caption
+#: frmMain.dfm:534
 msgid "Send individually"
 msgstr "Отправить по отдельности"
 
-#: frmMain.dfm:545
+#. MainForm..Panel2..PageControl1..tsFax..edtFAXNumber..Hint
+#: frmMain.dfm:543
 msgid "Enter multiple recipients separated by semicolons."
 msgstr "При вводе нескольких получателей они разделяются точкой с запятой."
 
-#: frmMain.dfm:558
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:84
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:433
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:690
+#. MainForm..Panel2..PageControl1..tsFax..cbABNames..Text
+#: frmMain.dfm:556 /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:84
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:439
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:697
 msgid "Select from address book"
 msgstr "Выбрать из адресной книги"
 
-#: frmMain.dfm:600
+#. MainForm..Panel2..PageControl1..tsFaxcover..Caption
+#: frmMain.dfm:598
 msgid "Fax cover"
 msgstr "Титульный лист факса"
 
-#: frmMain.dfm:614
-msgid "Use fax cover"
-msgstr "Использовать титульный лист"
-
-#: frmMain.dfm:630
+#. MainForm..Panel2..PageControl1..tsFaxcover..StaticText1..Caption
+#: frmMain.dfm:616
 msgid "Subject:"
 msgstr "Тема:"
 
-#: frmMain.dfm:646
+#. MainForm..Panel2..PageControl1..tsFaxcover..StaticText2..Caption
+#: frmMain.dfm:632
 msgid "Comments:"
 msgstr "Комментарии:"
 
-#: frmMain.dfm:654
-#: frmRecipient.dfm:34
+#. MainForm..Panel2..PageControl1..tsFaxcover..StaticText3..Caption
+#. RecipientName..Label2..Caption
+#: frmMain.dfm:640 frmRecipient.dfm:34
 msgid "Recipient's name:"
 msgstr "Имя получателя:"
 
-#: frmMain.dfm:664
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:1086
+#. MainForm..Panel2..PageControl1..tsFaxcover..edtRecipientName..Text
+#: frmMain.dfm:650 /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:1093
 msgid "<from address book>"
 msgstr "<из адресной книги>"
 
-#: frmMain.dfm:716
+#. MainForm..Panel2..PageControl1..tsFaxcover..StaticText4..Caption
+#: frmMain.dfm:666
+msgid "Cover:"
+msgstr ""
+
+#. MainForm..actions..actSend..Caption
+#: frmMain.dfm:719
 msgid "Send"
 msgstr "Отправить"
 
-#: frmMain.dfm:728
+#. MainForm..actions..actSave..Caption
+#: frmMain.dfm:731
 msgid "Save Number"
 msgstr "Сохранить номер"
 
-#: frmMain.dfm:732
+#. MainForm..actions..actDelete..Caption
+#: frmMain.dfm:735
 msgid "Delete Entry"
 msgstr "Удалить запись"
 
-#: frmMain.dfm:736
+#. MainForm..actions..actConfigure..Caption
+#: frmMain.dfm:739
 msgid "Configure"
 msgstr "Сконфигурировать"
 
-#: frmMain.dfm:740
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:93
+#. MainForm..actions..actClose..Caption
+#: frmMain.dfm:743 /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:93
 msgid "Close"
 msgstr "Закрыть"
 
-#: frmMain.dfm:744
+#. MainForm..actions..actSelect..Caption
+#: frmMain.dfm:747
 msgid "Select..."
 msgstr "Выбрать..."
 
-#: frmMain.dfm:748
+#. MainForm..actions..actHelp..Caption
+#: frmMain.dfm:751
 msgid "Help"
 msgstr "Помощь"
 
-#: frmMain.dfm:762
+#. MainForm..popup..mnuAddfile..Caption
+#: frmMain.dfm:765
 msgid "Add file..."
 msgstr "Добавить файл..."
 
-#: frmMain.dfm:766
-#: frmSelect.dfm:62
+#. MainForm..popup..mnuSelectAll..Caption
+#. SelectRcpt..popup..mnuSelectAll..Caption
+#: frmMain.dfm:769 frmSelect.dfm:62
 msgid "Select All"
 msgstr "Выбрать Все"
 
-#: frmMain.dfm:770
-#: frmSelect.dfm:66
+#. MainForm..popup..mnuSelectNone..Caption
+#. SelectRcpt..popup..mnuSelectNone..Caption
+#: frmMain.dfm:773 frmSelect.dfm:66
 msgid "Select None"
 msgstr "Выбрать Нет"
 
-#: frmMain.dfm:775
+#. MainForm..opendlg..Filter
+#: frmMain.dfm:778
 msgid "All supported files|*.ps;*.pdf;*.tif;*.tiff;*.pcl|All files|*.*"
 msgstr "Все поддерживаемые файлы |*.ps;*.pdf;*.tif;*.tiff;*.pcl|All files|*.*"
 
+#. FormProgress..Caption
 #: frmProgress.dfm:5
 msgid "Fax processing"
 msgstr "Обработка факса"
 
+#. FormProgress..Label1..Caption
 #: frmProgress.dfm:28
 msgid "Status:"
 msgstr "Статус:"
 
+#. FormProgress..lvResults......Caption
 #: frmProgress.dfm:51
 msgid "Recipients"
 msgstr "Получатели"
 
+#. FormProgress..lvResults......Caption
 #: frmProgress.dfm:55
 msgid "Subject"
 msgstr "Тема"
 
+#. FormProgress..lvResults......Caption
 #: frmProgress.dfm:59
 msgid "Status"
 msgstr "Статус"
 
+#. RecipientName..Caption
 #: frmRecipient.dfm:5
 msgid "Recipient's name"
 msgstr "Имя получателя"
 
+#. RecipientName..Label1..Caption
 #: frmRecipient.dfm:26
 msgid "FAX number:"
 msgstr "Номера факса:"
 
+#. SelectRcpt..Caption
 #: frmSelect.dfm:4
 msgid "Select Recipients"
 msgstr "Выбрать получателей"
 
-#: Main.dfm:36
-msgid "X"
-msgstr ""
-
-#: Main.dfm:40
-msgid "Verdana"
-msgstr ""
-
-#: Main.dfm:226
-msgid "Fax sent to:"
-msgstr "Факс отправлен:"
-
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookCSV.cpp:60
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookCSV.cpp:60
 msgid "Unable to lock addressbook.csv!"
 msgstr "Невозможно заблокировать addressbook.csv!"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookCSV.cpp:103
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:274
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookCSV.cpp:103
+#: /cygdrive/d/proj/Print2Fax/wfigui/TransportStoneFax.cpp:333
+#: /cygdrive/d/proj/Print2Fax/wfigui/TransportStoneFax.cpp:469
 msgid "Call to curl_easy_init failed"
 msgstr "Вызов curl_easy_init не удался"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookCSV.cpp:188
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookCSV.cpp:188
 msgid "Unable to create addressbook.csv!"
 msgstr "Невозможно создать addressbook.csv!"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:95
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookMAPI.cpp:95
 msgid "Unable to query address book contents table: 0x"
 msgstr "Невозможно запросить таблицу содержимого адресной книги: 0x"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:201
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookMAPI.cpp:201
 msgid "Unable to query address book hierarchy table: 0x"
 msgstr "Невозможно запросить иерархическую таблицу адресной книги: 0x"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:235
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookMAPI.cpp:235
 msgid "Unable to open address book sub container: 0x"
 msgstr "Невозможно открыть вспомогательное хранилище адресной книги: 0x"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:294
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookMAPI.cpp:294
 msgid "Unable to initialize MAPI: 0x"
 msgstr "Невозможно инициализировать MAPI: 0x"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:315
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookMAPI.cpp:315
 msgid "Unable to logon to MAPI: 0x"
 msgstr "Невозможно войти в MAPI: 0x"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:320
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookMAPI.cpp:320
 msgid "Unable to open MAPI address book: 0x"
 msgstr "Невозможно открыть адресную книгу MAPI: 0x"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookMAPI.cpp:325
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookMAPI.cpp:325
 msgid "Unable to open MAPI address book container: 0x"
 msgstr "Невозможно открыть хранилище адресной книги MAPI: 0x"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:85
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:85
 msgid "Unable to initialize ODBC: "
 msgstr "Невозможно инициализировать ODBC: "
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:90
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:90
 msgid "Unable to setup ODBC: "
 msgstr "Невозможна настройка ODBC: "
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:96
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:96
 msgid "Unable to create ODBC connection: "
 msgstr "Невозможно создание соединения ODBC: "
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:101
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:106
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:101
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:106
 msgid "Unable to setup ODBC connection: "
 msgstr "Невозможна настройка соединение ODBC: "
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:118
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:118
 msgid "Unable to open ODBC connection: "
 msgstr "Невозможно открыть соединение ODBC: "
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:134
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:134
 msgid "Unable to create ODBC statement: "
 msgstr "Невозможно создание оператора ODBC: "
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:153
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:153
 msgid "Unable to execute ODBC statement: "
 msgstr "Невозможно выполнение оператора ODBC: "
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:159
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:164
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:159
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:164
 msgid "Unable to bind ODBC column: "
 msgstr "Невозможно связать столбец ODBC: "
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/AddrBookODBC.cpp:171
+#: /cygdrive/d/proj/Print2Fax/wfigui/AddrBookODBC.cpp:171
 msgid "Unable to fetch ODBC data: "
 msgstr "Невозможно получение данных ODBC: "
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/ConfigSerializerIni.cpp:54
+#: /cygdrive/d/proj/Print2Fax/wfigui/ConfigSerializerIni.cpp:54
 msgid "Client is not configured. Would you like to configure it now?"
 msgstr "Клиент не сконфигурирован. Вы хотите сконфигурировать его сейчас?"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmConfig.cpp:65
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmConfig.cpp:65
 msgid "Choose address book location"
 msgstr "Выберите местонахождение адресной книги"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmConfig.cpp:99
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmConfig.cpp:99
 msgid "Specify a valid path for the Address Book"
 msgstr "Укажите действительный путь регистрации адресной книги"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmConfig.cpp:119
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:460
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmConfig.cpp:119
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:466
 msgid "rel. "
 msgstr ""
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:424
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:430
 msgid ""
 " is already present in the address book.\n"
 "Do you want to modify the associated number?"
@@ -557,47 +635,51 @@ msgstr ""
 " уже есть в адресной книге.\n"
 "Вы хотите изменить присвоенный номер?"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:625
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:632
 msgid "Unsent faxes will be lost. Are you sure you want to exit?"
 msgstr "Неотправленные факсы будут утрачены. Вы действительно хотите выйти?"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmMain.cpp:684
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:691
 msgid "Delete recipient?"
 msgstr "Удалить получателя?"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:60
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmMain.cpp:1254
+msgid "<none>"
+msgstr ""
+
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:60
 msgid "Converting file to PDF..."
 msgstr "Идет преобразование файла в формат PDF..."
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:65
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:65
 msgid "File conversion succeeded"
 msgstr "Файл успешно преобразован"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:70
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:70
 msgid "An unknown error has occurred. File has not been converted"
 msgstr "Произошла неизвестная ошибка. Файл не преобразован"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:76
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:76
 msgid "Sending fax..."
 msgstr "Производится отправление факса..."
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:81
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:81
 msgid "Fax correctly sent"
 msgstr "Факс успешно отправлен"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:86
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:86
 msgid "An unknown error has occurred. Fax has not been sent"
 msgstr "Произошла неизвестная ошибка. Факс не отправлен"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:95
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:95
 msgid "Job completed successfully"
 msgstr "Задача успешно выполнена"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:97
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:97
 msgid "Job completed with errors"
 msgstr "При выполнении задачи возникли ошибки"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/frmProgress.cpp:186
+#: /cygdrive/d/proj/Print2Fax/wfigui/frmProgress.cpp:186
 msgid ""
 "Bad username/password. Please enter correct values in the configuration "
 "dialog."
@@ -605,38 +687,38 @@ msgstr ""
 "Неверное имя пользователя/пароль. Пожалуйста, введите правильные значения в "
 "диалоговом окне конфигурации."
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/HttpClient.cpp:30
+#: /cygdrive/d/proj/Print2Fax/wfigui/HttpClient.cpp:30
 #, c-format
 msgid "The server responded with a status code of %d"
 msgstr "Код ответного состояния сервера %d"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/HttpClient.cpp:35
+#: /cygdrive/d/proj/Print2Fax/wfigui/HttpClient.cpp:35
 msgid "Bad username/password"
 msgstr "Неверное имя пользователя/пароль"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/HttpClient.cpp:66
+#: /cygdrive/d/proj/Print2Fax/wfigui/HttpClient.cpp:66
 #, c-format
 msgid "Call to curl_easy_perform failed: code=%i message=%hs"
 msgstr "Вызов curl_easy_perform не удался: код=%i сообщение=%hs"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/ProcessorStoneFax.cpp:49
+#: /cygdrive/d/proj/Print2Fax/wfigui/ProcessorStoneFax.cpp:49
 msgid "Cannot initialize libmagic"
 msgstr "Не удается инициализация  libmagic"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/ProcessorStoneFax.cpp:62
+#: /cygdrive/d/proj/Print2Fax/wfigui/ProcessorStoneFax.cpp:62
 msgid "Cannot load magic.mgc"
 msgstr "Не удается загрузка magic.mgc"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/ProcessorStoneFax.cpp:105
+#: /cygdrive/d/proj/Print2Fax/wfigui/ProcessorStoneFax.cpp:105
 #, c-format
 msgid "Call to magic_buffer failed: message=%hs"
 msgstr "Вызов magic_buffer не удался: сообщение=%hs"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/ProcessorStoneFax.cpp:147
+#: /cygdrive/d/proj/Print2Fax/wfigui/ProcessorStoneFax.cpp:147
 msgid "Ghostscript failed"
 msgstr "Ghostscript не сработал"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:75
+#: /cygdrive/d/proj/Print2Fax/wfigui/TransportStoneFax.cpp:108
 #, c-format
 msgid ""
 "The server responded with a status code of %d and provided the following "
@@ -644,14 +726,20 @@ msgid ""
 msgstr ""
 "Код ответного состояния сервера %d со следующим сообщением об ошибке: %s"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:146
+#: /cygdrive/d/proj/Print2Fax/wfigui/TransportStoneFax.cpp:181
 msgid "Server response is not JSON"
 msgstr "Ответ сервера не JSON"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:153
+#: /cygdrive/d/proj/Print2Fax/wfigui/TransportStoneFax.cpp:188
 msgid "Error parsing JSON response"
 msgstr "Ошибка при разборе ответа JSON"
 
-#: /cygdrive/d/proj/Imagicle/wfi/wfigui/TransportStoneFax.cpp:277
+#: /cygdrive/d/proj/Print2Fax/wfigui/TransportStoneFax.cpp:336
 msgid "Call to curl_mime_init failed"
 msgstr "Вызов curl_mime_init не удался"
+
+#~ msgid "Use fax cover"
+#~ msgstr "Использовать титульный лист"
+
+#~ msgid "Fax sent to:"
+#~ msgstr "Факс отправлен:"
