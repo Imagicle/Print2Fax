@@ -93,11 +93,9 @@
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <IncludePath>D:\lib\icu\75\include;D:\lib\curl\curl-7.74.0\include;$(IncludePath)</IncludePath>
         <BCC_UseClassicCompiler>false</BCC_UseClassicCompiler>
-        <VerInfo_Build>4</VerInfo_Build>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=Imagicle Spa;FileDescription=Imagicle print2fax GUI;FileVersion=1.7.1.4;InternalName=;LegalCopyright=Copyright 2010-2024 Imagicle Spa. Released under the terms of the GNU GPL license.;LegalTrademarks=;OriginalFilename=;ProductName=Imagicle print2fax;ProductVersion=1.7.0.923;Comments=</VerInfo_Keys>
-        <VerInfo_MinorVer>7</VerInfo_MinorVer>
-        <VerInfo_Release>1</VerInfo_Release>
+        <VerInfo_Keys>CompanyName=Imagicle Spa;FileDescription=Imagicle print2fax GUI;FileVersion=1.8.0.0;InternalName=;LegalCopyright=Copyright 2010-2024 Imagicle Spa. Released under the terms of the GNU GPL license.;LegalTrademarks=;OriginalFilename=;ProductName=Imagicle print2fax;ProductVersion=1.8.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_MinorVer>8</VerInfo_MinorVer>
         <Icon_MainIcon>$(BDS)\bin\cbuilder_PROJECTICON.ico</Icon_MainIcon>
         <UWP_CppLogo44>$(BDS)\bin\Artwork\Windows\UWP\cppreg_UwpDefault_44.png</UWP_CppLogo44>
         <UWP_CppLogo150>$(BDS)\bin\Artwork\Windows\UWP\cppreg_UwpDefault_150.png</UWP_CppLogo150>
@@ -128,7 +126,6 @@
     <PropertyGroup Condition="'$(Base_Win64x)'!=''">
         <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
         <BT_BuildType>Debug</BT_BuildType>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1)'!=''">
@@ -171,10 +168,6 @@
         <Defines>NDEBUG;$(Defines)</Defines>
         <LinkPackageStatics>rtl.lib;vcl.lib;vclimg.lib;inet.lib;vclx.lib;dbrtl.lib;IndyCore.lib;IndySystem.lib;xmlrtl.lib;vclactnband.lib;JvSystem.lib;Jcl.lib;JvCore.lib;JclVcl.lib;VclSmp.lib;JvStdCtrls.lib;IndyProtocols.lib;JvControls.lib;vcldb.lib;JvDB.lib;adortl.lib;JvDlgs.lib;JvCustom.lib;vclwinx.lib</LinkPackageStatics>
         <Icon_MainIcon>wfigui_Icon.ico</Icon_MainIcon>
-        <VerInfo_Keys>CompanyName=Imagicle Spa;FileDescription=Imagicle print2fax GUI;FileVersion=1.8.0.0;InternalName=;LegalCopyright=Copyright © 2024 Imagicle Spa. Released under the terms of the GNU GPL license.;LegalTrademarks=;OriginalFilename=;ProductName=Imagicle print2fax;ProductVersion=1.8.0.0;Comments=</VerInfo_Keys>
-        <VerInfo_Release>0</VerInfo_Release>
-        <VerInfo_Build>0</VerInfo_Build>
-        <VerInfo_MinorVer>8</VerInfo_MinorVer>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
         <Defines>NDEBUG;$(Defines)</Defines>
