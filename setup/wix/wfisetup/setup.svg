@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="744.09448819"
    height="1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    sodipodi:docname="setup.svg"
    inkscape:export-filename="D:\proj\Imagicle\wfi\setup\wix\wfisetup\setup.png"
    inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96">
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs4">
     <linearGradient
@@ -45,7 +45,7 @@
        id="filter3934"
        x="-0.15980046"
        width="1.3196009"
-       y="-0.33255774"
+       y="-0.33255773"
        height="1.6651155">
       <feGaussianBlur
          inkscape:collect="always"
@@ -60,18 +60,21 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.576433"
-     inkscape:cx="339.70283"
-     inkscape:cy="472.71232"
+     inkscape:zoom="1.2882165"
+     inkscape:cx="339.22869"
+     inkscape:cy="376.87764"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1507"
-     inkscape:window-height="1198"
-     inkscape:window-x="503"
-     inkscape:window-y="284"
+     inkscape:window-height="875"
+     inkscape:window-x="117"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:document-rotation="0" />
+     inkscape:document-rotation="0"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -89,7 +92,8 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       id="g867"
+       id="g1"
+       inkscape:export-filename="setup.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <rect
@@ -114,24 +118,24 @@
          inkscape:export-ydpi="90" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.002px;line-height:0%;font-family:'Oblivious font';-inkscape-font-specification:'Oblivious font';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#08277e;fill-opacity:1;stroke:none;stroke-width:1.16684"
-         x="379.12448"
-         y="204.54636"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.6276px;line-height:0%;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#08277e;fill-opacity:1;stroke:none;stroke-width:1.30231"
+         x="338.3428"
+         y="228.29381"
          id="text4112"
-         transform="scale(0.63893052,1.5651154)"
+         transform="scale(0.71310918,1.4023098)"
          inkscape:export-filename="D:\proj\wphf-reloaded\images\setup.png"
          inkscape:export-xdpi="90"
          inkscape:export-ydpi="90"><tspan
            sodipodi:role="line"
            id="tspan4114"
-           x="379.12448"
-           y="204.54636"
-           style="font-size:41.0041px;line-height:1.25;text-align:center;text-anchor:middle;fill:#08277e;fill-opacity:1;stroke-width:1.16684">Imagicle</tspan><tspan
+           x="338.3428"
+           y="228.29381"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.7646px;line-height:1.25;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;fill:#08277e;fill-opacity:1;stroke-width:1.30231">Imagicle</tspan><tspan
            sodipodi:role="line"
-           x="379.12448"
-           y="255.80148"
+           x="338.3428"
+           y="285.49954"
            id="tspan4118"
-           style="font-size:41.0041px;line-height:1.25;text-align:center;text-anchor:middle;fill:#08277e;fill-opacity:1;stroke-width:1.16684">print2fax</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.7646px;line-height:1.25;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;fill:#08277e;fill-opacity:1;stroke-width:1.30231">print2fax</tspan></text>
       <ellipse
          style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.46;fill:#00005b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;filter:url(#filter3934);enable-background:accumulate"
          id="path3824"
@@ -143,20 +147,6 @@
          cy="471.71448"
          rx="29.88628"
          ry="14.360939" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Oblivious font';-inkscape-font-specification:'Oblivious font';letter-spacing:0px;word-spacing:0px;fill:#031e03;fill-opacity:1;stroke:none"
-         x="208.43083"
-         y="542.50507"
-         id="text4959"
-         inkscape:export-filename="D:\proj\wphf-reloaded\images\setup.png"
-         inkscape:export-xdpi="90"
-         inkscape:export-ydpi="90"><tspan
-           sodipodi:role="line"
-           x="208.43083"
-           y="542.50507"
-           id="tspan2999"
-           style="font-size:12px;line-height:1.25">Rel. 1.7.0</tspan></text>
       <image
          y="430.46872"
          x="202.37326"
