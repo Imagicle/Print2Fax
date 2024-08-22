@@ -35,4 +35,5 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   -->
   <String Id="ConfigDlgUseSSLCheckBox">Usa connessione sicura (https)</String>
   <String Id="ConfigDlgSkipCertificateCheckCheckBox">Ignora i controlli di validità del certificato del server</String>
+  <String Id="WelcomeDlgDescription">L'Installazione guidata consente di installare [ProductName] [ProductVersion] nel computer. Fare clic su Avanti per continuare oppure su Annulla per uscire dall'Installazione guidata.</String>
 </WixLocalization>
