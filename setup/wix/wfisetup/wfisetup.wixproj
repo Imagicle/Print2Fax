@@ -70,8 +70,12 @@
     <Error Text="The WiX Toolset v3.11 (or newer) build tools must be installed to build this project. To download the WiX Toolset, see http://wixtoolset.org/releases/" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>cd $(TargetDir)en-us
-rename $(TargetFileName) $(TargetName)-$(PlatformName).msi</PostBuildEvent>
+    <PostBuildEvent>set InstallerDir=$(SolutionDir)..\..\InstallerRelease
+cd $(TargetDir)en-us
+del $(TargetName)-$(PlatformName).msi
+rename $(TargetFileName) $(TargetName)-$(PlatformName).msi
+if not exist %25InstallerDir%25  (mkdir %25InstallerDir%25) else (del %25InstallerDir%25\$(TargetName)-$(PlatformName).msi)
+copy $(TargetName)-$(PlatformName).msi %25InstallerDir%25</PostBuildEvent>
   </PropertyGroup>
   <!--
 	To modify your build process, add your task inside one of the targets below and uncomment it.
