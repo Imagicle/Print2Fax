@@ -59,13 +59,14 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     </Feature>
     
     <InstallExecuteSequence>
+      <Custom Action="ReadIni" Before="InstallInitialize">(UILevel=2 AND OVERWRITEINIVALUES=0)</Custom>
       <Custom Action="RemovePrinter" After="InstallInitialize">(REMOVE="ALL" OR REINSTALL)</Custom>
       <Custom Action="WriteIni" Before="AddPrinter">NOT Installed</Custom>
       <Custom Action="AddPrinter" Before="InstallFinalize">(NOT Installed OR UPGRADINGPRODUCTCODE OR REINSTALL)</Custom>
     </InstallExecuteSequence>
     
     <InstallUISequence>
-      <Custom Action="ReadIni" After="CostFinalize">NOT Installed AND OVERWRITEINIVALUES=0</Custom>
+      <Custom Action="ReadIni" After="CostFinalize">(NOT Installed AND OVERWRITEINIVALUES=0)</Custom>
     </InstallUISequence>
 
     <Property Id="WIXUI_INSTALLDIR" Value="INSTALLDIR" />
