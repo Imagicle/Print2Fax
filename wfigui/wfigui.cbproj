@@ -94,7 +94,7 @@
         <IncludePath>D:\lib\icu\75\include;D:\lib\curl\curl-7.74.0\include;$(IncludePath)</IncludePath>
         <BCC_UseClassicCompiler>false</BCC_UseClassicCompiler>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=Imagicle Spa;FileDescription=Imagicle print2fax GUI;FileVersion=1.8.0.0;InternalName=;LegalCopyright=Copyright 2010-2024 Imagicle Spa. Released under the terms of the GNU GPL license.;LegalTrademarks=;OriginalFilename=;ProductName=Imagicle print2fax;ProductVersion=1.8.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Imagicle Spa;FileDescription=Imagicle print2fax GUI;FileVersion=1.8.1.0;InternalName=;LegalCopyright=Copyright 2010-2025 Imagicle Spa. Released under the terms of the GNU GPL license.;LegalTrademarks=;OriginalFilename=;ProductName=Imagicle print2fax;ProductVersion=1.8.1.0;Comments=</VerInfo_Keys>
         <VerInfo_MinorVer>8</VerInfo_MinorVer>
         <Icon_MainIcon>$(BDS)\bin\cbuilder_PROJECTICON.ico</Icon_MainIcon>
         <UWP_CppLogo44>$(BDS)\bin\Artwork\Windows\UWP\cppreg_UwpDefault_44.png</UWP_CppLogo44>
@@ -327,7 +327,7 @@
                     <VersionInfoKeys Name="FileDescription">Imagicle print2fax GUI</VersionInfoKeys>
                     <VersionInfoKeys Name="FileVersion">0.5.2.8</VersionInfoKeys>
                     <VersionInfoKeys Name="InternalName">wfigui.exe</VersionInfoKeys>
-                    <VersionInfoKeys Name="LegalCopyright">Copyright 2010-2024 Imagicle Spa. Released under the terms of the GNU GPL license.</VersionInfoKeys>
+                    <VersionInfoKeys Name="LegalCopyright">Copyright 2010-2025 Imagicle Spa. Released under the terms of the GNU GPL license.</VersionInfoKeys>
                     <VersionInfoKeys Name="LegalTrademarks"/>
                     <VersionInfoKeys Name="OriginalFilename"/>
                     <VersionInfoKeys Name="ProductName">Imagicle print2fax</VersionInfoKeys>
